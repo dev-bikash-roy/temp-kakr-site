@@ -13,6 +13,15 @@
     <meta name="referrer" content="same-origin" />
     <title>KAKR Newsroom — Editor</title>
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <!--
+      Absolute path, deliberately. Decap defaults to a *relative* "config.yml",
+      which resolves against the document URL — and hosts disagree about whether
+      /admin redirects to /admin/. The Node server 301s to the trailing slash, so
+      the relative path resolves to /admin/config.yml; Vercel serves /admin
+      directly, so it resolved to /config.yml at the site root and 404'd, leaving
+      the editor with no configuration at all.
+    -->
+    <link rel="cms-config-url" type="text/yaml" href="/admin/config.yml" />
     <style>
       /* Shown until the editor bundle takes over the page. */
       html,
