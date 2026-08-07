@@ -81,13 +81,24 @@ export async function useNewsroomCards() {
    */
   const loaded = useState<boolean>('newsroom-cards-loaded', () => false)
 
+  /**
+   * `useRequestFetch()`, not bare `$fetch`.
+   *
+   * A relative `$fetch` on the server only resolves internally when it can see
+   * the current request. Under Vercel's ISR renderer it cannot, so it fell back
+   * to an absolute `http://localhost:3000/...` and the function died with
+   * FUNCTION_INVOCATION_FAILED on every newsroom route. `useRequestFetch` is
+   * bound to the active request and dispatches to the handler in-process.
+   */
+  const request = useRequestFetch()
+
   if (!loaded.value) {
-    cards.value = await $fetch<NewsroomCard[]>('/api/newsroom/cards')
+    cards.value = await request<NewsroomCard[]>('/api/newsroom/cards')
     loaded.value = true
   }
 
   async function refresh() {
-    cards.value = await $fetch<NewsroomCard[]>('/api/newsroom/cards')
+    cards.value = await request<NewsroomCard[]>('/api/newsroom/cards')
     loaded.value = true
   }
 

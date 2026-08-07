@@ -49,6 +49,17 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/google-fonts', '@nuxtjs/color-mode', '@nuxt/content'],
 
   content: {
+    /**
+     * Use Node's built-in `node:sqlite` instead of the `better-sqlite3` native
+     * addon.
+     *
+     * On Vercel every route that touches the content database returned 500 while
+     * static routes were fine — the signature of a native `.node` binary not
+     * surviving the serverless bundle. `node:sqlite` is part of the Node runtime
+     * (22.5+), so there is no binary to bundle and nothing to mis-trace.
+     */
+    experimental: { nativeSqlite: true },
+
     build: {
       markdown: {
         toc: { depth: 3, searchDepth: 3 },

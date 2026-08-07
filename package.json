@@ -37,5 +37,8 @@
     "@nuxtjs/robots": "^5.7.1",
     "decap-cms": "^3.15.1",
     "nuxt-icon": "^1.0.0-beta.7"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

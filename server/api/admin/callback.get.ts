@@ -23,7 +23,17 @@ interface TokenResponse {
   error_description?: string
 }
 
-/** Decap listens for `authorization:github:<result>:<json>` on window.postMessage. */
+/**
+ * Decap's OAuth popup protocol is a three-step handshake, and the order matters:
+ *
+ *   1. the popup announces itself with `authorizing:<provider>`
+ *   2. the editor answers with a message, revealing its origin
+ *   3. the popup replies with `authorization:<provider>:<result>:<json>`
+ *
+ * Sending the payload first — which is what this did originally — means the
+ * editor is not listening yet and simply discards it. The popup then sat on
+ * "Completing sign-in…" while the editor stayed on the login screen.
+ */
 function responsePage(payload: string, targetOrigin: string) {
   return `<!doctype html>
 <html lang="en">
@@ -36,12 +46,24 @@ function responsePage(payload: string, targetOrigin: string) {
   (function () {
     var payload = ${JSON.stringify(payload)};
     var target = ${JSON.stringify(targetOrigin)};
-    function send() { window.opener && window.opener.postMessage(payload, target); }
-    // Decap answers the first message with an "authorizing" handshake, then
-    // expects the payload again. Listening for it is more reliable than a timer.
-    window.addEventListener('message', function () { send(); }, { once: true });
-    send();
-    setTimeout(function () { window.close(); }, 1200);
+
+    if (!window.opener) {
+      document.body.textContent = 'This page must be opened from the KAKR editor.';
+      return;
+    }
+
+    function handleReply(event) {
+      // Only the editor on our own origin may receive the token.
+      if (event.origin !== target) return;
+      window.removeEventListener('message', handleReply, false);
+      window.opener.postMessage(payload, target);
+      setTimeout(function () { window.close(); }, 600);
+    }
+
+    window.addEventListener('message', handleReply, false);
+
+    // Step 1. Must come first — this is what makes the editor start listening.
+    window.opener.postMessage('authorizing:github', target);
   })();
 </script>
 </body>
