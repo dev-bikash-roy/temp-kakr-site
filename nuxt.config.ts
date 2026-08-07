@@ -30,10 +30,12 @@ export default defineNuxtConfig({
     public: {
       siteUrl,
       googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID || '',
-      // Repository the editor commits to. Not a secret — it is already visible in
-      // public/admin/config.yml — but it is read server-side to check that a
-      // signing-in editor actually has write access.
-      decapRepo: process.env.DECAP_REPO || 'dev-bikash-roy/kakr-ai'
+      // Repository and branch the editor commits to. Not secrets, but they must
+      // be environment-driven: a test deployment has to publish into its own repo
+      // rather than into production. The editor reads these at runtime via
+      // /api/admin/cms-config, so the same build works on both.
+      decapRepo: process.env.DECAP_REPO || 'dev-bikash-roy/kakr-ai',
+      decapBranch: process.env.DECAP_BRANCH || 'main'
     }
   },
 

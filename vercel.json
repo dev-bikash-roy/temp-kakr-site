@@ -1,7 +1,6 @@
 {
   "redirects": [
     {
-      "_comment": "SECURITY: @nuxt/content publishes an unauthenticated dump of the ENTIRE newsroom collection at /__nuxt_content/newsroom/sql_dump.txt — including archived articles and internal reviewer notes that appear on no page. It is a static asset, so it is served before any application middleware runs and cannot be blocked from inside the app. The server's own content queries are in-process and never reach this edge rule, so blocking it here is safe. See docs/newsroom/content-schema.md.",
       "source": "/__nuxt_content/:path*",
       "destination": "/newsroom",
       "permanent": false

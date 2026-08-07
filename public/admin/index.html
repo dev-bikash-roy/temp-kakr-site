@@ -64,19 +64,26 @@
       credential compromise. scripts/sync-decap.mjs copies the version pinned in
       package-lock.json into /admin/vendor/ during install and build.
     -->
+    <!--
+      Manual init. The repository, branch and OAuth origin come from the server at
+      runtime rather than from config.yml, because config.yml is a static file and
+      cannot know which deployment is serving it. Hardcoding them means a test
+      deployment commits into the production repository.
+    -->
+    <script>
+      window.CMS_MANUAL_INIT = true
+    </script>
     <script src="/admin/vendor/decap-cms.js"></script>
     <script>
       ;(function () {
         var message = document.getElementById('boot-message')
+        var CMS = window.DecapCms || window.CMS
 
-        if (typeof window.DecapCms === 'undefined' && typeof window.CMS === 'undefined') {
+        if (!CMS) {
           message.innerHTML =
             'The editor bundle is missing. A developer needs to run <code>npm run cms:sync</code> and redeploy.'
           return
         }
-
-        // The bundle registers itself and reads ./config.yml on its own. Calling
-        // init() again here would load the config twice.
 
         // Decap mounts into #nc-root. Hide the fallback only once that actually
         // appears, so a mount failure still leaves the instructions on screen.
@@ -87,6 +94,42 @@
           observer.disconnect()
         })
         observer.observe(document.body, { childList: true, subtree: true })
+
+        fetch('/api/admin/cms-config', { credentials: 'same-origin' })
+          .then(function (response) {
+            if (!response.ok) throw new Error('HTTP ' + response.status)
+            return response.json()
+          })
+          .then(function (backend) {
+            if (!backend.auth_configured) {
+              message.innerHTML =
+                'Sign-in is not configured for this deployment. A developer needs to set ' +
+                '<code>DECAP_GITHUB_CLIENT_ID</code> and <code>DECAP_GITHUB_CLIENT_SECRET</code>.'
+              return
+            }
+
+            // A partial config is merged over config.yml, so every field
+            // definition still lives in that one file.
+            CMS.init({
+              config: {
+                backend: {
+                  name: 'github',
+                  repo: backend.repo,
+                  branch: backend.branch,
+                  base_url: backend.base_url,
+                  auth_endpoint: 'api/admin/auth',
+                },
+                site_url: backend.base_url,
+                display_url: backend.base_url,
+              },
+            })
+          })
+          .catch(function (error) {
+            message.innerHTML =
+              'Could not load the editor configuration (' +
+              String(error.message) +
+              '). The public site is unaffected.'
+          })
       })()
     </script>
   </body>

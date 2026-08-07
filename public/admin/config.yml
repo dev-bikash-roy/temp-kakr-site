@@ -8,6 +8,15 @@
 # If you add a field to content.config.ts, add it here too — otherwise it exists in
 # the schema but nobody can set it.
 
+# `repo`, `branch` and `base_url` below are FALLBACKS ONLY. They are overridden at
+# runtime by public/admin/index.html, which fetches the real values from
+# /api/admin/cms-config (driven by the DECAP_REPO, DECAP_BRANCH and SITE_URL
+# environment variables).
+#
+# This is deliberate: a static file cannot know which deployment is serving it, so
+# hardcoding them would make a test deployment commit into the production
+# repository. Do not "fix" these by editing them per environment — set the
+# environment variables instead.
 backend:
   name: github
   repo: dev-bikash-roy/kakr-ai
