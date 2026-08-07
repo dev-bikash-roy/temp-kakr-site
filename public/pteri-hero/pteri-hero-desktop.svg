@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">PTERI identity and authorization flow</title>
+  <desc id="desc">A human and an AI agent send identity signals to PTERI. PTERI evaluates identity, authority, policy, and context, approves an enterprise action, and creates an evidence record.</desc>
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07100e"/>
+      <stop offset="0.5" stop-color="#030706"/>
+      <stop offset="1" stop-color="#06110d"/>
+    </linearGradient>
+    <radialGradient id="engine-glow">
+      <stop offset="0" stop-color="#27d69b" stop-opacity=".28"/>
+      <stop offset=".5" stop-color="#27d69b" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#27d69b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="engine-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#164b3b"/>
+      <stop offset="1" stop-color="#082019"/>
+    </linearGradient>
+    <pattern id="grid-pattern" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#b8c9c3" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="small-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1l10 5-10 5" fill="none" stroke="#27d69b" stroke-width="1.5"/>
+    </marker>
+    <marker id="arrow-violet" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1l10 5-10 5" fill="none" stroke="#8b7cff" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <g id="background">
+    <rect width="1600" height="900" fill="url(#bg-gradient)"/>
+    <rect id="background-grid" width="1600" height="900" fill="url(#grid-pattern)"/>
+    <circle cx="835" cy="445" r="390" fill="url(#engine-glow)"/>
+    <g id="background-particles" fill="#27d69b">
+      <circle cx="144" cy="160" r="2" opacity=".35"/>
+      <circle cx="276" cy="735" r="1.5" opacity=".26"/>
+      <circle cx="470" cy="120" r="1.5" opacity=".24"/>
+      <circle cx="1228" cy="154" r="2" opacity=".3"/>
+      <circle cx="1435" cy="690" r="1.5" opacity=".24"/>
+      <circle cx="1510" cy="310" r="2" opacity=".18"/>
+    </g>
+  </g>
+
+  <g id="human-identity" transform="translate(185 285)">
+    <circle r="88" fill="#07100e" stroke="#e7efec" stroke-opacity=".35"/>
+    <circle r="70" fill="none" stroke="#f4f7f6" stroke-width="2"/>
+    <circle cy="-18" r="20" fill="none" stroke="#f4f7f6" stroke-width="3"/>
+    <path d="M-38 43c7-29 25-43 38-43s31 14 38 43" fill="none" stroke="#f4f7f6" stroke-width="3" stroke-linecap="round"/>
+    <text y="125" fill="#f4f7f6" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="middle" letter-spacing="2">PERSON</text>
+  </g>
+
+  <g id="agent-identity" transform="translate(185 620)">
+    <circle r="88" fill="#0c0a22" stroke="#8b7cff" stroke-opacity=".5"/>
+    <circle r="70" fill="none" stroke="#8b7cff" stroke-width="2"/>
+    <path d="M0-34l34 20v40L0 46l-34-20v-40z" fill="none" stroke="#8b7cff" stroke-width="3"/>
+    <circle cx="0" cy="-34" r="7" fill="#0c0a22" stroke="#8b7cff" stroke-width="3"/>
+    <circle cx="34" cy="-14" r="7" fill="#0c0a22" stroke="#8b7cff" stroke-width="3"/>
+    <circle cx="34" cy="26" r="7" fill="#0c0a22" stroke="#8b7cff" stroke-width="3"/>
+    <circle cx="-34" cy="26" r="7" fill="#0c0a22" stroke="#8b7cff" stroke-width="3"/>
+    <circle cx="-34" cy="-14" r="7" fill="#0c0a22" stroke="#8b7cff" stroke-width="3"/>
+    <text y="125" fill="#b7afff" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="middle" letter-spacing="2">AI AGENT</text>
+  </g>
+
+  <g id="human-signal">
+    <path id="human-signal-path" d="M275 285H430C500 285 505 383 580 383H640" fill="none" stroke="#dce7e3" stroke-opacity=".55" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+    <circle id="human-signal-dot" cx="392" cy="285" r="6" fill="#f4f7f6" filter="url(#small-glow)"/>
+  </g>
+
+  <g id="agent-signal">
+    <path id="agent-signal-path" d="M275 620H430C500 620 505 507 580 507H640" fill="none" stroke="#8b7cff" stroke-opacity=".65" stroke-width="2.5" marker-end="url(#arrow-violet)"/>
+    <circle id="agent-signal-dot" cx="392" cy="620" r="6" fill="#8b7cff" filter="url(#small-glow)"/>
+  </g>
+
+  <g id="pteri-engine" transform="translate(800 445)">
+    <circle id="engine-aura" r="260" fill="url(#engine-glow)"/>
+    <circle id="context-ring" r="220" fill="none" stroke="#27d69b" stroke-opacity=".13" stroke-width="1.5" stroke-dasharray="3 12"/>
+    <circle id="policy-ring" r="184" fill="none" stroke="#27d69b" stroke-opacity=".2" stroke-width="1.5"/>
+    <circle id="authority-ring" r="150" fill="none" stroke="#27d69b" stroke-opacity=".28" stroke-width="1.5"/>
+    <circle id="identity-ring" r="118" fill="none" stroke="#27d69b" stroke-opacity=".45" stroke-width="2"/>
+    <path id="engine-outer" d="M0-128l111 64v128L0 128-111 64V-64z" fill="#06100d" stroke="#27d69b" stroke-width="2"/>
+    <path id="engine-inner" d="M0-103l89 51v104L0 103-89 52V-52z" fill="url(#engine-fill)" stroke="#5af0bc" stroke-opacity=".62" stroke-width="2"/>
+    <path id="pteri-mark" d="M0-49l43 25v49L0 50-43 25v-49zm0 15l-29 17v34L0 34l29-17V-17zm-15 22L16 6 3 14l-18 10z" fill="#41e5ae"/>
+    <text y="86" fill="#f4f7f6" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" letter-spacing="6">PTERI</text>
+
+    <g id="identity-label" transform="translate(0 -196)">
+      <circle r="27" fill="#07100e" stroke="#27d69b"/>
+      <circle cy="-6" r="7" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <path d="M-12 13c2-10 8-15 12-15s10 5 12 15" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <text y="-39" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="2">IDENTITY</text>
+    </g>
+    <g id="authority-label" transform="translate(-196 0)">
+      <circle r="27" fill="#07100e" stroke="#27d69b"/>
+      <path d="M-12 8V-7l8 7 5-12 6 12 8-7V8z" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <text x="-43" y="5" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="end" letter-spacing="2">AUTHORITY</text>
+    </g>
+    <g id="policy-label" transform="translate(196 0)">
+      <circle r="27" fill="#07100e" stroke="#27d69b"/>
+      <path d="M0-15l13 6v10c0 10-6 16-13 20-7-4-13-10-13-20V-9z" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <path d="M-6 2l4 4 8-10" fill="none" stroke="#27d69b" stroke-width="2"/>
+      <text y="-39" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="2">POLICY</text>
+    </g>
+    <g id="context-label" transform="translate(0 196)">
+      <circle r="27" fill="#07100e" stroke="#27d69b"/>
+      <circle cx="-8" cy="-5" r="4" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <circle cx="9" cy="-7" r="4" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <circle cy="10" r="4" fill="none" stroke="#eaf3ef" stroke-width="1.6"/>
+      <text y="48" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="2">CONTEXT</text>
+    </g>
+  </g>
+
+  <g id="decision-approved">
+    <path id="approved-path" d="M1045 445H1160" fill="none" stroke="#27d69b" stroke-width="3" marker-end="url(#arrow-green)"/>
+    <circle cx="1095" cy="445" r="6" fill="#27d69b" filter="url(#small-glow)"/>
+    <g transform="translate(1255 445)">
+      <rect x="-95" y="-54" width="190" height="108" rx="18" fill="#07110e" stroke="#27d69b" stroke-opacity=".7"/>
+      <circle cx="-51" r="23" fill="#09251d" stroke="#27d69b"/>
+      <path d="M-61 0l8 8 16-20" fill="none" stroke="#41e5ae" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="-12" y="7" fill="#eaf3ef" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">APPROVED</text>
+    </g>
+  </g>
+
+  <g id="decision-step-up" opacity=".65">
+    <path id="step-up-path" d="M1045 468c55 0 55 100 112 100h28" fill="none" stroke="#e7a82f" stroke-width="2" stroke-dasharray="7 9"/>
+    <text x="1118" y="548" fill="#e7a82f" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="1.5">STEP-UP IF REQUIRED</text>
+  </g>
+
+  <g id="enterprise-action" transform="translate(1450 355)">
+    <circle r="55" fill="#07110e" stroke="#27d69b" stroke-opacity=".55"/>
+    <path d="M-28 22h56M-22 22v-38h28v38M8 22V-4h18v26M-12-5h6m-6 10h6m-6 10h6m26-10h6m-6 10h6" fill="none" stroke="#41e5ae" stroke-width="2"/>
+    <text y="85" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="1.5">ENTERPRISE ACTION</text>
+  </g>
+
+  <g id="evidence-record" transform="translate(1450 650)">
+    <path d="M-66-78h102l30 30V78H-66z" fill="#07110e" stroke="#27d69b" stroke-opacity=".7"/>
+    <path d="M36-78v30h30" fill="none" stroke="#27d69b" stroke-opacity=".7"/>
+    <circle cx="-31" cy="-32" r="14" fill="#09251d" stroke="#27d69b"/>
+    <path d="M-38-32l5 5 10-12" fill="none" stroke="#41e5ae" stroke-width="2"/>
+    <path d="M-6-35h43M-47 2h84M-47 23h64M-47 44h72" stroke="#7d9089" stroke-width="3" stroke-linecap="round"/>
+    <text y="108" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" letter-spacing="1.5">EVIDENCE CREATED</text>
+  </g>
+
+  <g id="evidence-connection">
+    <path d="M1450 410v155" fill="none" stroke="#27d69b" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 9"/>
+    <circle cx="1450" cy="520" r="5" fill="#27d69b" filter="url(#small-glow)"/>
+  </g>
+</svg>

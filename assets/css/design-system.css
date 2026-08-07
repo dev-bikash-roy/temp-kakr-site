@@ -1,0 +1,301 @@
+/* ============================================
+   KAKR LABS DESIGN SYSTEM
+   Global spacing, typography, and layout rules
+   ============================================ */
+
+/* --- Section Spacing --- */
+/* All page sections use py-24 (96px top/bottom) */
+/* Hero sections use pt-32 pb-24 */
+/* Border between sections: border-t border-white/5 */
+
+/* --- Typography Scale --- */
+/* Page hero h1:     text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight */
+/* Section h2:       text-3xl sm:text-4xl font-bold text-white */
+/* Card h3:          text-lg font-bold text-white */
+/* Body large:       text-lg text-white/80 leading-relaxed */
+/* Body default:     text-sm text-white/70 leading-relaxed */
+/* Label/badge:      text-xs font-bold tracking-widest uppercase text-emerald-500 */
+/* Caption:          text-xs text-white/50 */
+
+/* --- Section Label Pattern --- */
+/* <p class="section-label">Label</p> */
+/* <h2 class="section-heading">Heading</h2> */
+/* <p class="section-desc">Description</p> */
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #10b981; /* emerald-500 */
+  margin-bottom: 0.75rem;
+}
+
+.section-heading {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  max-width: 42rem;
+}
+
+/* --- Page Container --- */
+.page-container, .container-custom {
+  max-width: 80rem; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem; /* Improved mobile padding */
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .page-container, .container-custom { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .page-container, .container-custom { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* --- Standard Section --- */
+.page-section {
+  padding-top: 2rem;    /* py-8 on mobile */
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+@media (min-width: 768px) {
+  .page-section {
+    padding-top: 6rem;    /* py-24 on tablet/desktop */
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-section {
+    padding-top: 8rem;    /* py-32 on large desktop */
+    padding-bottom: 8rem;
+  }
+}
+
+/* --- Hero Section --- */
+.page-hero {
+  padding-top: 3rem;    /* Reduced for mobile */
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .page-hero {
+    padding-top: 8rem;    /* pt-32 */
+    padding-bottom: 6rem; /* pb-24 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-hero {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* --- Responsive Utility Aliases --- */
+.section-py {
+  @apply py-12 md:py-16 lg:py-20;
+}
+
+.section-pt {
+  @apply pt-10 md:pt-28 lg:pt-36;
+}
+
+.section-pb {
+  @apply pb-10 md:pb-24 lg:pb-32;
+}
+
+/* --- Mobile Responsiveness Guardrails --- */
+*, *::before, *::after {
+  min-width: 0;
+}
+
+img,
+video,
+canvas,
+svg,
+iframe {
+  max-width: 100%;
+}
+
+table {
+  max-width: 100%;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+.page-container > *,
+.container-custom > *,
+.page-section > *,
+.section-py > * {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .page-container,
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-hero {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-py {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .page-hero h1,
+  .hero__heading {
+    font-size: clamp(2.35rem, 11vw, 3.4rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: 0 !important;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  .section-heading,
+  .section-title {
+    font-size: clamp(1.85rem, 8.75vw, 2.65rem) !important;
+    line-height: 1.14 !important;
+    letter-spacing: 0 !important;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  .section-desc,
+  .hero__sub,
+  .page-hero p {
+    font-size: clamp(0.98rem, 4vw, 1.08rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .prose {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .prose :where(h1, h2, h3, h4) {
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  .overflow-x-auto {
+    max-width: calc(100vw - 2rem);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  a[class*="px-"],
+  button[class*="px-"] {
+    max-width: 100%;
+  }
+
+  .whitespace-nowrap {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-container,
+  .container-custom {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .section-py,
+  .page-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .page-hero h1,
+  .hero__heading {
+    font-size: clamp(2.1rem, 10.5vw, 3rem) !important;
+  }
+}
+
+/* ============================================
+   AOS Animation Overrides
+   ============================================ */
+
+/* Ensure AOS elements start invisible */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Smoother fade-up */
+[data-aos="fade-up"] {
+  transform: translateY(24px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Fade right */
+[data-aos="fade-right"] {
+  transform: translateX(-24px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Fade left */
+[data-aos="fade-left"] {
+  transform: translateX(24px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Zoom in */
+[data-aos="zoom-in"] {
+  transform: scale(0.96);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}

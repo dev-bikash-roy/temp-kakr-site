@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run validate:content && npm run cms:sync && nuxt build",
+    "dev": "nuxt dev",
+    "dev:clean": "powershell -ExecutionPolicy Bypass -File ./restart-dev.ps1",
+    "generate": "npm run validate:content && npm run cms:sync && nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare && node scripts/sync-decap.mjs",
+    "cms:sync": "node scripts/sync-decap.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "newsroom:art": "node scripts/generate-newsroom-art.mjs"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "@nuxt/content": "^3.15.2",
+    "@nuxt/image": "^1.10.0",
+    "@nuxtjs/i18n": "^10.2.0",
+    "@nuxtjs/sitemap": "^7.4.7",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "@vueuse/nuxt": "^13.5.0",
+    "aos": "^3.0.0-beta.6",
+    "better-sqlite3": "^12.11.1",
+    "framer-motion": "^12.23.9",
+    "gsap": "^3.13.0",
+    "nuxt": "^3.13.0",
+    "prismjs": "^1.30.0",
+    "swiper": "^12.1.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/robots": "^5.7.1",
+    "decap-cms": "^3.15.1",
+    "nuxt-icon": "^1.0.0-beta.7"
+  }
+}

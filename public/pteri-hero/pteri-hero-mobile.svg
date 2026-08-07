@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 860" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile PTERI authorization flow</title>
+  <desc id="desc">A compact vertical flow showing a person and AI agent entering PTERI verification, followed by an approved action and evidence record.</desc>
+  <defs>
+    <linearGradient id="mobile-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07110e"/>
+      <stop offset="1" stop-color="#020504"/>
+    </linearGradient>
+    <radialGradient id="mobile-glow">
+      <stop offset="0" stop-color="#27d69b" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#27d69b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="mobile-grid" width="43" height="43" patternUnits="userSpaceOnUse">
+      <path d="M43 0H0V43" fill="none" stroke="#b8c9c3" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="mobile-small-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g id="mobile-background">
+    <rect width="430" height="860" rx="32" fill="url(#mobile-bg)"/>
+    <rect width="430" height="860" rx="32" fill="url(#mobile-grid)"/>
+  </g>
+
+  <g id="mobile-identities">
+    <g id="mobile-human" transform="translate(132 118)">
+      <circle r="54" fill="#07100e" stroke="#edf4f1"/>
+      <circle cy="-11" r="13" fill="none" stroke="#edf4f1" stroke-width="2"/>
+      <path d="M-25 28c5-18 15-27 25-27s20 9 25 27" fill="none" stroke="#edf4f1" stroke-width="2"/>
+      <text y="78" fill="#edf4f1" font-family="Inter,Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="1.5">PERSON</text>
+    </g>
+    <g id="mobile-agent" transform="translate(298 118)">
+      <circle r="54" fill="#0c0a22" stroke="#8b7cff"/>
+      <path d="M0-23l23 13v27L0 30-23 17v-27z" fill="none" stroke="#8b7cff" stroke-width="2"/>
+      <circle cx="0" cy="-23" r="5" fill="#0c0a22" stroke="#8b7cff" stroke-width="2"/>
+      <circle cx="23" cy="-10" r="5" fill="#0c0a22" stroke="#8b7cff" stroke-width="2"/>
+      <circle cx="-23" cy="-10" r="5" fill="#0c0a22" stroke="#8b7cff" stroke-width="2"/>
+      <text y="78" fill="#b7afff" font-family="Inter,Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="1.5">AI AGENT</text>
+    </g>
+  </g>
+
+  <g id="mobile-signals">
+    <path id="mobile-human-signal" d="M132 180v46c0 25 45 25 83 54" fill="none" stroke="#edf4f1" stroke-opacity=".65" stroke-width="2"/>
+    <path id="mobile-agent-signal" d="M298 180v46c0 25-45 25-83 54" fill="none" stroke="#8b7cff" stroke-opacity=".75" stroke-width="2"/>
+    <circle cx="215" cy="280" r="6" fill="#27d69b" filter="url(#mobile-small-glow)"/>
+  </g>
+
+  <g id="mobile-pteri-engine" transform="translate(215 400)">
+    <circle r="140" fill="url(#mobile-glow)"/>
+    <circle id="mobile-context-ring" r="105" fill="none" stroke="#27d69b" stroke-opacity=".18" stroke-dasharray="3 10"/>
+    <circle id="mobile-policy-ring" r="84" fill="none" stroke="#27d69b" stroke-opacity=".28"/>
+    <path id="mobile-engine" d="M0-76l66 38v76L0 76-66 38v-76z" fill="#0a261d" stroke="#27d69b" stroke-width="2"/>
+    <path id="mobile-pteri-mark" d="M0-33l29 17v32L0 33-29 16v-32zm0 11l-19 11v22L0 22l19-11v-22z" fill="#41e5ae"/>
+    <text y="56" fill="#f4f7f6" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">PTERI</text>
+    <g id="mobile-checks" fill="#a7b8b1" font-family="Inter,Arial,sans-serif" font-size="11" letter-spacing="1">
+      <text x="-126" y="-13">IDENTITY</text>
+      <text x="78" y="-13">POLICY</text>
+      <text x="-126" y="17">AUTHORITY</text>
+      <text x="78" y="17">CONTEXT</text>
+    </g>
+  </g>
+
+  <g id="mobile-approved">
+    <path d="M215 505v82" stroke="#27d69b" stroke-width="2.5"/>
+    <circle cx="215" cy="548" r="5" fill="#27d69b" filter="url(#mobile-small-glow)"/>
+    <rect x="126" y="587" width="178" height="64" rx="16" fill="#07110e" stroke="#27d69b"/>
+    <circle cx="159" cy="619" r="17" fill="#09251d" stroke="#27d69b"/>
+    <path d="M151 619l6 6 12-15" fill="none" stroke="#41e5ae" stroke-width="2.5"/>
+    <text x="188" y="625" fill="#edf4f1" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">APPROVED</text>
+  </g>
+
+  <g id="mobile-evidence">
+    <path d="M215 651v57" stroke="#27d69b" stroke-opacity=".55" stroke-width="2" stroke-dasharray="4 8"/>
+    <rect x="115" y="708" width="200" height="94" rx="16" fill="#07110e" stroke="#27d69b" stroke-opacity=".7"/>
+    <path d="M144 740h28v30h-28zM150 748h16M150 756h13M150 764h10" fill="none" stroke="#41e5ae" stroke-width="1.7"/>
+    <text x="190" y="747" fill="#edf4f1" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">EVIDENCE CREATED</text>
+    <text x="190" y="773" fill="#8da099" font-family="Inter,Arial,sans-serif" font-size="10.5">Identity · Authority · Action</text>
+  </g>
+</svg>

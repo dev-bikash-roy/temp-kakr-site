@@ -1,0 +1,198 @@
+/*
+ * Shared styles for the newsroom category landing pages (/updates, /tutorials).
+ *
+ * Imported via `<style scoped src="...">` from both pages so the two views stay
+ * visually identical without either page owning a copy of the rules. Handoff §7
+ * rules out duplicating markup and styling across category routes.
+ */
+
+.cat__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 1rem;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.cat__h1 {
+  margin-top: 1.5rem;
+  max-width: 44rem;
+  color: #ffffff;
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.cat__lede {
+  margin-top: 1.25rem;
+  max-width: 40rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.cat__crosslink {
+  margin-top: 1.5rem;
+}
+
+.cat__crosslink a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #34d399;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.cat__crosslink a:hover {
+  color: #6ee7b7;
+}
+
+.cat__crosslink a:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+.cat__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .cat__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .cat__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/*
+ * Honest empty state. Handoff §3.3 asks for a credible coming-soon state rather
+ * than placeholder cards, so this points at real, working destinations instead of
+ * implying content that does not exist.
+ */
+.cat__empty {
+  padding: 3rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.cat__empty-title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.cat__empty-body {
+  margin: 0.5rem auto 0;
+  max-width: 34rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.cat__empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.cat__btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.cat__btn--primary {
+  background: #10b981;
+  color: #000000;
+}
+
+.cat__btn--primary:hover {
+  background: #34d399;
+}
+
+.cat__btn--secondary {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.cat__btn--secondary:hover {
+  border-color: rgba(52, 211, 153, 0.5);
+  color: #34d399;
+}
+
+.cat__btn:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+}
+
+/* Upcoming-topics grid used by the /tutorials coming-soon state. */
+.cat__topics {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .cat__topics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .cat__topics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.cat__topic {
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.875rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.cat__topic-title {
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.cat__topic-desc {
+  margin-top: 0.375rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat__btn,
+  .cat__crosslink a {
+    transition: none;
+  }
+}

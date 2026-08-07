@@ -1,0 +1,350 @@
+/* ============================================
+   TYPOGRAPHY CONFIGURATION
+   ============================================ */
+
+/* Font Variables */
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', 'Courier', monospace;
+  --font-heading: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-lg: 1.125rem;
+  /* 18px */
+  --text-xl: 1.25rem;
+  /* 20px */
+  --text-2xl: 1.5rem;
+  /* 24px */
+  --text-3xl: 1.875rem;
+  /* 30px */
+  --text-4xl: 2.25rem;
+  /* 36px */
+  --text-5xl: 3rem;
+  /* 48px */
+  --text-6xl: 3.75rem;
+  /* 60px */
+  --text-7xl: 4.5rem;
+  /* 72px */
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+}
+
+/* ============================================
+   BASE FONT SETUP
+   ============================================ */
+
+* {
+  font-family: var(--font-sans);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: var(--leading-relaxed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  /* Tighter letter spacing for large text */
+  line-height: var(--leading-tight);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-weight: 600;
+  font-size: var(--text-2xl);
+}
+
+h5 {
+  font-weight: 600;
+  font-size: var(--text-xl);
+}
+
+h6 {
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+/* ============================================
+   TEXT ELEMENTS
+   ============================================ */
+
+p {
+  margin-bottom: 1em;
+  line-height: var(--leading-relaxed);
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+/* ============================================
+   CODE & MONOSPACE
+   ============================================ */
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+}
+
+pre {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  line-height: var(--leading-normal);
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* ============================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ============================================ */
+
+button,
+.btn,
+a.button {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a {
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* ============================================
+   LISTS
+   ============================================ */
+
+ul,
+ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: var(--leading-relaxed);
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+
+blockquote {
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--leading-relaxed);
+  padding-left: 1.5rem;
+  border-left: 4px solid currentColor;
+  margin: 1.5rem 0;
+}
+
+/* ============================================
+   LABELS & FORM ELEMENTS
+   ============================================ */
+
+label,
+.label {
+  font-weight: 500;
+  font-size: var(--text-sm);
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+/* ============================================
+   UPPERCASE TEXT
+   ============================================ */
+
+.uppercase,
+.text-uppercase {
+  letter-spacing: 0.05em;
+  /* Wider spacing for uppercase */
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.5rem;
+    /* 40px on mobile */
+    --text-4xl: 2rem;
+    /* 32px on mobile */
+    --text-3xl: 1.5rem;
+    /* 24px on mobile */
+  }
+
+  h1 {
+    font-size: var(--text-5xl);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+  }
+
+  h3 {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* ============================================
+   DARK MODE ADJUSTMENTS
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  pre {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* ============================================
+   GLOBAL TYPE-SCALE NORMALIZATION
+   ------------------------------------------------
+   Single source of truth for heading sizes across every page.
+
+   Pages historically used ad-hoc Tailwind sizes (text-3xl … text-7xl)
+   and mixed weights (bold / extrabold / black) on the same visual role,
+   so headings looked different from page to page.
+
+   These rules re-map every *prominent* heading onto the canonical scale
+   defined in theme.css, using !important so they win over the inline
+   Tailwind utilities. They are scoped by the size class already present
+   (the author's intent signal): only headings that are meant to be large
+   are unified — small panel / card titles (text-lg / xl / 2xl) are left
+   alone so they don't balloon.
+
+   Escape hatch: add the class `keep-size` to any heading to opt out.
+   Change the values once in theme.css to restyle the whole site.
+   ============================================ */
+
+/* Hero title — every page has exactly one <h1>, always the hero */
+h1:not(.keep-size) {
+  font-size: var(--hero-title-size) !important;      /* clamp(2rem, 4.5vw, 3.75rem) */
+  font-weight: var(--hero-title-weight) !important;  /* 900 */
+  line-height: var(--hero-title-line-height) !important;
+  letter-spacing: var(--hero-title-letter-spacing) !important;
+}
+
+/* Section headings — any prominent (large) h2–h6 on any page,
+   regardless of the specific text-* / breakpoint variant used. */
+:is(h2, h3, h4, h5, h6):not(.keep-size):is(
+  [class*="text-3xl"],
+  [class*="text-4xl"],
+  [class*="text-5xl"],
+  [class*="text-6xl"],
+  [class*="text-7xl"]
+) {
+  font-size: var(--section-heading-size) !important;     /* clamp(1.75rem, 3.5vw, 3rem) */
+  font-weight: var(--section-heading-weight) !important; /* 800 */
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Text smoothing utilities */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kakr Labs Press Releases</title>
+    <link>https://kakr.ai/press</link>
+    <description>Latest press releases and news from Kakr Labs</description>
+    <language>en-us</language>
+    <atom:link href="https://kakr.ai/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kakr Labs Joins Google Cloud Partner Advantage</title>
+      <link>https://kakr.ai/press/kakr-labs-joins-google-cloud-partner-advantage</link>
+      <guid>https://kakr.ai/press/kakr-labs-joins-google-cloud-partner-advantage</guid>
+      <pubDate>Sat, 24 Jan 2026 09:00:00 GMT</pubDate>
+      <description><![CDATA[
+Delivering signature-based identity and blockchain-backed settlement for automation and AI-agent workflows.
+]]></description>
+      <content:encoded><![CDATA[
+<p>
+Kakr Labs announced today that it has joined Google Cloud Partner Advantage as a Partner level partner for the Build engagement model technology partner, helping Google Cloud customers adopt PTERI Infrastructure — a signature-based identity layer and Litecoin-powered Blockchain-as-a-Service (BaaS) designed to replace OTP-based verification and support the emerging AI-agentic economy.
+</p>
+
+<p>
+As a Google Cloud partner, Kakr offers customers a modern approach to identity, reducing reliance on inbox-dependent authentication while enabling deterministic, cryptographic verification for users and automated systems. Key features include:
+</p>
+
+<ul>
+  <li><strong>Signature-Based Identity:</strong> Moves organizations beyond OTPs using cryptographic proofs tied to existing email identifiers.</li>
+  <li><strong>AI-Agent Compatibility:</strong> Enables authentication for automated and AI-driven workflows without inbox access.</li>
+  <li><strong>Litecoin-Backed BaaS:</strong> Provides a high-assurance settlement layer powered by mature Litecoin cryptography.</li>
+  <li><strong>Cloud-Native Deployment:</strong> Built on Google Cloud using Cloud Run, VPC networking, and Cloud Armor for scale and security.</li>
+</ul>
+
+<p>
+"Verification assumptions from the Web2 era no longer support automated systems," said Harvin Singh, CEO of KAKR Labs. "PTERI gives organizations a clear, practical way to adopt identity and settlement models suited for AI, automation, and future-ready security."
+</p>
+
+<p>
+Organizations can learn more at <a href="https://kakr.org">kakr.org</a>.
+</p>
+
+<hr />
+
+<p><strong>About KAKR Labs</strong><br />
+Kakr bridges the gap between legacy Web2 and the Web3 era by replacing outdated security "guessing games" with verifiable cryptographic proof. We provide high-assurance identity and settlement infrastructure designed to secure the emerging AI agent economy.
+</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

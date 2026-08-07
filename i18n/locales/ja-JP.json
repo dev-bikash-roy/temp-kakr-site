@@ -1,0 +1,834 @@
+{
+  "welcome": "Kakr Labsへようこそ",
+  "description": "安全なLitecoinブロックチェーン上に構築されたエンタープライズグレードのWeb3インフラストラクチャ",
+  "navigation": {
+    "solutions": "ソリューション",
+    "platforms": "プラットフォーム",
+    "industries": "業界",
+    "pricing": "価格",
+    "kakrExplained": "Kakrの説明"
+  },
+  "language": {
+    "english": "English",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "japanese": "日本語",
+    "arabic": "العربية"
+  },
+  "hero": {
+    "title": "Web3の未来",
+    "subtitle": "セキュリティ、スケール、コントロールを求める企業のために構築されました。",
+    "getStarted": "始める",
+    "exploreSolutions": "ソリューションを探索"
+  },
+  "security": {
+    "title": "Litecoin上に構築。スケールのために設計。設計によって保護。",
+    "description": "当社のクローズドソースインフラストラクチャは、Bitcoinの信頼性、Litecoinの効率性、エンタープライズグレードのコントロールを提供します。実験的なチェーンも脆弱なショートカットもありません。信頼できる実証済みの技術のみです。",
+    "powCore": "Proof-of-Workコア",
+    "powDescription": "LitecoinのBitcoinと同一のPoWは、ゼロダウンタイム、グローバルな信頼、エンタープライズ使用のための最強の基盤を提供します。",
+    "lightningFast": "超高速＆低コスト",
+    "lightningDescription": "2.5分の確認で1トランザクションあたり約0.19ドル",
+    "compliance": "コンプライアンス対応",
+    "complianceDescription": "GDPR、HIPAA、NYDFSプログラムを支援する統制と監査証跡"
+  },
+  "industries": {
+    "title": "私たちがサービスを提供する業界",
+    "description": "すべてのセクターに合わせたソリューション"
+  },
+  "demo": {
+    "title": "Pteri Explorerを体験",
+    "description": "プラットフォームのインタラクティブツアーを行い、Pteri Explorerがブロックチェーン体験をどのように変革できるかを発見してください",
+    "tourTitle": "Pteri Explorerのツアーを行う",
+    "viewDemo": "デモを見る"
+  },
+  "pricing": {
+    "title": "シンプルな料金プラン",
+    "titleHighlight": "開発者と企業向け",
+    "subtitle": "トークンなし。ごまかしなし。わかりやすいサービス料金。",
+    "free": "無料",
+    "getStarted": "始める",
+    "contactSales": "営業に問い合わせ",
+    "mostPopular": "最も人気",
+    "recommended": "おすすめ",
+    "viewFullPricing": "料金の詳細を見る",
+    "perMonth": "/月",
+    "prev": "← 前へ",
+    "next": "次へ →",
+    "tabs": {
+      "identity": "Identity Trust Layer",
+      "blockchain": "ブロックチェーンインフラ"
+    },
+    "whatYouGet": "含まれる内容",
+    "bestFor": "最適な用途",
+    "identity": {
+      "basic": {
+        "title": "無料",
+        "price": "$0",
+        "desc": "個人開発者やテスト向け。クレジットカード不要。数分で始められます。",
+        "cta": "始める",
+        "features": [
+          "APIコール 毎秒3回",
+          "エージェントID 1つ",
+          "最大5アカウントのMFA",
+          "セルフカストディウォレットへのアクセス",
+          "マーケットプレイスの閲覧（近日公開）",
+          "全プラットフォーム — Android iOS Web"
+        ],
+        "bestFor": [
+          "個人的なテスト",
+          "初めての統合",
+          "プラットフォームの評価"
+        ]
+      },
+      "scale": {
+        "title": "Pro",
+        "price": "$49",
+        "desc": "本番環境で複数のエージェントを運用する開発者やスタートアップ向け。",
+        "cta": "始める",
+        "features": [
+          "APIコール 毎秒30回",
+          "最大10個のエージェントID",
+          "最大25アカウントのMFA",
+          "マーケットプレイスへのフルアクセス（近日公開）",
+          "認証済みエージェントバッジ（近日公開）",
+          "PTERI生涯支払い",
+          "優先サポート"
+        ],
+        "bestFor": [
+          "開発スタジオ",
+          "エージェント群を持つスタートアップ",
+          "AIエージェントを導入する中小企業"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Pteri",
+        "price": "$299",
+        "desc": "AIエージェントを大規模に展開し、完全なカバレッジとサポートを必要とする組織向け。",
+        "cta": "営業に問い合わせ",
+        "features": [
+          "APIコール 毎秒300回",
+          "無制限のエージェントID",
+          "最大200アカウントのMFA",
+          "マーケットプレイスへのフルアクセス（近日公開）",
+          "カスタムSLA",
+          "ホワイトラベルオプション",
+          "専任サポート"
+        ],
+        "bestFor": [
+          "中堅企業",
+          "規制産業",
+          "RBIおよびUAEのコンプライアンス要件"
+        ]
+      }
+    },
+    "blockchain": {
+      "developer": {
+        "title": "BaaS Developer",
+        "price": "$2,500",
+        "desc": "強力なLitecoin BaaSを必要とするスタートアップ向け",
+        "cta": "始める",
+        "features": [
+          "APIコール: 300回/秒",
+          "10万コール/月",
+          "Litecoinエクスプローラー",
+          "基本SDKアクセス",
+          "コミュニティサポート",
+          "Pteri Playgroundアクセス",
+          "Pteri Intelligence",
+          "AI MCPデプロイメント"
+        ]
+      },
+      "pro": {
+        "title": "BaaS Pro",
+        "price": "$6,000",
+        "desc": "成長する製品向けのフルパワーLitecoin BaaS",
+        "cta": "始める",
+        "features": [
+          "APIコール: 800回/秒",
+          "100万コール/月",
+          "拡張エクスプローラー",
+          "フルSDKスイート",
+          "優先サポート",
+          "無制限のAPIキーユーザー",
+          "プライバシー重視の決済管理",
+          "ノードアクセス",
+          "AI MCPデプロイメント"
+        ]
+      },
+      "enterprise": {
+        "title": "BaaS Enterprise",
+        "price": "カスタム",
+        "desc": "エンタープライズデプロイメント向けの無制限ブロックチェーンインフラ",
+        "cta": "営業に問い合わせ",
+        "features": [
+          "無制限のAPIコール",
+          "専用ノードクラスター",
+          "カスタムスマートコントラクト",
+          "ホワイトラベルBaaS",
+          "プライバシー重視の決済管理",
+          "SLA保証",
+          "専用エンタープライズストレージ",
+          "24/7専用サポート"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "summary": "Litecoinネイティブの認証とインフラ。トークンなし。SMSなし。PoWセキュリティ。",
+    "platform": "プラットフォーム",
+    "identity": "アイデンティティ",
+    "payments": "決済",
+    "developers": "Developers",
+    "documentation": "ドキュメント",
+    "playground": "プレイグラウンド",
+    "apiKeys": "APIキー",
+    "company": "会社概要",
+    "about": "会社概要",
+    "press": "プレス",
+    "partnerships": "パートナーシップ",
+    "pricing": "料金",
+    "contact": "お問い合わせ",
+    "security": "セキュリティ",
+    "trustCenter": "トラストセンター",
+    "privacyPolicy": "プライバシー Policy",
+    "termsOfService": "利用規約",
+    "cookiePolicy": "クッキーポリシー",
+    "downloadApp": "アプリをダウンロード",
+    "aiInsights": "AIインサイト",
+    "sitemap": "Sitemap",
+    "privacy": "プライバシー",
+    "terms": "利用規約"
+  },
+  "pteri": {
+    "hero": {
+      "title": "PTERIプラットフォーム — 統合プライバシートラストエンジン"
+    },
+    "overview": {
+      "title": "概要",
+      "col1": "分散型セルフカストディ\n鍵はデバイスにのみ保存。\n中央サーバーなし。",
+      "col2Highlight": "あなたの鍵、あなたのコントロール。",
+      "col2": "鍵はデバイスにのみ保存。\n中央サーバーなし、ハニーポットリスクなし。"
+    },
+    "apis": {
+      "title": "API",
+      "items": {
+        "0": {
+          "title": "セルフカストディウォレットAPI",
+          "points": {
+            "0": "MFA強化",
+            "1": "アイデンティティ"
+          }
+        },
+        "1": {
+          "title": "顧客管理型決済API",
+          "points": {
+            "0": "決済"
+          }
+        },
+        "2": {
+          "title": "ブロックチェーンサービスAPI",
+          "points": {
+            "0": "インテリジェンス（AIエージェント & A2A）",
+            "1": "エンタープライズ"
+          }
+        }
+      },
+      "blockchainService": {
+        "title": "ブロックチェーンサービスAPI",
+        "description": "揺るぎない真実の上のセルフカストディサービス。"
+      },
+      "controlService": {
+        "title": "コントロールサービス",
+        "description": "カスタムのセルフカストディレバレッジ。"
+      },
+      "custodyProtocol": {
+        "title": "カストディプロトコル",
+        "description": "時間をかけて保護される継続的なサービス。"
+      },
+      "developerTools": "開発者ツール"
+    },
+    "coreModules": {
+      "label": "コアモジュール",
+      "title": "6つのコアモジュール",
+      "items": {
+        "0": {
+          "title": "PTERI認証",
+          "sub": "MFA強化",
+          "desc": "既存のMFA/OTPフローの上に決定論的な暗号署名を重ねます。",
+          "points": {
+            "0": "ハイブリッドOTPサポート（OTPの要求または生成）",
+            "1": "フィッシング耐性 - RBI、UAE、NIST、PSD2準拠",
+            "2": "既存のアカウントに暗号学的に検証可能な認可を追加"
+          }
+        },
+        "1": {
+          "title": "PTERIアイデンティティ",
+          "sub": "検証可能なアイデンティティ（DID）",
+          "desc": "ユーザーまたは組織が管理する検証可能なアイデンティティ。デバイス上で鍵を所有・管理します。",
+          "points": {
+            "0": "デバイス上での鍵生成と保存",
+            "1": "中央IDプロバイダーなし",
+            "2": "PII露出なしの検証可能な資格情報"
+          }
+        },
+        "2": {
+          "title": "PTERI決済",
+          "sub": "セルフカストディLitecoin決済",
+          "desc": "セルフカストディLitecoin決済。Litecoin Proof-of-Workで動作。",
+          "points": {
+            "0": "真のピアツーピア、顧客管理型の鍵",
+            "1": "ポリシー制御の支出",
+            "2": "顧客管理型の決済認証情報"
+          }
+        },
+        "3": {
+          "title": "PTERIインテリジェンス",
+          "sub": "AIエージェント & A2A",
+          "desc": "自律エージェントのための検証可能な暗号権限。検証可能な認可証拠によるエージェント間の安全なインタラクション。",
+          "points": {
+            "0": "ZK強化プライバシーと委任",
+            "1": "MCP2 AIツールで動作",
+            "2": "AIのためのファーストクラス暗号プリンシパル"
+          }
+        },
+        "4": {
+          "title": "PTERIエンタープライズ",
+          "sub": "Google Cloudバックアップインフラ",
+          "desc": "99.99%以上の稼働時間SLAを備えたGoogle Cloudバックアップインフラ。",
+          "points": {
+            "0": "監査対応でコンプライアンスフレンドリー",
+            "1": "グローバル運用でスケーラブル",
+            "2": "専用インスタンスとホワイトラベルオプション"
+          }
+        },
+        "5": {
+          "title": "PTERI開発者ツール",
+          "sub": "完全なSDK、APIとMCP2",
+          "desc": "迅速なAI駆動開発のための完全なSDK、APIとMCP2。段階的な採用 - 小さく始めて、主権的な信頼をスケール。",
+          "points": {
+            "0": "セルフカストディウォレットAPI、顧客管理型決済API、ブロックチェーンサービスAPI",
+            "1": "MFAから始めて、決済、AI、またはIoTに拡張",
+            "2": "迅速な統合のためのAI駆動MCP2"
+          }
+        }
+      }
+    },
+    "howItWorks": {
+      "label": "仕組み",
+      "title": "デバイスから検証可能な証明へ",
+      "steps": {
+        "0": {
+          "label": "ユーザーデバイス"
+        },
+        "1": {
+          "label": "秘密鍵をローカルに保存"
+        },
+        "2": {
+          "label": "PTERI APIコール"
+        },
+        "3": {
+          "label": "Litecoin PoW証明"
+        },
+        "4": {
+          "label": "検証可能なアクション"
+        }
+      }
+    },
+    "cta": {
+      "title": "プライバシートラストエンジンをデプロイする準備はできていますか？",
+      "description": "認証、決済、AIエージェント、エンタープライズセキュリティのための1つの暗号層。",
+      "getApiKey": "無料APIキーを取得",
+      "pteriWallet": "PTERIウォレット",
+      "bookDemo": "エンタープライズデモを予約",
+      "viewDocs": "ドキュメントを見る"
+    }
+  },
+  "apiPage": {
+    "badge": "開発者向けPTERI",
+    "hero": {
+      "title": "あらゆるワークフローにIDと認可を追加",
+      "titlePart1": "アイデンティティと",
+      "titleHighlight": "認可を",
+      "subtitle": "あらゆるワークフローに追加",
+      "description": "PTERIのAPI、SDK、MCP統合を使用して、ユーザーの認証、エージェントの認可、認証情報の保護、重要な操作の検証を行います。",
+      "badges": {
+        "uptime": "エンタープライズグレードのインフラストラクチャ",
+        "litecoin": "MCP対応",
+        "agnostic": "言語非依存"
+      },
+      "cta": {
+        "docs": "クイックスタートを始める",
+        "wallet": "APIリファレンスを見る",
+        "download": "開発者ダッシュボードを開く"
+      }
+    },
+    "devProblem": {
+      "title": "開発者が直面する課題",
+      "description": "システムが拡大するにつれ、シークレットに依存した認可は脆弱になり、監査が困難になり、安全な失効も危険になります。",
+      "failureTitle": "共有シークレットの限界",
+      "leakedCredentials": {
+        "title": "認証情報の漏えい",
+        "description": "APIキーはコピーされ、ログに残り、漏えいし、複数のシステムで使い回されます。"
+      },
+      "persistentAccess": {
+        "title": "永続的なアクセス権",
+        "description": "長期間有効なトークンは、本来の目的が失効した後も有効なまま残ります。"
+      },
+      "scopeCreep": {
+        "title": "過剰な権限",
+        "description": "認証情報は、人やエージェントが実際に必要とする以上のアクセス権を付与してしまいます。"
+      },
+      "unsafeDelegation": {
+        "title": "不明確なエージェントの権限",
+        "description": "エージェントは、ユーザーや組織がその特定の操作を承認したという証明がないままアクセス権を持つ場合があります。"
+      }
+    },
+    "authority": {
+      "title": "検証可能な権限の上に構築されたAPI",
+      "signedRequests": {
+        "title": "署名済みリクエスト",
+        "description": "リクエストはデバイス所有またはエージェントに委任された鍵で署名されるため、共有シークレットは不要です。"
+      },
+      "verifiedAuthority": {
+        "title": "検証済みの権限",
+        "description": "ID、委任、スコープ、ポリシー、有効期限はリクエスト時に評価されます。"
+      },
+      "deterministicPolicy": {
+        "title": "ポリシー評価",
+        "description": "適用されるポリシーは、操作が要求された瞬間に評価されます。"
+      },
+      "cleanOutcomes": {
+        "title": "許可または拒否",
+        "description": "すべてのリクエストは、証跡を伴う検証可能な許可または拒否の結果を生成します。"
+      }
+    },
+    "quickStart": "クイックスタート — 疑似コード",
+    "coreCapabilities": {
+      "title": "APIのコア機能",
+      "authentication": {
+        "title": "パスワードレスMFA",
+        "description": "既存のアプリケーション、ポータル、従業員向けワークフローにパスワードレス認証を追加します。"
+      },
+      "authorization": {
+        "title": "ランタイム認可",
+        "description": "重要な操作が実行される前に、ID、スコープ、コンテキスト、ポリシーを検証します。"
+      },
+      "aiDelegation": {
+        "title": "エージェント認可",
+        "description": "すべてのAIエージェントに、管理と失効が可能な検証可能なIDと厳密にスコープされた権限を付与します。"
+      },
+      "payments": {
+        "title": "決済と承認",
+        "description": "顧客が管理するLitecoin決済に、暗号学的な承認と顧客管理型Litecoin決済を組み合わせます。"
+      },
+      "policy": {
+        "title": "操作の証跡",
+        "description": "操作とそのID、権限、適用されるポリシーを結び付ける、改ざん検知可能な証跡を生成します。"
+      }
+    },
+    "howItWorks": {
+      "title": "IDから検証済みの操作まで",
+      "steps": {
+        "0": "識別 — 検証可能なIDを確立する",
+        "1": "認証 — 共有シークレットなしで確認する",
+        "2": "認可 — スコープ、ポリシー、有効期限を定義する",
+        "3": "検証 — リクエスト時に権限を評価する",
+        "4": "許可または拒否",
+        "4sub": "検証可能な証跡とともに"
+      }
+    },
+    "mcp": {
+      "badge": "MCP統合",
+      "title": "MCPとツールのセキュリティ",
+      "description": "PTERIのドキュメントには、エージェントがツールやサービスにアクセスする際の権限を検証するためのMCP向け機能が含まれています。エージェントは検証可能でスコープされた境界内で動作し、監査と失効が可能です。"
+    },
+    "verificationInfrastructure": {
+      "badge": "検証インフラストラクチャ",
+      "title": "インフラストラクチャAPI",
+      "description": "Litecoinのプルーフ・オブ・ワークとLitecoin検証コンポーネントは、PTERIの認可の証跡を支える独立した検証レイヤーとして使用され、上記のIDおよび認可APIとは分離されています。"
+    },
+    "environments": {
+      "title": "対応環境",
+      "description": "既存のIDプロバイダー、アプリケーション、AIエージェント、MCPサーバー、クラウドインフラストラクチャと併用できます。まずは1つの重要なワークフローから始め、徐々に拡大してください。"
+    },
+    "nextSteps": {
+      "title": "構築を始める",
+      "description": "APIリファレンス、SDK、統合ガイド、MCPドキュメントがdocs.kakr.aiに集約されています。",
+      "docs": "APIリファレンスを見る",
+      "bookCall": "エンタープライズデモを予約する"
+    },
+    "finalCta": {
+      "title": "アクセスと操作の境界にPTERIを追加",
+      "docs": "ドキュメントを見る",
+      "wallet": "PTERIアプリを開く",
+      "start": "APIキーを取得する"
+    }
+  },
+  "about": {
+    "badge": "会社概要",
+    "hero": {
+      "title": "AIの時代に向けてエネルギーを信頼に変える",
+      "subtitle": "Kakr Labsは、エージェント型の未来において、人間、AIエージェント、企業のための基盤となる信頼インフラを構築しています。"
+    },
+    "story": {
+      "title": "私たちのストーリー",
+      "p1": "私たちがKakr Labsを設立したのは、パスワード、OTP、集中型IDプロバイダー、シークレットベースのAPIなどのレガシーセキュリティモデルが大規模に失敗し続けているからです。フィッシング、SIMスワップ、データ侵害、安全でないAI委任は、巨大なリスクと摩擦を生み出しています。",
+      "p2": "解決策は、壊れたシステムの上にさらに層を重ねることではありません。脆弱で確率論的な信頼を、エネルギーに裏付けられた決定論的な暗号証明に置き換えることです。だからこそ、私たちはPTERI — Litecoinのセキュリティに基づいた統合認証プラットフォーム — を構築しました。"
+    },
+    "mission": {
+      "title": "私たちのミッション",
+      "headline": "すべてのアクションの瞬間に、真に顧客管理された保管で検証可能な権限を提供する。",
+      "description": "共有シークレットなし。中央ハニーポットなし。仮定なし。個人ユーザーからグローバル企業までスケールする数学的に証明可能な信頼のみ。"
+    },
+    "whatWeBuild": {
+      "title": "私たちが構築するもの",
+      "pteriPlatform": {
+        "title": "PTERIプラットフォーム",
+        "description": "認証、分散型ID、セルフカストディ決済、AI委任（A2A）、ポリシー施行のための暗号キャリア層。"
+      },
+      "pteriWallet": {
+        "title": "PTERIウォレット",
+        "description": "あなたの主権的コントロールインターフェース：生体認証セキュリティと暗号署名を備えた真のセルフカストディLitecoinウォレット。"
+      },
+      "pteriApis": {
+        "title": "PTERI APIと開発者ツール",
+        "description": "SDK、MCP搭載の統合ツール、docs.kakr.aiの完全なドキュメント。"
+      },
+      "enterprise": {
+        "title": "エンタープライズソリューション",
+        "description": "99.99%以上の稼働時間と規制準拠（RBI、UAE、NISTなど）を備えたGoogle Cloudバックアップインフラ。"
+      }
+    },
+    "approach": {
+      "title": "私たちのアプローチ",
+      "zeroCustody": {
+        "title": "設計による顧客管理型カストディ",
+        "description": "あなたが鍵を管理します。私たちは決して保持しません。"
+      },
+      "deterministicProof": {
+        "title": "検証可能な認可証拠",
+        "description": "Litecoin PoWはすべてのアクションを数学的に検証可能にします。"
+      },
+      "privacyFirst": {
+        "title": "プライバシーファースト",
+        "description": "顧客管理型の決済認証情報とゼロ知識証明。"
+      },
+      "agenticEra": {
+        "title": "エージェント型時代のために構築",
+        "description": "自律型AIエージェントへの安全でスコープされた委任。"
+      },
+      "incrementalAdoption": {
+        "title": "段階的な採用",
+        "description": "完全な書き直しなしに既存システムの上に層を重ねる。"
+      }
+    },
+    "leadership": {
+      "title": "リーダーシップ",
+      "teamDescription": "チームはAIシステム、ブロックチェーンインフラ、エンタープライズセキュリティにおける深い専門知識を組み合わせています。",
+      "founder": "創業者 & CEO",
+      "cofounder": "共同創業者 & CTO"
+    },
+    "vision": {
+      "title": "私たちのビジョン",
+      "description": "パスワードのない世界。IDが完全に検証可能でユーザーが管理し、認証がフィッシングやハッキングされることなく、支払いがセルフカストディで、AIエージェントが暗号的に強制された境界内で安全に動作する世界。"
+    },
+    "cta": {
+      "title": "すべてのアイデンティティとアクションを保護する準備はできていますか？",
+      "explorePlatform": "PTERIプラットフォームを探索",
+      "downloadWallet": "ウォレットをダウンロード",
+      "readDocs": "ドキュメントを読む",
+      "bookDemo": "エンタープライズデモを予約"
+    },
+    "corporate": {
+      "name": "Kakr Labs Inc.",
+      "address": "240 W Old Country Rd, Suite 1, Hicksville, NY 11801\n登録事務所: 30 N Gould St, Sheridan, Wyoming 82801",
+      "poweredBy": "Litecoinの実績あるブロックチェーンで動作。",
+      "copyright": "© 2026 Kakr Labs. 全著作権所有。",
+      "trademarks": "Kakr™とPTERI™はKakr Labs Inc.の商標です。"
+    }
+  },
+  "cta": {
+    "title": "業務を変革する準備はできていますか？",
+    "description": "無料のPTERI Walletで開始するか、50％オフの3か月パイロットを探索して、分散型セキュリティの未来を体験してください。",
+    "startTrial": "無料トライアルを開始",
+    "scheduleDemo": "デモをスケジュール"
+  },
+  "platform": {
+    "header": {
+      "eyebrow": "PTERIプラットフォーム",
+      "title": {
+        "deterministic": "ひとつの",
+        "identity": "認可モデル",
+        "for": "、",
+        "humansAI": "人間とAIのために"
+      },
+      "subtitle": "パスワードレス認証、スコープされた権限、検証可能な証跡により、従業員のアクセス、AIエージェントの活動、機密性の高い企業業務を保護します。",
+      "stats": {
+        "zero": "ゼロ",
+        "sharedSecrets": "共有シークレット",
+        "hundredPercent": "100%",
+        "selfCustodial": "自己管理型",
+        "binary": "二値",
+        "outcomesOnly": "結果のみ"
+      },
+      "cta": {
+        "download": "無料で構築を始める",
+        "demo": "ドキュメントを見る"
+      }
+    },
+    "proofCard": {
+      "label": "PTERI検証",
+      "steps": [
+        "デバイスキーを読み込み",
+        "リクエストに署名",
+        "暗号学的アンカー",
+        "権限を検証済み"
+      ],
+      "result": "権限を検証済み — アクセス許可"
+    },
+    "flowStrip": {
+      "label": "デバイス → 暗号学的証明 → 検証可能な操作",
+      "steps": [
+        "ユーザーデバイス",
+        "デバイスキー",
+        "PTERI API",
+        "検証済みアンカー",
+        "検証済み ✓"
+      ]
+    },
+    "interactiveDemo": {
+      "overline": "インタラクティブデモ",
+      "title": "PTERIの[span]実際の動作[/span]を見る",
+      "description": "リクエストの認可と検証可能なIDの管理に使用される、自己管理型のウェブウォレットインターフェースを体験してください。",
+      "iframeTitle": "PTERIウェブウォレットデモ"
+    },
+    "problem": {
+      "overline": "根本的な課題",
+      "title": "なぜIDは[span]失敗し続けるのか[/span]",
+      "description": "IDの失敗は構造的な問題です。AIと自動化が加速するにつれ、脆弱なシステムはより頻繁に失敗し、より高くつくようになります。",
+      "legacy": {
+        "badge": "従来型システム",
+        "risk": "高リスク",
+        "footer": "⚠ 確率的。誤りうる。操作の瞬間に検証できない。",
+        "rows": [
+          {
+            "from": "ユーザーリクエスト",
+            "to": "パスワードが推測される"
+          },
+          {
+            "from": "リスクシグナル",
+            "to": "OTPが傍受される"
+          },
+          {
+            "from": "IDを推定",
+            "to": "認証情報が盗まれる"
+          },
+          {
+            "from": "許可 / 拒否",
+            "to": "確率的な推測"
+          }
+        ]
+      },
+      "pteri": {
+        "badge": "PTERI",
+        "risk": "暗号学的",
+        "footer": "✓ 決定論的。二値的。暗号学的に証明済み。",
+        "rows": [
+          {
+            "from": "ユーザーリクエスト",
+            "to": "暗号学的証明"
+          },
+          {
+            "from": "デバイスが署名",
+            "to": "オンチェーンで検証済み"
+          },
+          {
+            "from": "PTERIが検証",
+            "to": "決定論的ID"
+          },
+          {
+            "from": "許可 / 拒否",
+            "to": "二値の結果 ✓"
+          }
+        ]
+      }
+    },
+    "authority": {
+      "overline": "定義的な特性",
+      "title": "IDを[br][span]暗号学的[br]権限[/span]として",
+      "description": "共有シークレットなし。カストディアル保管なし。確率スコアなし。あるのは暗号学的証明だけです。",
+      "properties": [
+        "IDはデバイス上の暗号鍵に紐づけられる",
+        "鍵は権限保有者のみが生成・保持する",
+        "サーバーとの間で共有シークレットのやり取りは一切ない",
+        "証明はステートレスで独立して検証可能",
+        "信頼度スコアやレピュテーションシステムは使用しない"
+      ],
+      "card": {
+        "name": "PTERI権限モデル",
+        "tags": "ノンカストディアル・決定論的・検証可能",
+        "conclusion": "権限が証明されれば → [strong]アクセス許可[/strong]。証明されなければ → [strong]アクセス拒否[/strong]。",
+        "items": [
+          {
+            "label": "デバイス固有鍵",
+            "desc": "お使いのデバイス上でのみ生成・保存"
+          },
+          {
+            "label": "暗号学的署名",
+            "desc": "すべての操作に署名 — 共有シークレット不要"
+          },
+          {
+            "label": "Litecoin PoWアンカリング",
+            "desc": "暗号学的にアンカーされ、世界規模で検証可能"
+          },
+          {
+            "label": "二値の結果",
+            "desc": "許可か拒否か — 曖昧さも推測もなし"
+          }
+        ]
+      }
+    },
+    "coreModules": {
+      "overline": "プラットフォームのコア機能",
+      "title": "プラットフォームのコア[span]機能[/span]",
+      "items": [
+        {
+          "title": "パスワードレスMFA",
+          "sub": "従業員向け認証",
+          "desc": "既存のアプリケーション、ポータル、従業員向けワークフローに、全面的な置き換えを必要とせずパスワードレスの暗号学的認証を追加します。"
+        },
+        {
+          "title": "検証可能なID",
+          "sub": "ID管理",
+          "desc": "人、エージェント、アプリケーション、デバイスそれぞれに、管理と失効が可能な独自の検証可能なIDを確立します。"
+        },
+        {
+          "title": "ランタイム認可",
+          "sub": "AIエージェントおよびエージェント間連携",
+          "desc": "各エージェントが何を実行でき、どのリソースにアクセスでき、その権限がどれだけ有効かを定義します。操作の瞬間にポリシーを適用します。"
+        },
+        {
+          "title": "認証情報の保護",
+          "sub": "Google Cloudインフラストラクチャ",
+          "desc": "鍵や認可に関する情報を、プロンプト、エージェントのメモリ、露出したランタイムコンポーネントの外側に保持します。Google Cloudを基盤としたエンタープライズグレードの信頼性を実現します。"
+        },
+        {
+          "title": "決済と承認",
+          "sub": "顧客管理型Litecoin",
+          "desc": "顧客が管理するLitecoin決済に、オプションの顧客管理型Litecoin決済と暗号学的な決済処理を組み合わせます。"
+        },
+        {
+          "title": "開発者向けおよびMCPツール",
+          "sub": "SDK、REST API、MCP",
+          "desc": "迅速な統合を実現する完全なSDKとMCP統合。まずは1つの重要なワークフローから始め、徐々に拡大してください。"
+        }
+      ]
+    },
+    "teamsAndCases": {
+      "teams": {
+        "overline": "対象となる方",
+        "title": "[span]高い信頼性が求められるワークフロー[/span]のために構築",
+        "items": [
+          {
+            "title": "フィンテック・金融サービス",
+            "desc": "金融ワークフローにパスワードレスアクセスと操作単位の認可を追加します。"
+          },
+          {
+            "title": "AIプラットフォーム",
+            "desc": "すべての操作について、エージェントに検証可能なIDとスコープされた権限を付与します。"
+          },
+          {
+            "title": "エンタープライズSaaS",
+            "desc": "既存のスタックを置き換えることなく、アクセス制御を強化します。"
+          },
+          {
+            "title": "決済インフラストラクチャ",
+            "desc": "決済や機密性の高い金融業務に暗号学的な承認を追加します。"
+          }
+        ]
+      },
+      "useCases": {
+        "overline": "ユースケース",
+        "title": "[span]ID[/span]のユースケース",
+        "items": [
+          {
+            "title": "パスワードレスログイン",
+            "desc": "パスワードを暗号学的証明に置き換えます。"
+          },
+          {
+            "title": "SMS / TOTP二要素認証の置き換え",
+            "desc": "フィッシング可能なOTPを、ウォレット署名による認証で排除します。"
+          },
+          {
+            "title": "管理者・特権アクセス",
+            "desc": "社内ツールに共有認証情報は不要です。"
+          },
+          {
+            "title": "サービス・システムID",
+            "desc": "静的なAPIキーをスコープされた権限に置き換えます。"
+          },
+          {
+            "title": "AIエージェントID",
+            "desc": "自律型AIエージェントのための検証可能な権限。"
+          },
+          {
+            "title": "自己管理型決済",
+            "desc": "カストディアンなしでLitecoinを認可します。"
+          }
+        ]
+      }
+    },
+    "devExp": {
+      "overline": "開発者体験",
+      "title": "[span]段階的な統合[/span][br]のために設計",
+      "description": "組み込み型の暗号学的ID。書き換え不要で、既存のスタックと併用できます。",
+      "readDocs": "ドキュメントを読む",
+      "features": [
+        {
+          "title": "組み込み型SDK",
+          "desc": "npm installするだけで数分で統合できます。OAuth、JWT、既存の認証フローと併用可能です。"
+        },
+        {
+          "title": "段階的な導入",
+          "desc": "既存システムの上にPTERIを重ねて導入。MFAから始め、決済やAIへと拡大できます。"
+        },
+        {
+          "title": "言語非依存",
+          "desc": "JS、Python、Java、PHP、Go向けのSDKを提供。REST APIはどのスタックでも動作します。"
+        },
+        {
+          "title": "MCP2 AI統合",
+          "desc": "AI駆動のMCP2ツールにより、LLMやエージェントがPTERIを呼び出して署名、検証、権限委任を行えます。"
+        }
+      ],
+      "codePanel": {
+        "filename": "verify.ts",
+        "tag": "TypeScript",
+        "comments": {
+          "install": "// npm install {'@'}kakr/pteri-sdk",
+          "verify": "// 署名済みリクエストを検証 — バックエンドのシークレットは不要",
+          "unauthorized": "権限が証明されていません",
+          "deterministic": "// 決定論的。二値的。推測なし。"
+        },
+        "stats": {
+          "zeroKeys": "APIキーの保存はゼロ",
+          "anyFramework": "あらゆるフレームワークで動作"
+        }
+      }
+    },
+    "finalCta": {
+      "overline": "構築を始める",
+      "title": "ひとつの認可モデル。[br][span]あらゆるワークフローに。[/span]",
+      "subtitle": "1つのアプリケーション、1つのエージェント、あるいは1つの重要なワークフローから始めて、既存のインフラストラクチャを置き換えることなくパスワードレス認証とランタイム認可を追加できます。",
+      "ctas": {
+        "identity": "無料で構築を始める",
+        "blockchain": "統合ガイドを見る",
+        "sales": "エンタープライズデモを予約する"
+      }
+    },
+    "seo": {
+      "title": "PTERIプラットフォーム | パスワードレスMFAとAIエージェント認可",
+      "description": "パスワードレス認証、スコープされた権限、検証可能な証跡により、従業員のアクセス、AIエージェントの活動、機密性の高い企業業務を保護します。"
+    }
+  }
+}

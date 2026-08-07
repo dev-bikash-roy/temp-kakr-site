@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kakr.ai/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>
+
+  <url><loc>https://kakr.ai/platform</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/solutions</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/wallet</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/api-hub</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/pricing</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+
+  <url><loc>https://kakr.ai/resources</loc><priority>0.8</priority><changefreq>daily</changefreq></url>
+  <!-- /newsroom, /newsroom/*, /updates and /tutorials are listed in the generated
+       /newsroom/sitemap.xml instead, so article URLs stay in sync without an edit
+       here. Kept out of this file to avoid duplicate entries. -->
+  <url><loc>https://kakr.ai/playground</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/help</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/faqs</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/trust-center</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <!-- /blog is intentionally absent: it stays live for inbound links but canonicals
+       to /newsroom, so indexing it separately would compete with the canonical. -->
+
+
+  <url><loc>https://kakr.ai/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/why-us</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/partnerships</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/roadmap</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/contact-sales</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/start-pilot</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/pilot-programm</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://kakr.ai/pteri</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/kakr-explained</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/use-cases</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/industry</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/platforms</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/products</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/developers</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/intelligence</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/ai</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/identity</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/authentication</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/payments</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/security-overview</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/compliance-infrastructure</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/decentralized-as-a-service</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/blockchain-infrastructure</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/iot-security</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://kakr.ai/financial-services</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/healthcare</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/government-public-sector</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/technology-saas</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/telecom-esim</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/retail-ecommerce</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://kakr.ai/press</loc><priority>0.6</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kakr.ai/press/pteri-launch</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/press/google-cloud</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/press/google-cloud-partnership</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://kakr.ai/api</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kakr.ai/api-policy</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/privacy-policy</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/terms-of-service</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/cookie-policy</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/acceptable-use-policy</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/disclaimer</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/gdpr-compliance</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://kakr.ai/data-processing-addendum</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+</urlset>

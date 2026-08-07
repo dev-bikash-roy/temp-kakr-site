@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# The editor is a private surface. Also enforced by an X-Robots-Tag header and a
+# noindex meta tag, since robots.txt is a request rather than an access control.
+Disallow: /admin
+Disallow: /admin/
+
+Sitemap: https://kakr.ai/sitemap.xml
+Sitemap: https://kakr.ai/newsroom/sitemap.xml
+Sitemap: https://www.kakr.ai/sitemap.xml

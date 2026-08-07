@@ -1,0 +1,14 @@
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: block;
+}
+
+html {
+  scrollbar-width: auto;
+
+}
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden!important;
+  }
+}

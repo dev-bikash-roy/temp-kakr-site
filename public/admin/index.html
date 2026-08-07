@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      The editor is a private surface. This tag, the X-Robots-Tag header set by the
+      `/admin` routeRule in nuxt.config.ts, and the Disallow in robots.txt are three
+      independent layers — robots.txt is only a request, and a header can be dropped
+      by a misconfigured proxy.
+    -->
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
+    <meta name="referrer" content="same-origin" />
+    <title>KAKR Newsroom — Editor</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <style>
+      /* Shown until the editor bundle takes over the page. */
+      html,
+      body {
+        margin: 0;
+        background: #050505;
+        color: #e5e5e5;
+        font-family: Inter, 'Segoe UI', system-ui, sans-serif;
+      }
+      #boot {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+        text-align: center;
+      }
+      #boot h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+      #boot p {
+        margin: 0;
+        max-width: 34rem;
+        color: rgba(229, 229, 229, 0.6);
+        font-size: 0.875rem;
+        line-height: 1.7;
+      }
+      #boot a {
+        color: #34d399;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boot">
+      <div>
+        <h1>Loading the KAKR Newsroom editor…</h1>
+        <p id="boot-message">
+          You will be asked to sign in with GitHub. If this message stays on screen, the editor bundle failed to
+          load — tell a developer to run <code>npm run cms:sync</code>, and meanwhile the
+          <a href="/newsroom">Newsroom</a> is unaffected.
+        </p>
+      </div>
+    </div>
+
+    <!--
+      Decap CMS is served from KAKR's own origin, not a public CDN. This page holds a
+      live GitHub token after sign-in, so a swapped CDN bundle would be a repository
+      credential compromise. scripts/sync-decap.mjs copies the version pinned in
+      package-lock.json into /admin/vendor/ during install and build.
+    -->
+    <script src="/admin/vendor/decap-cms.js"></script>
+    <script>
+      ;(function () {
+        var message = document.getElementById('boot-message')
+
+        if (typeof window.DecapCms === 'undefined' && typeof window.CMS === 'undefined') {
+          message.innerHTML =
+            'The editor bundle is missing. A developer needs to run <code>npm run cms:sync</code> and redeploy.'
+          return
+        }
+
+        // The bundle registers itself and reads ./config.yml on its own. Calling
+        // init() again here would load the config twice.
+
+        // Decap mounts into #nc-root. Hide the fallback only once that actually
+        // appears, so a mount failure still leaves the instructions on screen.
+        var boot = document.getElementById('boot')
+        var observer = new MutationObserver(function () {
+          if (!document.getElementById('nc-root')) return
+          boot.style.display = 'none'
+          observer.disconnect()
+        })
+        observer.observe(document.body, { childList: true, subtree: true })
+      })()
+    </script>
+  </body>
+</html>

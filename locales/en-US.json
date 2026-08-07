@@ -1,0 +1,2535 @@
+{
+  "welcome": "Welcome to Kakr Labs",
+  "description": "Enterprise-grade Web3 infrastructure built on the secure Litecoin blockchain",
+  "navigation": {
+    "solutions": "Solutions",
+    "platforms": "Platforms",
+    "industries": "Industries",
+    "pricing": "Pricing",
+    "kakrExplained": "Kakr Explained"
+  },
+  "language": {
+    "english": "English",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "japanese": "日本語",
+    "arabic": "العربية"
+  },
+  "hero": {
+    "title": "Future of Web3",
+    "heroSubtitle": "All unified under one platform. All secured by Litecoin.",
+    "getStarted": "Get Started",
+    "exploreSolutions": "Explore Docs",
+    "contactSales": "Contact Sales"
+  },
+  "wallet": {
+    "hero": {
+      "badge": "PTERI Wallet",
+      "titlePart1": "Your Identity.",
+      "titlePart2": " Your Authority.",
+      "titlePart3": " Your Control.",
+      "description": "Passwordless authentication, customer-controlled credentials, AES-256 encryption, biometric protection, and cryptographically verifiable security - all inside an app built for verifiable identity.",
+      "downloadAndroid": "Download for Android",
+      "downloadIOS": "Download for iOS",
+      "viewDocs": "View Docs",
+      "comingSoon": "Coming Soon",
+      "stats": {
+        "custody": {
+          "value": "100%",
+          "label": "Self-Custody"
+        },
+        "cloud": {
+          "value": "0",
+          "label": "Cloud Storage"
+        },
+        "privacy": {
+          "value": "8",
+          "label": "Privacy"
+        }
+      }
+    },
+    "whatIs": {
+      "title": "What PTERI Wallet Is",
+      "description": "A next-generation self-custody Litecoin wallet built with:",
+      "cards": {
+        "encryption": {
+          "title": "AES-256 encryption",
+          "desc": "AES-256 encryption protects your keys under customer control"
+        },
+        "mweb": {
+          "title": "Customer-Controlled Keys",
+          "desc": "You always control your private keys"
+        },
+        "custody": {
+          "title": "Zero-custody architecture",
+          "desc": "You own everything"
+        },
+        "biometric": {
+          "title": "Biometric protection",
+          "desc": "Face ID & Touch ID"
+        },
+        "cloud": {
+          "title": "Device-side key isolation",
+          "desc": "Secure enclave"
+        },
+        "performance": {
+          "title": "Lightning-fast performance",
+          "desc": "Built with Flutter"
+        },
+        "onboarding": {
+          "title": "Frictionless onboarding",
+          "desc": "Get started in minutes"
+        }
+      },
+      "quote": {
+        "part1": "It's not just a wallet -",
+        "part2": "it's the foundation of your decentralized identity."
+      }
+    },
+    "whyExists": {
+      "title": "Why PTERI Wallet Exists",
+      "description": "The PTERI App was designed for security workflows, not trading.\nIt provides what other apps do not:",
+      "missing": {
+        "auth": "Authentication",
+        "identity": "Identity",
+        "iot": "IoT",
+        "enterprise": "Enterprise Security",
+        "integration": "Developer Integrations",
+        "privacy": "Privacy by Design"
+      },
+      "conclusion": {
+        "text": "So we built PTERI Wallet to be the",
+        "highlight": "identity layer of the decentralized internet",
+        "suffix": "- powered by the reliability of Litecoin."
+      }
+    },
+    "features": {
+      "title": "Core Features",
+      "subtitle": "Enterprise-grade security meets consumer-friendly design",
+      "list": {
+        "custody": {
+          "title": "Zero-Custody Architecture",
+          "desc": "Private keys never leave the device. We don't store seeds. We can't access your wallet. We can't recover your wallet.",
+          "tagline": "Exactly how Web3 should be.",
+          "points": [
+            "You own everything",
+            "No unencrypted credential storage on KAKR servers",
+            "Complete control"
+          ]
+        },
+        "biometric": {
+          "title": "Biometric Security",
+          "desc": "Unlock the wallet using Face ID, Touch ID, Android biometrics, and secure enclave hardware.",
+          "tagline": "Your device becomes your vault.",
+          "points": [
+            "Face ID support",
+            "Touch ID support",
+            "Secure enclave hardware"
+          ]
+        },
+        "mweb": {
+          "title": "Hardware-Backed Key Isolation",
+          "desc": "Private keys are generated and stored in device secure enclave hardware, isolated from the OS and never exposed to the network.",
+          "tagline": "Security rooted in hardware.",
+          "points": [
+            "Secure enclave storage",
+            "Isolated from OS-level threats",
+            "Keys never leave the device"
+          ]
+        },
+        "backup": {
+          "title": "Encrypted Backups",
+          "desc": "Encrypted wallet backups to iCloud or Google Drive, protected with AES-256 and password-based encryption.",
+          "tagline": "Backups only YOU can decrypt.",
+          "points": [
+            "AES-256 encryption",
+            "Cloud backup support",
+            "Biometric gating"
+          ]
+        },
+        "performance": {
+          "title": "Instant Performance",
+          "desc": "Built in Flutter for modern performance with instant app load, rapid transaction signing, and smooth UI.",
+          "tagline": "Fast enough for daily use. Secure enough for enterprise identity.",
+          "points": [
+            "Instant app load",
+            "Smooth animations",
+            "Hardware-accelerated"
+          ]
+        },
+        "login": {
+          "title": "Decentralized Login & 2FA",
+          "desc": "PTERI Wallet doubles as your login device to approve logins and sign authentication challenges.",
+          "tagline": "Your wallet is now your unhackable login key.",
+          "points": [
+            "Approve logins",
+            "Sign challenges",
+            "PTERI Auth ready"
+          ]
+        },
+        "dev": {
+          "title": "Developer-First Design",
+          "desc": "Every feature is optimized for builders with easy integration, message signing, and API interactions.",
+          "tagline": "Your app + PTERI Wallet = frictionless UX.",
+          "points": [
+            "Easy PTERI Auth integration",
+            "Sign messages & payloads",
+            "Decentralized identities"
+          ]
+        },
+        "multi": {
+          "title": "Multi-Device Support",
+          "desc": "Use PTERI Wallet across iPhone, Android, iPads, and tablets. Back up once, restore anywhere.",
+          "tagline": "Back up once. Restore anywhere.",
+          "points": [
+            "iOS & Android",
+            "Tablet support",
+            "Cloud sync"
+          ]
+        },
+        "quantum": {
+          "title": "Cryptographically Verifiable",
+          "desc": "Built for the next era with AES-256 encryption, Litecoin Proof-of-Work, and zero centralized storage.",
+          "tagline": "Future-proof security.",
+          "points": [
+            "AES-256 encryption",
+            "PoW security",
+            "Customer-controlled keys"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "title": "What You Can Do with PTERI Wallet",
+      "items": {
+        "store": {
+          "title": "Store & Send Litecoin Securely",
+          "desc": "Effortless UX. Bulletproof protection."
+        },
+        "login": {
+          "title": "Crypto Login Device",
+          "desc": "PTERI Authentication uses your wallet as your identifier."
+        },
+        "iot": {
+          "title": "Secure Your IoT Devices",
+          "desc": "Your wallet can issue and manage decentralized IoT keys."
+        },
+        "identity": {
+          "title": "Manage On-Chain Identity",
+          "desc": "Your device = your ID. No centralized username/password ever again."
+        },
+        "build": {
+          "title": "Build Apps That Use PTERI Wallet",
+          "desc": "Developers can build DeFi apps, IoT dashboards, authentication flows, and more."
+        }
+      }
+    },
+    "architecture": {
+      "title": "Architecture Overview",
+      "subtitle": "Built on security-first principles",
+      "layers": {
+        "device": {
+          "name": "On Device",
+          "items": [
+            "Secure enclave",
+            "Biometric lock",
+            "AES-256 encrypted storage"
+          ]
+        },
+        "transit": {
+          "name": "In Transit",
+          "items": [
+            "TLS 1.2+",
+            "Encrypted payloads"
+          ]
+        },
+        "chain": {
+          "name": "On Blockchain",
+          "items": [
+            "Litecoin Proof-of-Work",
+            "Litecoin mainnet settlement",
+            "Immutable transactions"
+          ]
+        },
+        "app": {
+          "name": "In App",
+          "items": [
+            "Flutter layer",
+            "State providers",
+            "Message signing",
+            "Authentication approvals"
+          ]
+        }
+      }
+    },
+    "love": {
+      "users": {
+        "title": "Why Users Love PTERI Wallet",
+        "items": [
+          "No tracking",
+          "No ads",
+          "No analytics",
+          "No data collection",
+          "No bullshit"
+        ],
+        "summary": "Just pure self-custody freedom and professional-grade security."
+      },
+      "devs": {
+        "title": "Why Developers Love It",
+        "items": [
+          "Built for identity",
+          "Built for authentication",
+          "Built for enterprise blockchain apps",
+          "Clean APIs",
+          "Easy UI components",
+          "Real-time Playground testing"
+        ],
+        "summary": "PTERI Wallet is more than a wallet - it's an authentication device for Web3."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "custodial": {
+          "q": "Is this a custodial wallet?",
+          "a": "Never. 100% self-custody. Your keys, your crypto."
+        },
+        "recover": {
+          "q": "Can Kakr Labs recover my wallet?",
+          "a": "No. Only your seed phrase can. We have zero access to your wallet or keys."
+        },
+        "chains": {
+          "q": "What chains do you support?",
+          "a": "Litecoin only - by design, for reliability and performance."
+        },
+        "private": {
+          "q": "Is PTERI Wallet private?",
+          "a": "Your keys never leave your device, and Kakr Labs has zero access to your wallet or transaction history - your activity stays under your control."
+        },
+        "secure": {
+          "q": "Is this app secure?",
+          "a": "Yes. It uses hardware security modules, biometric protection, and zero unencrypted credential storage on KAKR servers — all keys stay on your device."
+        }
+      }
+    },
+    "cta": {
+      "title": "Download PTERI Wallet",
+      "subtitle": "Experience the next generation of Litecoin security & identity.",
+      "developerGuides": "Developer Guides"
+    }
+  },
+  "security": {
+    "title": "Built on Litecoin. Engineered for scale. Secured by design.",
+    "description": "Our closed-source infrastructure delivers the reliability of Bitcoin, the efficiency of Litecoin, and enterprise-grade controls. No experimental chains, no fragile shortcuts - just proven tech you can depend on.",
+    "powCore": "Proof-of-Work Core",
+    "powDescription": "Litecoin's Bitcoin-identical PoW delivers zero downtime, global trust, and the strongest foundation for enterprise use.",
+    "lightningFast": "Lightning Fast & Low Cost",
+    "lightningDescription": "~$0.19 per transaction with 2.5-minute confirmations",
+    "compliance": "Compliance Ready",
+    "complianceDescription": "Controls and audit evidence to support GDPR, HIPAA, and NYDFS programs"
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "description": "Tailored solutions for every sector",
+    "financialServicesItem": "Financial Services",
+    "retailEcommerce": "Retail & eCommerce",
+    "technologySaaS": "Technology & SaaS",
+    "healthcareItem": "Healthcare",
+    "governmentPublic": "Government & Public",
+    "telecomEsim": "Telecom & eSIM",
+    "enterprise": "Enterprise",
+    "publicSector": "Public Sector",
+    "financialServices": "Financial Services",
+    "healthcare": "Healthcare",
+    "telecom": "Telecom",
+    "featured": "Featured",
+    "featuredDescription": "Explore our latest industry solutions",
+    "featuredTag": "New",
+    "healthcareAiSolutions": "Healthcare AI Solutions",
+    "viewAll": "View All Industries",
+    "exploreSolutions": "Explore all industry solutions"
+  },
+  "navheader": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "developers": "Developers",
+    "security": "Security",
+    "company": "Company",
+    "pricing": "Pricing",
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "freeTrial": "Free Trial",
+    "pteri": "PTERI",
+    "identity": "Identity",
+    "payments": "Payments",
+    "api": "API",
+    "docs": "Docs",
+    "about": "About",
+    "partnerships": "Partnerships",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookDemo": "Book a Demo",
+    "platform": "Platform"
+  },
+  "header": {
+    "solutions": "Solutions",
+    "developers": "Developers",
+    "security": "Security",
+    "company": "Company",
+    "pricing": "Pricing",
+    "platform": "Platform"
+  },
+  "index": {
+    "hero": {
+      "explained": "Explained",
+      "securityScaleControl": "Security. Scale. Control.",
+      "builtOnLitecoin": "Built on Litecoin.",
+      "turningEnergyIntoTrust": "Identity and Authorization Security",
+      "forTheAiEra": "for the AI Era",
+      "description": "Kakr Labs builds identity and authorization security for people, AI agents, and enterprise systems. PTERI provides passwordless MFA, runtime authorization, credential protection, and verifiable action evidence."
+    },
+    "ecosystem": {
+      "title": "PTERI Ecosystem",
+      "description": "All Kakr components share the same cryptographic trust foundation."
+    },
+    "developers": {
+      "title": "Developers",
+      "subtitle": "Build normally. Add trust by design.",
+      "launchPlayground": "Launch Playground",
+      "getApiKey": "Get API Key"
+    },
+    "whyLitecoin": {
+      "title": "Why Litecoin",
+      "energyBackedPow": "Energy-backed PoW",
+      "uptime": "12+ years uptime",
+      "lowFees": "Low fees",
+      "mwebPrivacy": "Self-custody by design"
+    },
+    "finalCta": {
+      "title": "Build on proof, not guesswork.",
+      "button": "Get Started"
+    }
+  },
+  "partnerSection": {
+    "title": "Backed & Trusted By:",
+    "description": "Supported by world-class technology partners and industry leaders."
+  },
+  "aiEnergyProof": {
+    "title": "AI, Energy, and Proof"
+  },
+  "codeCompare": {
+    "fromComplexToClean": "From Complex to Clean",
+    "watchHowLiaas": "Watch how Liaas replaces boilerplate with a simple, powerful API.",
+    "withoutLiaas": "Without Liaasï¿½",
+    "withLiaas": "With Liaasï¿½",
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "articleSlider": {
+    "readMore": "Read More",
+    "insight": "Insight",
+    "product": "Product",
+    "release": "Release",
+    "perspective": "Perspective",
+    "readTime": "{minutes} min read",
+    "beyondSmartContracts": {
+      "title": "Beyond Smart Contracts",
+      "excerpt": "Discover how LiaaS delivers next-gen blockchain solutions that are faster, more secure, and infinitely scalable."
+    },
+    "unlockBlockchain": {
+      "title": "Unlock Blockchain Simplicity",
+      "excerpt": "Explore the powerful features of the Pteri Playground, designed to abstract away complexity for developers."
+    },
+    "unveilingPteri": {
+      "title": "Unveiling Pteri Playground",
+      "excerpt": "A deep dive into the future of automated blockchain development and how it will change the game for enterprises."
+    },
+    "transformingEnergy": {
+      "title": "Transforming Energy Data",
+      "excerpt": "Learn about blockchainï¿½s pivotal role in creating a more transparent and efficient generational change in the energy sector."
+    }
+  },
+  "ctaTiles": {
+    "requestDemo": "Request a Demo",
+    "startBuilding": "Start Building"
+  },
+  "buildPanel": {
+    "title": "There is so much left to build",
+    "description": "Kakr teams deliver mission-critical outcomes for the West's most important institutions.",
+    "ctaLabel": "LEARN MORE"
+  },
+  "providerComparison": {
+    "title": "Provider Comparison",
+    "description": "A comprehensive look at how Kakr Labs stacks up against common auth and blockchain providers.",
+    "features": "Features",
+    "highlighted": "Kakr Labs highlighted as our recommended solution",
+    "kakrLabs": "Kakr Labs (Litecoin)",
+    "auth0Okta": "Auth0 / Okta",
+    "ethereumSolana": "Ethereum / Solana",
+    "otherWallets": "Other Wallets / Infra",
+    "authentication": "Authentication",
+    "walletApproved2fa": "Wallet-approved 2FA & passwordless sign-in",
+    "centralizedEmailSms": "Centralized email/SMS OTP",
+    "smartContracts": "Smart contracts, token-based",
+    "basicWallets": "Basic wallets, often centralized",
+    "infrastructure": "Infrastructure",
+    "closedSourceEnterprise": "Closed-source, enterprise-grade BaaS",
+    "proprietaryCloud": "Proprietary cloud, subscription-based",
+    "publicNodes": "Public nodes, variable infra",
+    "mixedQuality": "Mixed quality, often unreliable",
+    "blockchainBase": "Blockchain Base",
+    "litecoinMostUtilized": "Litecoin (most utilized, Bitcoin-identical)",
+    "naCentralizedSaaS": "N/A (centralized SaaS)",
+    "ethereumSolanaTokens": "Ethereum/Solana (tokens, contracts)",
+    "varies": "Varies",
+    "regulatoryClarity": "Regulatory Clarity",
+    "commodityStatus": "Commodity status, globally recognized",
+    "dependsOnRegion": "Depends on region",
+    "uncertainTokens": "Uncertain, tokens under scrutiny",
+    "unclear": "Unclear",
+    "privacyOptions": "Privacy Options",
+    "mwebConfidential": "Privacy-focused transaction controls (policy-gated)",
+    "none": "None",
+    "publicByDefault": "Public by default",
+    "limited": "Limited",
+    "scalability": "Scalability",
+    "globalNodes": "Global nodes, API-first, enterprise SLAs",
+    "highButCentralized": "High but centralized",
+    "highTps": "High TPS but unstable/reg risks",
+    "inconsistent": "Inconsistent",
+    "businessModel": "Business Model",
+    "noTokens": "No tokens, no gimmicks, service-first",
+    "saasFees": "SaaS fees, data risk",
+    "tokenBased": "Token-based economics",
+    "trustModel": "Trust Model",
+    "userControlledKeys": "User-controlled keys, no data warehousing",
+    "centralizedStorage": "Centralized storage of user creds",
+    "tokenCustody": "Token custody / smart contracts",
+    "mixed": "Mixed"
+  },
+  "mobileAppHero": {
+    "text": "We don't just secure identities-we deliver the strongest foundation for enterprise blockchain. Built entirely on Litecoin, the most utilized blockchain on the planet with the highest market share, architectural parity with Bitcoin, and full regulatory clarity."
+  },
+  "hoverVideoList": {
+    "ourPlatforms": "Our Platforms",
+    "demo": "Demo",
+    "viewDemo": "View {title} demo",
+    "viewDemoButton": "VIEW DEMO",
+    "closeDemo": "Close demo",
+    "blockchain2fa": {
+      "title": "Blockchain 2FA",
+      "subtitle": "Decentralized, wallet-based login that eliminates SMS and push risks.",
+      "blurb": "Decentralized, wallet-based login that eliminates SMS and push risks.",
+      "demoTitle": "Take a tour of Blockchain 2FA"
+    },
+    "daasBaaS": {
+      "title": "DaaS & BaaS",
+      "subtitle": "Litecoin-powered infrastructure-as-a-service for authentication and payments.",
+      "blurb": "Litecoin-powered infrastructure-as-a-service for authentication and payments.",
+      "demoTitle": "Take a tour of BaaS & DaaS"
+    },
+    "pteriWallet": {
+      "title": "PTERI Wallet",
+      "subtitle": "Self-custody wallet with free on-chain 2FA and ultra-low fees.",
+      "blurb": "Self-custody wallet with free on-chain 2FA and ultra-low fees.",
+      "demoTitle": "Take a tour of Pteri Explorer"
+    },
+    "playgroundExplorer": {
+      "title": "Playground & Explorer",
+      "subtitle": "Developer sandbox and blockchain explorer for rapid testing and verification.",
+      "blurb": "Developer sandbox and blockchain explorer for rapid testing and verification.",
+      "demoTitle": "Take a tour of Pteri Playground"
+    },
+    "pteriIntelligence": {
+      "title": "PTERI Intelligence",
+      "subtitle": "AI-powered blockchain intelligence and analytics platform.",
+      "blurb": "AI-powered blockchain intelligence and analytics platform.",
+      "demoTitle": "Take a tour of Pteri Intelligence"
+    },
+    "pteriWalletMweb": {
+      "title": "PTERI Wallet | Self-Custody",
+      "subtitle": "Privacy-focused wallet with AES-256 encryption and biometric protection.",
+      "blurb": "Privacy-focused wallet with AES-256 encryption and biometric protection.",
+      "demoTitle": "Take a tour of Pteri Wallet | Self-Custody"
+    }
+  },
+  "fullWidthVideo": {
+    "alt": "PTERI Wallet in action"
+  },
+  "builtWithKakr": {
+    "title": "Our Strategic Alliances",
+    "description": "We join forces with industry leaders to strengthen our mission-delivering secure, scalable, and Litecoin-powered infrastructure that enterprises can trust.",
+    "payments": "Payments",
+    "identityKyc": "Identity & KYC",
+    "apisMicroservices": "APIs & Microservices",
+    "googleStartups": "Google Startups"
+  },
+  "iosHero": {
+    "bestInClass": "Best-in-Class Litecoin Wallet with Self-Custody",
+    "description": "Seamless privacy, unmatched control-Pteri Wallet for Litecoin users.",
+    "appStoreAlt": "Download on the App Store",
+    "comingSoon": "Coming Soon"
+  },
+  "features": {
+    "litecoinNative": {
+      "title": "Litecoin-Native",
+      "description": "Built entirely on Litecoin's secure, proven blockchain with no experimental layers."
+    },
+    "enterpriseApis": {
+      "title": "Enterprise APIs",
+      "description": "RESTful, GraphQL, and gRPC APIs with automatic retries, circuit breakers, and SLA-backed reliability."
+    },
+    "azurePowered": {
+      "title": "Azure-Powered",
+      "description": "Global infrastructure on Microsoft Azure with 99.99% uptime and encryption in transit and at rest."
+    },
+    "lightningFast": {
+      "title": "Lightning Fast",
+      "description": "Sub-second response times with edge caching and intelligent load balancing."
+    },
+    "secureByDesign": {
+      "title": "Secure by Design",
+      "description": "Zero data warehousing, wallet-controlled keys, and AES-256 encryption."
+    },
+    "globalScale": {
+      "title": "Global Scale",
+      "description": "Multi-region deployments with automatic failover and DDoS protection."
+    }
+  },
+  "stats": {
+    "apiCalls": "API Calls",
+    "developers": "Developers",
+    "languages": "Languages",
+    "uptime": "Uptime"
+  },
+  "whyChoose": {
+    "title": "Why Choose",
+    "description": "Kakr Labs delivers infrastructure that enterprises can trust.",
+    "builtForFuture": "Built for the Future of Web3",
+    "subtitle": "We combine cutting-edge cryptography with robust infrastructure to deliver a platform that is secure, private, and scalable.",
+    "exploreTechnology": "Explore Technology",
+    "zeroCustody": {
+      "title": "Zero-custody by design",
+      "description": "Only you hold the keys. No central honeypot. We ensure your assets remain truly yours through architecture that prioritizes sovereignty."
+    },
+    "zkEnhanced": {
+      "title": "ZK-enhanced verification",
+      "description": "Prove attributes without exposing sensitive data. Leverage zero-knowledge proofs to validate identity with complete privacy."
+    },
+    "googleCloud": {
+      "title": "Google Cloud execution",
+      "description": "Enterprise-grade scale and reliability. Built on infrastructure designed for 99.99% uptime and low-latency global performance."
+    },
+    "litecoinPow": {
+      "title": "Litecoin PoW + Self-Custody",
+      "description": "Battle-tested security with customer-controlled keys. Combining the immutable security of Proof of Work with self-custodial key management."
+    },
+    "securityFirst": "Security First",
+    "privacyCore": "Privacy Core",
+    "infrastructure": "Infrastructure",
+    "hybridTech": "Hybrid Tech"
+  },
+  "replaceStack": {
+    "title": "Replace the Stack",
+    "subtitle": "Kakr replaces security categories - not just products.",
+    "legacyStack": "Legacy Stack",
+    "passwords": "Passwords",
+    "mfa": "MFA (TOTP)",
+    "iam": "IAM / SSO",
+    "fraudDetection": "Fraud Detection",
+    "authTokens": "Auth Tokens",
+    "kakrSolution": "Kakr Solution",
+    "trustLayer": "Kakr Trust Layer",
+    "energy": "Energy",
+    "proof": "Proof",
+    "cryptography": "Cryptography",
+    "consolidating": "Consolidating fragmented security into a single unified trust protocol.",
+    "trustedBy": "Trusted by modern security teams"
+  },
+  "walletShowcase": {
+    "titlePrefix": "Hola, Pteri!",
+    "titleSuffix": "Best in Class",
+    "description": "Experience the most secure and user-friendly Litecoin wallet."
+  },
+  "pteri": {
+    "title": "Platform",
+    "description": "The Pteri platform provides a comprehensive suite of tools for building, deploying, and managing blockchain applications.",
+    "sectionTitle": "Our Platforms",
+    "explore": "View Demo",
+    "hero": {
+      "titlePart1": "What is ",
+      "titlePart2": "",
+      "subtitle": "PTERI is a universal trust system. It unifies cryptographic identity, authentication, payments, AI agents, and APIs into one decentralized infrastructure.",
+      "clarification": "PTERI is the carrier layer that holds cryptographic authority; the wallet, identity flows, payments, and APIs are interfaces into the same system.",
+      "exploreDocs": "Explore Docs",
+      "bookDemo": "Book a Demo"
+    },
+    "whatPteriDoes": {
+      "title": "What PTERI Is",
+      "paragraphs": [
+        "PTERI is the carrier layer that holds and enforces cryptographic authority across digital systems.",
+        "Instead of relying on passwords, shared secrets, custodial trust, or behavioral inference, PTERI establishes authority through cryptographic proof that is verified at request time. This authority model applies uniformly across identity, authentication, payments, APIs, and AI workflows.",
+        "The PTERI Wallet is one interface into this carrier layer. It allows users to hold authority, sign requests, approve actions, and authorize transactions - but the underlying authority model remains consistent regardless of how PTERI is used.",
+        "PTERI is not a collection of disconnected features. It is a single system designed to remove fragility from modern digital infrastructure."
+      ]
+    },
+    "problem": {
+      "title": "The Problem PTERI Solves",
+      "description": "Modern digital systems suffer from the same root flaw: authority is centralized, shareable, and fragile.",
+      "items": [
+        "Identity is inferred from passwords, inbox access, and behavioral signals",
+        "Payments depend on intermediaries and custodial control",
+        "APIs rely on static secrets that leak and persist",
+        "AI systems operate with credentials they should never permanently hold",
+        "Every breach, account takeover, or unauthorized action is a symptom of this model."
+      ],
+      "solution": "PTERI replaces this approach entirely by making authority deterministic, self-custodial, and verifiable without trust assumptions."
+    },
+    "differentiation": {
+      "title": "What Makes PTERI Different",
+      "subtitle": "PTERI improves security by removing entire classes of failure, not by adding complexity.",
+      "items": [
+        "No shared secrets",
+        "No custodial key storage",
+        "No behavioral surveillance",
+        "No probabilistic trust scoring",
+        "No permanent permissions"
+      ],
+      "note": "Authority is proven cryptographically and enforced consistently across all surfaces."
+    },
+    "useCases": {
+      "title": "Where PTERI Is Used",
+      "subtitle": "PTERI is designed to operate as infrastructure, not an application silo.",
+      "items": [
+        "Replacing OTP-based authentication in existing systems",
+        "Securing high-risk access such as admin panels and internal tools",
+        "Authorizing transactions without intermediaries",
+        "Enforcing API access without API keys",
+        "Delegating limited authority to AI agents safely"
+      ],
+      "closing": "Each use case operates on the same authority layer."
+    },
+    "howItWorks": {
+      "title": "How PTERI Works",
+      "description": "PTERI is not a collection of products. It is one trust layer that verifies identity and intent through signed actions and independent verification."
+    },
+    "components": {
+      "wallet": {
+        "title": "Master Demo",
+        "description": "The PTERI Wallet holds cryptographic keys locally and signs actions without exposing private keys."
+      },
+      "auth": {
+        "title": "Blockchain 2FA",
+        "description": "PTERI Authentication replaces OTPs and passwords with signed approvals."
+      },
+      "identity": {
+        "title": "Pteri Explorer",
+        "description": "PTERI Identity is cryptographic and verifiable, not declarative."
+      },
+      "ai": {
+        "title": "Pteri Intelligence",
+        "description": "PTERI enables AI agents to sign actions and operate under verifiable trust."
+      },
+      "payments": {
+        "title": "Pteri Payments",
+        "description": "PTERI Payments ensure customer-controlled, verifiable settlement."
+      },
+      "api": {
+        "title": "Liaas Playground",
+        "description": "PTERI is API-first for integrating trust with your existing infrastructure."
+      }
+    },
+    "faqs": {
+      "title": "PTERI FAQs (Carrier Layer)",
+      "items": [
+        {
+          "q": "Is PTERI just a wallet?",
+          "a": "No. PTERI is the carrier layer. The wallet is one interface used to hold and exercise authority."
+        },
+        {
+          "q": "Does Kakr Labs control authority?",
+          "a": "No. Authority is held by users and enforced cryptographically. Kakr Labs cannot impersonate or override authority."
+        },
+        {
+          "q": "Do I need a new token?",
+          "a": "No. PTERI operates on proof-of-work principles using standard Litecoin (LTC) for settlement where needed. There is no proprietary PTERI token."
+        },
+        {
+          "q": "Do I need to use payments to use PTERI?",
+          "a": "No. Payments are optional. PTERI can be used purely for identity and authorization."
+        }
+      ]
+    },
+    "nonClaims": "PTERI provides cryptographic assurance and verification tools.",
+    "cta": {
+      "title": "Build on proof, not guesswork.",
+      "getStarted": "Get Started",
+      "bookDemo": "Book a Demo",
+      "docs": "Docs"
+    },
+    "seo": {
+      "title": "PTERI - A Universal Trust System for the AI Era | Kakr Labs",
+      "description": "PTERI unifies cryptographic identity, authentication, payments, AI agents, and APIs into one decentralized trust infrastructure designed for autonomous systems.",
+      "image": "/images/og-images/pteri-page.jpg"
+    }
+  },
+  "insights": {
+    "title": "Latest",
+    "description": "Stay up to date with the latest news and insights from Kakr Labs."
+  },
+  "demo": {
+    "title": "Experience Pteri Explorer",
+    "description": "Take an interactive tour of our platform and discover how Pteri Explorer can transform your blockchain experience",
+    "tourTitle": "Take a tour of Pteri Explorer",
+    "viewDemo": "VIEW DEMO"
+  },
+  "footer": {
+    "summary": "Securing AI agents and existing enterprise systems in one cryptographic layer.",
+    "companyName": "Kakr labs Inc. (a Wyoming corporation)",
+    "helpCenter": "Help Center",
+    "products": "Products",
+    "pteriExplorer": "Pteri Explorer",
+    "pteriLiaas": "Pteri LiaaS",
+    "pteriPlayground": "Pteri Playground",
+    "pteriIntelligence": "Pteri Intelligence",
+    "pteriWallet": "Pteri Wallet",
+    "daas": "Decentralized-as-a-Service (DaaS)",
+    "developers": "Developers",
+    "apiDocs": "API Docs",
+    "getStarted": "Get Started",
+    "twoFaDemo": "2FA Demo",
+    "faqs": "FAQs",
+    "supportPortal": "Support Portal",
+    "status": "Status",
+    "solutions": "Solutions",
+    "financialServices": "Financial Services",
+    "retailEcommerce": "Retail & eCommerce",
+    "technologySaas": "Technology & SaaS",
+    "healthcare": "Healthcare",
+    "governmentPublic": "Government & Public",
+    "telecomEsim": "Telecom & eSIM",
+    "company": "Company",
+    "about": "About",
+    "partnerships": "Partnerships",
+    "roadmap": "Roadmap",
+    "press": "Press",
+    "contact": "Contact",
+    "careers": "Careers",
+    "trustLegal": "Trust & Legal",
+    "trustCenter": "Trust Center",
+    "compliance": "Compliance",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "support": "Support",
+    "docs": "Docs",
+    "community": "Community",
+    "pricing": "Pricing",
+    "startFree": "Start Free",
+    "connectWithUs": "Connect with us",
+    "getProductUpdates": "Get product updates",
+    "productUpdatesDescription": "on wallet 2FA, BaaS, and enterprise launches.",
+    "subscribe": "Subscribe",
+    "copyright": "ï¿½ {year} Kakr Labs. Powered by Litecoinï¿½s 100% uptime blockchain.",
+    "allRightsReserved": "All rights reserved.",
+    "trademarks": "Kakrï¿½ and PTERIï¿½ are trademarks of Kakr labs Inc.",
+    "sitemap": "Sitemap",
+    "daasBaaS": "DaaS & BaaS",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "downloadApp": "Download the App",
+    "documentation": "Documentation",
+    "playground": "Playground",
+    "apiKeys": "API Keys",
+    "sdks": "SDKs",
+    "apisBaas": "APIs / BaaS",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch with Us"
+    },
+    "left": {
+      "title": "Request a Demo or Reach Out",
+      "description": "Whether you're curious about our blockchain solutions or would like to book a personalized demo, we're here to help. Just fill out the form, and we'll get back to you as soon as possible.",
+      "azureListing": "Want to explore more? Check out our",
+      "azureLinkText": "Azure listing",
+      "azureDescription": "to learn about how Kakr Labs is helping businesses harness the power of Web3.",
+      "immediateAssistance": "If you need immediate assistance, feel free to email us at",
+      "lookForward": "We look forward to hearing from you!"
+    },
+    "form": {
+      "userType": {
+        "label": "Which of the following best describes you?",
+        "choose": "Choose",
+        "web3Lead": "Web3 Lead at a Brand or IP",
+        "agency": "Agency or Consulting firm",
+        "developer": "Developer",
+        "salesDemo": "Sales demo",
+        "artist": "Artist / Creator",
+        "other": "Other"
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email"
+      },
+      "company": {
+        "label": "Company Name",
+        "placeholder": "Company Name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      },
+      "submit": "SUBMIT",
+      "success": "Your message has been sent successfully!",
+      "errors": {
+        "recaptcha": "Failed to validate reCAPTCHA. Please try again.",
+        "sending": "Failed to send your message. Please try again."
+      }
+    }
+  },
+  "about": {
+    "badge": "Kakr Labs",
+    "hero": {
+      "title": "Building Identity and Authorization Security for the AI Era",
+      "subtitle": "Kakr Labs is building the foundational trust infrastructure for humans, AI agents, and enterprises in the agentic future."
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "Kakr Labs was founded to solve a fundamental problem: digital identity systems approximate who you are instead of proving it. We set out to build infrastructure that replaces probabilistic security with deterministic cryptographic proof.",
+      "p2": "Built on the Litecoin blockchain, running continuously since 2011, we deliver self-custodial identity, payments, and AI delegation through a single unified protocol."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "headline": "Replace guesswork with proof.",
+      "description": "To deliver privacy-first, scalable, and accessible blockchain tools — removing reliance on centralized accounts, cloud authentication, and traditional identity models."
+    },
+    "whatWeBuild": {
+      "title": "What We Build",
+      "pteriPlatform": {
+        "title": "PTERI Platform",
+        "description": "The cryptographic carrier layer for authentication, verifiable identity, self-custodial payments, AI delegation (A2A), and policy enforcement."
+      },
+      "pteriWallet": {
+        "title": "PTERI Wallet",
+        "description": "Your customer-controlled interface: true self-custody Litecoin wallet with biometric security and cryptographic signing."
+      },
+      "pteriApis": {
+        "title": "PTERI APIs & Developer Tools",
+        "description": "SDKs, MCP-powered integration tools, and full documentation at docs.kakr.ai."
+      },
+      "enterprise": {
+        "title": "Enterprise Solutions",
+        "description": "Google Cloud-backed infrastructure with 99.99%+ uptime SLAs, audit-ready compliance, and global scalability."
+      }
+    },
+    "approach": {
+      "title": "Our Approach",
+      "zeroCustody": {
+        "title": "Zero-Custody by Design",
+        "description": "You control your keys. We never hold them."
+      },
+      "deterministicProof": {
+        "title": "Verifiable Authorization Evidence",
+        "description": "Litecoin PoW makes every action mathematically verifiable."
+      },
+      "privacyFirst": {
+        "title": "Privacy First",
+        "description": "Optional privacy-focused transaction controls and Zero-Knowledge proofs."
+      },
+      "agenticEra": {
+        "title": "Built for the Agentic Era",
+        "description": "Secure, scoped delegation to autonomous AI agents."
+      },
+      "incrementalAdoption": {
+        "title": "Incremental Adoption",
+        "description": "Layer PTERI on top of existing systems — no full rewrites required."
+      }
+    },
+    "leadership": {
+      "title": "Leadership",
+      "founder": "Founder & CEO",
+      "cofounder": "Co-Founder",
+      "harvinBio": "Harvin is building a universal trust infrastructure for the AI era, focused on strengthening existing enterprise systems with verifiable, cryptographic trust. With a clear vision for the agentic economy, he is working to redefine how identity, security, and digital interactions function at scale.",
+      "josephBio": "With extensive experience managing blockchain-powered projects, Joseph combines his leadership skills with deep technical knowledge to drive success. His passion is in integrating AI and blockchain to enhance decentralization, automation, and reduce human biases.",
+      "gursonBio": "Gurson is focused on building businesses that perform at the highest level while staying true to the values that got him here—community, resilience, and relationships. His goal is to create lasting impact, uplift others, and build legacies that extend far beyond profit.",
+      "teamDescription": "Kakr Labs is a lean, focused team of engineers, cryptographers, and product builders committed to making sovereign digital identity accessible to everyone."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "A world where every digital action — login, payment, AI delegation, device handshake — is backed by cryptographic proof anchored to the most durable blockchain on earth."
+    },
+    "cta": {
+      "title": "Get In Touch",
+      "explorePlatform": "Explore Platform",
+      "downloadWallet": "Download Wallet",
+      "readDocs": "Read Docs",
+      "bookDemo": "Book a Demo"
+    },
+    "corporate": {
+      "poweredBy": "Powered by Litecoin · running continuously since 2011",
+      "copyright": "© 2026 Kakr Labs Inc. All rights reserved.",
+      "trademarks": "Kakr™ and PTERI™ are trademarks of Kakr Labs Inc."
+    },
+    "whyWeBuild": {
+      "title": "Why We Build",
+      "description": "Because the world deserves trustless, open, cryptographically secure infrastructure - with no hype, no intermediaries, and no compromise."
+    },
+    "ecosystem": {
+      "title": "Ecosystem & Products",
+      "pteriWallet": {
+        "title": "PTERI Wallet",
+        "description": "A customer-controlled PTERI App with passwordless authentication, biometric approval, and zero unencrypted credential storage on KAKR servers."
+      },
+      "pteriIntelligence": {
+        "title": "PTERI Intelligence (MCP)",
+        "description": "AI-powered automation for identity, infra, and wallet logic."
+      },
+      "pteriExplorer": {
+        "title": "PTERI Explorer",
+        "description": "Full-chain explorer for Litecoin, Bitcoin, Dogecoin, with advanced transaction search."
+      },
+      "pteriLiaas": {
+        "title": "PTERI LiaaS API",
+        "description": "Litecoin-as-a-Service: tokenless payments, IPFS storage, and dev SDKs."
+      },
+      "pteriPlayground": {
+        "title": "PTERI Playground",
+        "description": "Interactive tooling for wallet/API prototyping, testing, and developer onboarding."
+      },
+      "tagline": "No NFTs. No stablecoins. No smart contracts. Just verifiable, real-chain tools."
+    },
+    "whyLitecoin": {
+      "title": "Why Litecoin?",
+      "reason1": "Bitcoin architecture, no hype",
+      "reason2": "Fast, cheap, stable; running continuously since 2011",
+      "reason3": "Proven Proof-of-Work security, real on-chain finality",
+      "reason4": "No intermediaries, just cryptography",
+      "tagline": "Minimal. Trustless. Durable. Litecoin is the backbone of everything we build."
+    },
+    "partnerships": {
+      "title": "Powered by World-Class Partnerships",
+      "subtitle": "Validated and supported by:",
+      "compliance": "Encrypted, access-controlled infrastructure with exportable audit trails"
+    },
+    "roadmap": {
+      "title": "What's Ahead",
+      "pteriId": "PTERI ID - Decentralized KYC, shipping & residency (2026)",
+      "esimDefense": "eSIM Defense - SIM swap fraud prevention",
+      "zkProofs": "Zero-Knowledge Proofs for uniqueness & age verification",
+      "secureOnboarding": "Secure onboarding for existing and emerging systems"
+    },
+    "contactLinks": {
+      "legalCorporate": "Legal & Corporate",
+      "toolsDashboards": "Tools & Dashboards",
+      "legalInquiries": "Legal Inquiries"
+    }
+  },
+  "legal": {
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last Updated: September 26, 2025",
+      "entity": "Entity: Kakr Labs, Inc. (Wyoming C-Corp)",
+      "intro": "This Cookie Policy explains how Kakr Labs Inc. (ï¿½Kakr Labs,ï¿½ ï¿½we,ï¿½ ï¿½our,ï¿½ or ï¿½usï¿½) uses cookies and similar technologies on kakr.org, kakr.io, and any related web properties (ï¿½Websitesï¿½).",
+      "consent": "By using our Websites, you consent to our use of cookies in accordance with this policy.",
+      "whatAreCookies": {
+        "title": "1. What Are Cookies?",
+        "content": "Cookies are small text files stored on your device when you visit a website. They help websites function, improve performance, and remember certain preferences.",
+        "types": "Cookies may be:",
+        "list": [
+          "First-party cookies (set by Kakr Labs), or",
+          "Third-party cookies (set by analytics or service providers)."
+        ]
+      },
+      "howWeUse": {
+        "title": "2. How Kakr Labs Uses Cookies",
+        "intro": "Kakr Labs uses a minimal, privacy-first cookie setup. We do not track users across websites, build behavioral profiles, or store unnecessary personal data.",
+        "usage": "We use cookies only for:",
+        "essential": {
+          "title": "A. Essential / Strictly Necessary Cookies",
+          "content": "Required for the website to function properly.",
+          "examples": "Examples:",
+          "list": [
+            "Security cookies",
+            "Load balancing",
+            "Basic session management",
+            "Cloud infrastructure functionality (Google Cloud)"
+          ],
+          "note": "These cannot be disabled because the site cannot function without them."
+        },
+        "performance": {
+          "title": "B. Performance & Analytics Cookies (Minimal Use)",
+          "content": "Used only to understand website performance, uptime, and page interactions.",
+          "examples": "We may use:",
+          "list": [
+            "Google Analytics (privacy mode)",
+            "Privacy-preserving analytics tools (cookieless when possible)"
+          ],
+          "note": "These cookies do not track personal identity, wallets, transactions, or behavior beyond overall site metrics."
+        },
+        "functional": {
+          "title": "C. Functionality Cookies (Optional)",
+          "content": "Used to remember light/dark theme mode or language preference.",
+          "examples": "Examples:",
+          "list": [
+            "Theme selection",
+            "Localization settings",
+            "Accessibility features"
+          ],
+          "note": "These enhance user experience but are not required."
+        }
+      },
+      "notUsed": {
+        "title": "3. Cookies We Do NOT Use",
+        "intro": "Kakr Labs does not use:",
+        "list": [
+          "? Advertising cookies",
+          "? Pixel tracking",
+          "? Retargeting cookies",
+          "? Behavioral profiling cookies",
+          "? Cookies tied to blockchain or wallet data",
+          "? Any cookies containing sensitive personal info"
+        ],
+        "note": "Your on-chain data, wallet addresses, API keys, and authentication details never touch cookies."
+      },
+      "thirdParty": {
+        "title": "4. Third-Party Cookies",
+        "intro": "Certain trusted partners may set cookies strictly for technical or analytical purposes:",
+        "google": {
+          "title": "A. Google Cloud",
+          "content": "Used for hosting, load balancing, and security infrastructure."
+        },
+        "openai": {
+          "title": "B. OpenAI",
+          "content": "Used only when using PTERI Intelligence on the website - no PII or wallet data is shared."
+        },
+        "analytics": {
+          "title": "C. Analytics Providers",
+          "content": "Only limited, non-identifying analytics may be collected."
+        },
+        "note": "We review all partners for compliance with GDPR, SOC 2, ISO 27001, and other global standards."
+      },
+      "managing": {
+        "title": "5. Managing Your Cookie Preferences",
+        "content": "You can manage or disable cookies through your browser:",
+        "list": [
+          "Chrome: Settings ? Privacy & Security ? Cookies",
+          "Safari: Preferences ? Privacy",
+          "Firefox: Settings ? Privacy & Security",
+          "Edge: Settings ? Site Permissions ? Cookies"
+        ],
+        "note": "Disabling essential cookies may affect website performance."
+      },
+      "changes": {
+        "title": "6. Changes to This Cookie Policy",
+        "content": "We may update this Cookie Policy periodically. When changes occur, we will update the ï¿½Last Updatedï¿½ date at the top of the page."
+      },
+      "contact": {
+        "title": "7. Contact Us",
+        "content": "If you have questions about this Cookie Policy, contact us:",
+        "email": "Email: privacy@kakr.org",
+        "website": "Website: https://kakr.org"
+      }
+    },
+    "dpa": {
+      "title": "Data Processing Addendum (DPA)",
+      "effective": "Effective upon acceptance",
+      "entity": "Entity: Kakr Labs, Inc. (Wyoming C-Corp)",
+      "intro": "This Data Processing Addendum (ï¿½DPAï¿½) forms part of the agreement between Kakr Labs Inc. (ï¿½Kakr Labs,ï¿½ ï¿½Processorï¿½) and the customer or organization using Kakr Labsï¿½ Services (ï¿½Customer,ï¿½ ï¿½Controllerï¿½).",
+      "effectiveDate": "This DPA is effective upon Customerï¿½s acceptance or continued use of Kakr Labs Services.",
+      "definitions": {
+        "title": "1. Definitions",
+        "list": [
+          "ï¿½Controllerï¿½ means the entity that determines the purposes and means of processing Personal Data.",
+          "ï¿½Processorï¿½ means Kakr Labs Inc., which processes Personal Data on behalf of the Controller.",
+          "ï¿½Personal Dataï¿½ means any information relating to an identifiable natural person processed under the Agreement.",
+          "ï¿½Processingï¿½ means any operation performed upon Personal Data.",
+          "ï¿½Servicesï¿½ means Kakr Labsï¿½ platforms including PTERI, APIs, dashboards, intelligence tools, and related infrastructure.",
+          "ï¿½Sub-processorsï¿½ means third parties engaged by Kakr Labs to support the Services."
+        ]
+      },
+      "purpose": {
+        "title": "2. Purpose of Processing",
+        "intro": "Kakr Labs processes Personal Data solely to deliver the Services, including:",
+        "list": [
+          "Account creation for dashboard/API access",
+          "Email communication",
+          "Basic usage metrics",
+          "Support and issue resolution"
+        ],
+        "note": "Kakr Labs does not process private keys, seed phrases, wallet balances, or blockchain transactions on behalf of the Customer. PTERI Wallet is fully self-custodial, and all cryptographic data remains on the userï¿½s device."
+      },
+      "categories": {
+        "title": "3. Categories of Data Processed",
+        "intro": "Kakr Labs processes minimal personal data, typically limited to:",
+        "account": {
+          "title": "A. Account Data",
+          "list": [
+            "Email address",
+            "Organization details (if applicable)"
+          ]
+        },
+        "support": {
+          "title": "B. Support Data",
+          "list": [
+            "Contact name and communication details (optional)",
+            "Ticket or request content"
+          ]
+        },
+        "usage": {
+          "title": "C. Usage Data (Anonymized)",
+          "list": [
+            "API call counts",
+            "Performance metrics",
+            "Capacity consumption"
+          ]
+        },
+        "note": "No sensitive or financial personal data is collected."
+      },
+      "processorObligations": {
+        "title": "4. Processor Obligations (Kakr Labs)",
+        "intro": "Kakr Labs will:",
+        "list": [
+          "Process Personal Data only according to written instructions from the Controller.",
+          "Maintain industry-standard security measures aligned with SOC 2, ISO 27001, and GDPR expectations.",
+          "Ensure confidentiality obligations for employees and contractors.",
+          "Assist the Controller with data subject rights where applicable.",
+          "Notify the Controller of any Personal Data breach without undue delay.",
+          "Maintain a public list of sub-processors (see Section 9).",
+          "Permit audits as described in Section 8.",
+          "Delete or return Personal Data upon termination of the Services."
+        ],
+        "note": "Kakr Labs never sells or monetizes Personal Data."
+      },
+      "controllerObligations": {
+        "title": "5. Controller Obligations (Customer)",
+        "intro": "The Controller is responsible for:",
+        "list": [
+          "Ensuring legal basis for collecting and providing Personal Data to Kakr Labs",
+          "Ensuring accuracy of Personal Data",
+          "Managing user-side encryption and key storage (for blockchain tools)",
+          "Complying with all applicable data protection laws"
+        ],
+        "note": "Because the PTERI Wallet is decentralized, the Controller must ensure users understand that keys cannot be recovered by Kakr Labs."
+      },
+      "security": {
+        "title": "6. Security Measures",
+        "intro": "Kakr Labs uses strong technical and organizational measures including:",
+        "infrastructure": {
+          "title": "A. Infrastructure Security",
+          "list": [
+            "Hosted exclusively on Google Cloud",
+            "Encryption at rest (AES-256) and in transit (TLS 1.2+)",
+            "Zero access to cryptographic keys or blockchain secrets"
+          ]
+        },
+        "system": {
+          "title": "B. System Controls",
+          "list": [
+            "Access control & strict IAM policies",
+            "Network isolation & firewall segmentation",
+            "Continuous monitoring & logging (anonymized)"
+          ]
+        },
+        "application": {
+          "title": "C. Application Security",
+          "list": [
+            "Regular patching",
+            "Vulnerability scanning",
+            "Closed-source, enterprise-hardened infrastructure"
+          ]
+        },
+        "privacy": {
+          "title": "D. Privacy by Design",
+          "list": [
+            "Minimal data retention",
+            "No private key or seed phrase processing",
+            "Customer-controlled key management with zero visibility into wallet contents"
+          ]
+        }
+      },
+      "requests": {
+        "title": "7. Data Subject Requests",
+        "intro": "Where applicable:",
+        "list": [
+          "Kakr Labs will assist in fulfilling requests to access, modify, delete, or restrict Personal Data.",
+          "Requests should be submitted to privacy@kakr.org.",
+          "Kakr Labs cannot modify or delete blockchain data, as blockchain records are immutable.",
+          "Kakr Labs cannot recover lost private keys, mnemonics, or wallet contents."
+        ]
+      },
+      "audits": {
+        "title": "8. Audits",
+        "intro": "Upon reasonable request:",
+        "list": [
+          "Kakr Labs will provide current documentation describing security controls, hosting architecture, and compliance posture.",
+          "On-site audits may be performed no more than once per year, and only with reasonable notice and scope."
+        ]
+      },
+      "subprocessors": {
+        "title": "9. Sub-processors",
+        "intro": "Kakr Labs uses the following trusted sub-processors:",
+        "primary": {
+          "title": "Primary Infrastructure",
+          "list": [
+            "Google Cloud Platform ï¿½ hosting, compute, KMS, networking"
+          ]
+        },
+        "ai": {
+          "title": "AI Processing (Optional Features Only)",
+          "list": [
+            "OpenAI ï¿½ for PTERI Intelligence (no PII or private keys shared)"
+          ]
+        },
+        "note": "Kakr Labs ensures sub-processors comply with obligations consistent with this DPA."
+      },
+      "transfers": {
+        "title": "10. Cross-Border Data Transfers",
+        "intro": "Any transfers of Personal Data outside the Controllerï¿½s region will comply with:",
+        "list": [
+          "GDPR Standard Contractual Clauses (where applicable)",
+          "Appropriate safeguards required under global privacy laws"
+        ],
+        "note": "Kakr Labs uses Google Cloud regions with strong compliance guarantees."
+      },
+      "retention": {
+        "title": "11. Data Retention & Deletion",
+        "intro": "Kakr Labs retains Personal Data only as long as necessary to deliver the Services.",
+        "termination": "Upon termination:",
+        "list": [
+          "Account and support data are deleted within 90 days",
+          "Usage logs are anonymized",
+          "No cryptographic data is retained",
+          "Blockchain data remains on the public Litecoin network and cannot be altered."
+        ]
+      },
+      "liability": {
+        "title": "12. Limitation of Liability",
+        "intro": "Liabilities under this DPA are governed by the main Agreement. Kakr Labs is not responsible for:",
+        "list": [
+          "Loss of wallets or private keys",
+          "Blockchain transaction errors",
+          "Customer misconfiguration",
+          "On-chain losses, slippage, or network fees"
+        ]
+      },
+      "term": {
+        "title": "13. Term & Termination",
+        "content": "This DPA remains in effect as long as Kakr Labs processes Personal Data for the Customer. Upon termination of Services, Kakr Labs will delete Personal Data as described in Section 11."
+      },
+      "contact": {
+        "title": "14. Contact Information",
+        "intro": "For privacy or data protection matters:",
+        "email": "Email: privacy@kakr.org",
+        "website": "Legal Website: https://kakr.org"
+      }
+    },
+    "gdpr": {
+      "title": "GDPR Compliance Statement",
+      "lastUpdated": "Last Updated: September 26, 2025",
+      "entity": "Entity: Kakr Labs, Inc. (Wyoming C-Corp)",
+      "intro": "Kakr Labs Inc. (ï¿½Kakr Labs,ï¿½ ï¿½we,ï¿½ ï¿½our,ï¿½ or ï¿½usï¿½) is committed to protecting personal data in accordance with the General Data Protection Regulation (GDPR) (EU) 2016/679, the UK GDPR, and all applicable global privacy regulations.",
+      "design": "We design every product-including PTERI, Playground, Intelligence, and Data-with zero-knowledge principles, decentralization, and minimal data collection at the core.",
+      "statement": "This GDPR Compliance Statement explains how Kakr Labs meets its obligations as a data processor and data controller where applicable.",
+      "minimization": {
+        "title": "1. Data Minimization & Privacy by Design",
+        "intro": "Kakr Labs follows strict data minimization principles:",
+        "list": [
+          "We collect only essential personal data.",
+          "No private keys, mnemonics, wallet balances, or on-chain information is ever processed by Kakr Labs.",
+          "PTERI Wallet is fully self-custodial, meaning all sensitive cryptographic materials remain on the userï¿½s device.",
+          "Our systems are architected to store no unnecessary personal data."
+        ],
+        "note": "This aligns directly with GDPR Articles 5(1)(c) (data minimization) and 25 (privacy by design & default)."
+      },
+      "roles": {
+        "title": "2. Roles Under GDPR",
+        "services": "For Services such as dashboards, API access, and support:",
+        "processor": "Kakr Labs acts as a Data Processor.",
+        "website": "For website-level analytics and account registration:",
+        "controller": "Kakr Labs may act as a Data Controller.",
+        "dpa": "A full breakdown is provided in our Data Processing Addendum (DPA)."
+      },
+      "lawfulBasis": {
+        "title": "3. Lawful Basis for Processing",
+        "intro": "We process limited personal data under GDPR-compliant legal bases, including:",
+        "list": [
+          "Performance of a contract (e.g., API access, platform use)",
+          "Legitimate interest (e.g., platform security, fraud prevention)",
+          "Consent (e.g., optional cookies or email preferences)"
+        ],
+        "note": "We do not process any sensitive data categories (GDPR Article 9)."
+      },
+      "rights": {
+        "title": "4. Your GDPR Rights",
+        "intro": "All users-including EU and UK users-have the right to:",
+        "list": [
+          "Access your personal data",
+          "Rectify inaccurate information",
+          "Erase data (right to be forgotten)",
+          "Restrict processing",
+          "Object to certain types of processing",
+          "Data portability",
+          "Withdraw consent at any time"
+        ],
+        "contact": "Requests may be submitted to: privacy@kakr.org",
+        "response": "Kakr Labs responds to all GDPR requests within 30 days."
+      },
+      "transfers": {
+        "title": "5. International Data Transfers",
+        "intro": "Kakr Labs uses Google Cloud as its exclusive hosting provider. Any cross-border transfers outside the EEA/UK are protected using:",
+        "list": [
+          "Standard Contractual Clauses (SCCs)",
+          "Approved transfer mechanisms",
+          "Industry-standard safeguards and encryption"
+        ],
+        "note": "No personal data is sold, traded, or transferred for advertising purposes."
+      },
+      "subprocessors": {
+        "title": "6. Sub-Processors",
+        "intro": "We rely on a minimal set of highly-compliant partners:",
+        "primary": {
+          "title": "Primary Infrastructure",
+          "list": [
+            "Google Cloud Platform ï¿½ Hosting, compute, networking, encryption"
+          ]
+        },
+        "ai": {
+          "title": "Optional AI Processing",
+          "list": [
+            "OpenAI ï¿½ Only used when customers use PTERI Intelligence"
+          ]
+        },
+        "note1": "No PII, private keys, or wallet data are shared.",
+        "note2": "All sub-processors undergo strict due diligence and operate under GDPR-compliant data processing agreements."
+      },
+      "security": {
+        "title": "7. Data Security & Encryption",
+        "intro": "We maintain a comprehensive security framework aligned with:",
+        "standards": [
+          "SOC 2 Trust Services Criteria (control alignment; no report issued)",
+          "ISO 27001 control framework (alignment)",
+          "GDPR Article 32 (Security of Processing)"
+        ],
+        "measuresIntro": "Measures include:",
+        "measures": [
+          "TLS 1.2+ encryption in transit",
+          "AES-256 encryption at rest",
+          "Multi-layered access controls",
+          "Closed-source hardened infrastructure",
+          "Network segmentation and firewalls",
+          "Continuous monitoring and auditing"
+        ],
+        "blockchain": "Litecoin's Proof-of-Work blockchain provides additional integrity guarantees at the protocol layer."
+      },
+      "retention": {
+        "title": "8. Data Retention",
+        "intro": "We retain personal data only as long as necessary for operational purposes:",
+        "list": [
+          "Support communications: 90 days",
+          "Account and API metadata: retained while active",
+          "Usage logs: anonymized",
+          "Cryptographic data: never stored"
+        ],
+        "note": "No personal data is retained longer than required."
+      },
+      "breach": {
+        "title": "9. Incident Response & Breach Notification",
+        "intro": "In the unlikely event of a personal data breach involving Kakr Labs systems, we will:",
+        "list": [
+          "Notify affected Controllers/Customers without undue delay (GDPR Article 33)",
+          "Cooperate fully with impact assessment",
+          "Provide all necessary documentation and remediation steps"
+        ],
+        "note": "Kakr Labs has had zero data breaches to date."
+      },
+      "contact": {
+        "title": "10. Contact Information",
+        "intro": "For GDPR queries, data requests, or DPA execution:",
+        "email": "Email: privacy@kakr.org",
+        "website": "Website: https://kakr.org",
+        "dpo": "Data Protection Officer (DPO) responsibilities are handled internally by Kakr Labsï¿½ Compliance & Security division."
+      }
+    },
+    "securityOverview": {
+      "title": "Security Overview",
+      "lastUpdated": "Last Updated: September 26, 2025",
+      "entity": "Entity: Kakr Labs, Inc. (Wyoming C-Corp)",
+      "intro": "Kakr Labs Inc. (ï¿½Kakr Labsï¿½) delivers enterprise-grade security built on decentralization, zero-knowledge principles, and hardened cloud infrastructure. Our systems are designed to minimize data, eliminate central points of failure, and ensure the highest levels of protection for users, developers, and enterprise clients.",
+      "foundation": "Security at Kakr Labs is not an add-on-it is the foundation of everything we build.",
+      "philosophy": {
+        "title": "1. Security Philosophy",
+        "intro": "Our architecture follows four core principles:",
+        "zeroCustody": {
+          "title": "A. Customer-Controlled Custody",
+          "content": "We never hold private keys, seed phrases, or user crypto assets. PTERI Wallet is fully self-custodial."
+        },
+        "minimalData": {
+          "title": "B. Minimal Data Surfaces",
+          "content": "We collect nearly zero personal data, drastically reducing attack vectors."
+        },
+        "closedSource": {
+          "title": "C. Closed-Source Infrastructure",
+          "content": "Our enterprise network is closed-source by design, hardened, and protected against supply-chain attacks."
+        },
+        "decentralizedAuth": {
+          "title": "D. Decentralized Authentication",
+          "content": "Our blockchain-based 2FA is ~2000% stronger than traditional app-based MFA and eliminates SIM-swap and OTP phishing risk."
+        }
+      },
+      "infrastructure": {
+        "title": "2. Infrastructure Security",
+        "intro": "Our infrastructure is hosted exclusively on Google Cloud, leveraging:",
+        "list": [
+          "Google Cloud Armor",
+          "VPC isolation",
+          "Kubernetes-optimized clusters",
+          "Cloud Load Balancing",
+          "IAM-controlled access",
+          "Google Cloud KMS encryption"
+        ],
+        "deployment": {
+          "intro": "We use a multi-region deployment model purpose-built for:",
+          "list": [
+            "high uptime",
+            "strong isolation",
+            "rapid scaling",
+            "enterprise reliability"
+          ]
+        }
+      },
+      "encryption": {
+        "title": "3. Encryption Standards",
+        "transit": {
+          "title": "A. Encryption in Transit",
+          "list": [
+            "TLS 1.2+",
+            "HSTS enabled",
+            "Certificate pinning (where supported)"
+          ]
+        },
+        "rest": {
+          "title": "B. Encryption at Rest",
+          "list": [
+            "AES-256 on Google Cloud-managed services",
+            "Redundant storage with automatic integrity checks"
+          ]
+        },
+        "wallet": {
+          "title": "C. Wallet & Key Security",
+          "list": [
+            "Private keys never leave the userï¿½s device",
+            "Mnemonics are never visible, stored, or transmitted to Kakr Labs",
+            "Biometric + hardware security support on iOS/Android"
+          ]
+        },
+        "mweb": {
+          "title": "D. Privacy-Focused Transaction Controls",
+          "content": "PTERI Wallet gives users privacy-focused control over their own transaction history and payment credentials, with no centralized visibility into wallet activity."
+        }
+      },
+      "access": {
+        "title": "4. Access Controls",
+        "internal": {
+          "title": "A. Internal Access",
+          "list": [
+            "Strict role-based access control (RBAC)",
+            "Zero standing privileges",
+            "Time-bound access grants",
+            "Mandatory multi-factor authentication for all staff",
+            "Device management & endpoint protection"
+          ]
+        },
+        "customer": {
+          "title": "B. Customer Access",
+          "list": [
+            "API keys with scoped permissions",
+            "Revocable credentials",
+            "Optional Litecoin-based 2FA for login (stronger than TOTP)"
+          ]
+        }
+      },
+      "application": {
+        "title": "5. Application Security",
+        "intro": "Kakr Labs implements:",
+        "list": [
+          "Continuous vulnerability scanning",
+          "Automated dependency monitoring",
+          "Static and dynamic code analysis",
+          "Secure SDLC practices",
+          "Regular threat modeling for new features",
+          "Closed-source codebase to prevent exploit replication"
+        ],
+        "deployment": {
+          "intro": "All deployments pass through:",
+          "list": [
+            "CI/CD security gates",
+            "Manual code review",
+            "Infrastructure compliance checks"
+          ]
+        }
+      },
+      "network": {
+        "title": "6. Network Security",
+        "intro": "Our networking architecture includes:",
+        "list": [
+          "Isolated VPCs",
+          "Firewalls with least-privilege rules",
+          "Private subnets for sensitive services",
+          "WAF protection",
+          "DDoS mitigation via Google Cloud Armor",
+          "Rate limiting and abuse prevention",
+          "Bot detection systems"
+        ]
+      },
+      "logging": {
+        "title": "7. Logging & Monitoring",
+        "intro": "We maintain:",
+        "list": [
+          "Real-time monitoring",
+          "Behavior anomaly detection",
+          "Secure audit logs (immutable and restricted)",
+          "Automated alerting for irregular events",
+          "Threat intelligence integration"
+        ],
+        "note": "All logs are anonymized and never contain personal data or keys."
+      },
+      "compliance": {
+        "title": "8. Compliance Alignment",
+        "intro": "Our programs align with:",
+        "list": [
+          "SOC 2 Trust Services Criteria (Security, Availability, Confidentiality) - control alignment",
+          "ISO 27001 control framework (alignment)",
+          "GDPR",
+          "HIPAA-aligned technical safeguards",
+          "Litecoin PoW protocol alignment"
+        ],
+        "note": "We maintain detailed risk assessments and vendor reviews annually."
+      },
+      "incident": {
+        "title": "9. Incident Response",
+        "intro": "We operate a multi-stage incident response program:",
+        "list": [
+          "Detection",
+          "Containment",
+          "Investigation",
+          "Remediation",
+          "Communication",
+          "Post-incident review"
+        ],
+        "note1": "In the rare event of a personal data incident, we notify affected parties without undue delay.",
+        "note2": "To date, Kakr Labs has had zero security breaches."
+      },
+      "subprocessors": {
+        "title": "10. Sub-Processors & Third-Party Security",
+        "intro": "We use only high-trust partners:",
+        "google": {
+          "title": "Google Cloud Platform",
+          "content": "Hosting, compute, networking, KMS, monitoring."
+        },
+        "openai": {
+          "title": "OpenAI (Optional)",
+          "content": "Used only for PTERI Intelligence features. No PII or wallet data is shared."
+        },
+        "note": "All vendors undergo strict compliance and security screening."
+      },
+      "bcdr": {
+        "title": "11. Business Continuity & Disaster Recovery",
+        "intro": "We maintain:",
+        "list": [
+          "Multi-region redundancy",
+          "Automated failover",
+          "Daily encrypted snapshots",
+          "High-availability infrastructure",
+          "Defined RPO/RTO objectives",
+          "Annual incident simulations"
+        ],
+        "note": "Our systems are designed for near 24/7 availability."
+      },
+      "disclosure": {
+        "title": "12. Responsible Disclosure",
+        "intro": "We encourage responsible reporting of security issues. Submit findings to:",
+        "email": "Email: contact@kakr.ai",
+        "note": "We respond promptly and appreciate contributions from the security community."
+      }
+    },
+    "trustCenter": {
+      "title": "Trust Center",
+      "subtitle": "Your Trust, Our Priority",
+      "description": "Kakr Labs builds secure Web3 solutions on Litecoin's 100% uptime blockchain, protecting against risks like $2.6B in SIM swap fraud and $4.45M in breaches. Our PTERI suite-Wallet, Playground, Intelligence, and Data-delivers decentralized 2FA (2000% stronger than traditional apps), AES-256 encryption, and low-fee transactions (~$0.19/tx).",
+      "lastUpdated": "Last updated: September 26, 2025",
+      "hostedOn": "Hosted on Azure & IBM | Powered by Litecoin PoW & AES-256 Encryption",
+      "security": {
+        "title": "Our Commitment to Security",
+        "description": "We prioritize your data and operations with industry-leading protections.",
+        "decentralized": {
+          "title": "Decentralized Architecture",
+          "description": "PTERI Wallet's self-custody ensures you control your keys; no private data stored.",
+          "list": [
+            "Self-custody of private keys",
+            "No central point of failure",
+            "Resistant to server breaches"
+          ]
+        },
+        "twofa": {
+          "title": "Cryptographic 2FA",
+          "description": "BIP-39 message signing, 2000% stronger than Google Authenticator, eliminates phishing.",
+          "list": [
+            "Immune to SIM swap attacks",
+            "Eliminates phishing vulnerabilities",
+            "Cryptographic proof of identity"
+          ]
+        },
+        "mweb": {
+          "title": "Customer-Controlled Payments",
+          "description": "Self-custodial Litecoin payments protect sensitive financial data while maintaining compliance.",
+          "list": [
+            "Self-custodial payment control",
+            "Selective disclosure for compliance",
+            "Enhanced data protection"
+          ]
+        },
+        "encryption": {
+          "title": "Encryption",
+          "description": "TLS for all data in transit; secure APIs (REST/GraphQL) with robust authentication and authorization.",
+          "list": [
+            "TLS 1.3 for all communications",
+            "API key rotation and management",
+            "Secure webhook delivery"
+          ]
+        }
+      },
+      "compliance": {
+        "title": "Compliance Standards",
+        "description": "We meet rigorous global standards to ensure your data is protected.",
+        "soc2": {
+          "title": "Security Controls & Independent Review",
+          "description": "Independent third-party security assessments and penetration testing of our systems and data integrity controls.",
+          "list": [
+            "Independent third-party security assessments and penetration testing",
+            "Internal information security program with periodic control reviews"
+          ]
+        },
+        "gdpr": {
+          "title": "GDPR & HIPAA-aligned",
+          "description": "Protecting EU and healthcare data with comprehensive privacy controls.",
+          "list": [
+            "Data minimization principles",
+            "Privacy by design architecture"
+          ]
+        },
+        "industry": {
+          "title": "Industry-Specific Compliance",
+          "description": "Meeting specialized regulatory requirements across industries.",
+          "list": [
+            "PCI DSS for payment processing",
+            "NYDFS for financial services",
+            "NIST frameworks for government"
+          ]
+        },
+        "auditLogs": {
+          "title": "Audit Logs via PTERI Data",
+          "description": "Our blockchain-based audit logs provide immutable records of all security-relevant events, ensuring transparency and accountability. These logs are tamper-proof and can be used for compliance reporting and security investigations.",
+          "list": [
+            "Immutable blockchain records",
+            "Cryptographic proof of integrity",
+            "Exportable for compliance reporting"
+          ]
+        }
+      },
+      "reliability": {
+        "title": "Reliability & Uptime",
+        "description": "Our infrastructure is designed for maximum availability and resilience.",
+        "litecoin": {
+          "title": "Litecoin Blockchain",
+          "description": "Powered by the Litecoin blockchain, running continuously since 2011.",
+          "uptime": "Uptime",
+          "value": "100%"
+        },
+        "hosting": {
+          "title": "Hosted on Azure & IBM",
+          "description": "Scalable, redundant infrastructure with global availability and disaster recovery.",
+          "availability": "Availability",
+          "value": "99.99%"
+        },
+        "platform": {
+          "title": "99.99% Platform Uptime",
+          "description": "Guaranteed for BaaS and Enterprise plans, with comprehensive SLAs and monitoring.",
+          "sla": "SLA Compliance",
+          "value": "100%"
+        }
+      },
+      "partnerships": {
+        "title": "Partnerships for Trust",
+        "description": "Our collaborations ensure reliability and security.",
+        "azure": {
+          "title": "Microsoft Azure",
+          "description": "Global hosting for secure scalability with enterprise-grade security and compliance.",
+          "list": [
+            "Global data center presence",
+            "Advanced threat protection"
+          ]
+        },
+        "ibm": {
+          "title": "IBM Partner Plus",
+          "description": "Hybrid cloud-blockchain solutions with enterprise-grade security and reliability.",
+          "list": [
+            "Hybrid cloud architecture",
+            "Enterprise blockchain expertise"
+          ]
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "Privacy-first AI for PTERI Intelligence with secure, responsible AI implementation.",
+          "list": [
+            "Privacy-preserving AI models",
+            "Responsible AI development"
+          ]
+        }
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "We believe in open, honest communication about our security practices.",
+        "noMonetization": {
+          "title": "No Data Monetization",
+          "description": "We don't sell or share your data. Your information is used only to provide and improve our services."
+        },
+        "reporting": {
+          "title": "Open Reporting",
+          "description": "Regular security audits published (Q1 2026 next). We share our security practices and findings openly."
+        },
+        "privacy": {
+          "title": "Privacy Policy",
+          "description": "Clear data practices at Privacy Policy. We're transparent about how we collect, use, and protect your data."
+        }
+      },
+      "assurance": {
+        "title": "Customer Assurance",
+        "description": "Don't just take our word for it. Hear from our customers.",
+        "fintech": {
+          "name": "Fintech Director",
+          "role": "Financial Services",
+          "quote": "Kakr's 2FA and compliance tools cut our fraud by 90% and streamlined audits. The implementation was smooth and our customers appreciate the added security."
+        },
+        "healthcare": {
+          "name": "Healthcare IT Lead",
+          "role": "Regional Hospital",
+          "quote": "PTERI Data's immutable logs ensured our HIPAA compliance. The transparency and security have improved our regulatory reporting and patient trust."
+        },
+        "placeholder": "Replace with real testimonials as available."
+      },
+      "contact": {
+        "title": "Contact Our Trust Team",
+        "description": "For security or compliance inquiries, we're here to help.",
+        "getInTouch": {
+          "title": "Get in Touch",
+          "description": "Have questions about our security practices, compliance certifications, or data protection? Our dedicated Trust team is ready to assist you.",
+          "emailLabel": "Email",
+          "emailValue": "contact@kakr.ai",
+          "phoneLabel": "Phone",
+          "phoneValue": ""
+        },
+        "form": {
+          "title": "Submit an Inquiry",
+          "nameLabel": "Name",
+          "namePlaceholder": "Your name",
+          "emailLabel": "Email",
+          "emailPlaceholder": "you@example.com",
+          "messageLabel": "Message",
+          "messagePlaceholder": "Your inquiry",
+          "submit": "Submit Inquiry"
+        }
+      },
+      "cta": {
+        "title": "Ready to Build with Confidence?",
+        "description": "Start with our free 2FA API or explore a 3-month pilot at 50% off.",
+        "startFree": "Start Free",
+        "contactTeam": "Contact Trust Team"
+      },
+      "footer": {
+        "tagline": "Kakr Labs: Secure Web3 Innovation You Can Trust.",
+        "poweredBy": "Hosted on Azure & IBM | Powered by Litecoin PoW & AES-256 Encryption"
+      }
+    },
+    "aup": {
+      "title": "Acceptable Use Policy (AUP)",
+      "lastUpdated": "Last Updated: September 26, 2025",
+      "entity": "Entity: Kakr Labs, Inc. (Wyoming C-Corp)",
+      "intro": "This Acceptable Use Policy (ï¿½AUPï¿½) applies to all users of Kakr Labs Inc. (ï¿½Kakr Labs,ï¿½ ï¿½we,ï¿½ ï¿½our,ï¿½ or ï¿½usï¿½) including access to:",
+      "servicesList": [
+        "PTERI Wallet",
+        "PTERI Playground",
+        "PTERI Intelligence",
+        "PTERI Data",
+        "Kakr Labs APIs (Blockchain-as-a-Service, Authentication, and Developer Tools)",
+        "Kakr Labs Dashboard",
+        "kakr.org, kakr.io, and all related web services"
+      ],
+      "agreement": "By using any Kakr Labs product or service, you agree to comply with this AUP. Failure to comply may result in suspension or termination of access, legal action, and reporting to relevant authorities.",
+      "prohibited": {
+        "title": "1. Prohibited Activities",
+        "intro": "Users must NOT use Kakr Labs services for any of the following:",
+        "illegal": {
+          "title": "A. Illegal Activities",
+          "content": "You may not use Kakr Labs services for activities that violate any applicable law, including but not limited to:",
+          "list": [
+            "Fraud, identity theft, or impersonation",
+            "Money laundering or terrorist financing",
+            "Distribution of stolen or illegal goods",
+            "Unauthorized access to financial systems",
+            "Child exploitation or harm",
+            "Illegal gambling",
+            "Activities prohibited under U.S. export control or sanctions laws"
+          ]
+        },
+        "crypto": {
+          "title": "B. Cryptocurrency Abuse",
+          "content": "You may not use Kakr Labs products to:",
+          "list": [
+            "Create or distribute scams, phishing, or rug pulls",
+            "Operate mixers, tumblers, or transaction obfuscation tools",
+            "Execute pump-and-dump schemes",
+            "Evade sanctions or AML/KYC processes",
+            "Perform unauthorized blockchain scraping or harvesting"
+          ]
+        },
+        "wallet": {
+          "title": "C. Wallet Misuse",
+          "content": "You may not:",
+          "list": [
+            "Attempt to extract, intercept, or tamper with another userï¿½s private keys",
+            "Reverse-engineer or interfere with PTERI Wallet security",
+            "Use PTERI Wallet as a backend for automated botnets",
+            "Attempt to bypass the self-custody design"
+          ]
+        },
+        "api": {
+          "title": "D. API Abuse",
+          "content": "Prohibited uses include:",
+          "list": [
+            "Excessive API calls beyond permitted rate limits",
+            "DDoS, stress testing, or load generation",
+            "Automated account creation",
+            "Reverse-engineering or scraping internal node infrastructure",
+            "Attempting to impersonate Kakr Labs services",
+            "Interfering with node operations or blockchain integrity"
+          ]
+        },
+        "security": {
+          "title": "E. Security Violations",
+          "content": "Strictly prohibited:",
+          "list": [
+            "Probing, scanning, or testing system vulnerabilities",
+            "Attempting to bypass authentication, encryption, or access controls",
+            "Injecting malware, ransomware, or malicious scripts",
+            "Exploiting any security flaw without responsible disclosure"
+          ]
+        },
+        "behavior": {
+          "title": "F. Harmful or Abusive Behavior",
+          "content": "Users may not:",
+          "list": [
+            "Harass Kakr Labs staff",
+            "Misrepresent affiliation with Kakr Labs",
+            "Interfere with another userï¿½s access",
+            "Use Kakr Labs services to spam, distribute malware, or transmit harmful code"
+          ]
+        }
+      },
+      "geo": {
+        "title": "2. High-Risk Geographic Restrictions",
+        "intro": "Kakr Labs services may not be used from jurisdictions subject to:",
+        "list": [
+          "U.S. OFAC sanctions",
+          "U.S. Export Control restrictions",
+          "Prohibited or embargoed regions"
+        ],
+        "note": "We reserve the right to deny or restrict access based on geopolitical risk."
+      },
+      "content": {
+        "title": "3. Content Restrictions",
+        "intro": "Kakr Labs services must not be used to generate, transmit, or store:",
+        "list": [
+          "Hate speech",
+          "Violence or extremist content",
+          "Explicit or sexual content involving minors",
+          "False information designed to mislead or cause harm",
+          "Personally identifiable information (PII) without lawful basis"
+        ],
+        "note": "This applies especially to PTERI Intelligence (AI features)."
+      },
+      "fairUse": {
+        "title": "4. Fair Use & Resource Protection",
+        "intro": "Users must not:",
+        "list": [
+          "Consume excessive resources",
+          "Abuse free tiers",
+          "Circumvent billing or metering systems",
+          "Attempt to overload blockchain nodes or infrastructure"
+        ],
+        "note": "We may throttle, restrict, or suspend usage if abuse is detected."
+      },
+      "selfCustody": {
+        "title": "5. Self-Custody Responsibility",
+        "intro": "You acknowledge:",
+        "list": [
+          "Kakr Labs cannot recover private keys or seed phrases",
+          "Kakr Labs cannot access your wallet or assets",
+          "Loss of keys results in permanent, irreversible loss"
+        ],
+        "note": "Users are solely responsible for secure backup and storage."
+      },
+      "enforcement": {
+        "title": "6. Enforcement",
+        "intro": "Kakr Labs may take any of the following actions:",
+        "list": [
+          "Immediate service suspension",
+          "Termination of accounts",
+          "IP or region blocking",
+          "API key revocation",
+          "Notification to law enforcement",
+          "Legal action for damages or misuse"
+        ],
+        "note": "We may act without prior notice if necessary to protect security."
+      },
+      "reporting": {
+        "title": "7. Reporting Violations",
+        "intro": "To report any abuse, security flaw, or suspicious activity:",
+        "email": "Email: contact@kakr.ai"
+      },
+      "changes": {
+        "title": "8. Changes to This AUP",
+        "content": "We may update this AUP at any time. Continued use of Kakr Labs services constitutes acceptance of the updated policy."
+      }
+    }
+  },
+  "partnerships": {
+    "meta": {
+      "title": "Partnerships - Kakr Labs",
+      "description": "Strategic partnerships and collaborations that enable enterprise-grade Web3 solutions on the Litecoin blockchain."
+    },
+    "hero": {
+      "title": "Our Partners &",
+      "subtitle": "Ecosystem",
+      "description": "Kakr Labs is supported by leading global technology partners who share our vision for secure, decentralized authentication and identity. From Microsoft to IBM to Google, our partnership journey reflects our commitment to building world-class infrastructure.",
+      "contact": "Contact Partnerships"
+    },
+    "journey": {
+      "title": "Our Partnership Journey",
+      "description": "Kakr Labs has grown through three major partnership phases - each strengthening our technology, infrastructure, and enterprise capabilities.",
+      "microsoft": {
+        "title": "Microsoft for Startups",
+        "phase": "Phase 1: 2022 ? March 2025",
+        "role": "Our first major technical and cloud partner.",
+        "list": [
+          "Azure credits",
+          "Engineering resources",
+          "Business support",
+          "Cloud tooling",
+          "Startup acceleration"
+        ],
+        "outcome": "This partnership helped us build our early platform foundations and scale from prototype ? production."
+      },
+      "ibm": {
+        "title": "IBM Partner Plus",
+        "phase": "Phase 2: March 2025 ? Dec 2025",
+        "role": "Advanced enterprise positioning and security posture.",
+        "list": [
+          "Enterprise-grade frameworks",
+          "Compliance alignment",
+          "Security-focused development",
+          "Infrastructure strategy",
+          "Partnerships in traditional industries"
+        ],
+        "outcome": "IBM's ecosystem helped us refine our identity, IoT, and decentralized authentication offerings."
+      },
+      "google": {
+        "title": "Google for Startups",
+        "phase": "? Phase 3: June 2025 ? Present",
+        "role": "Our current and primary partnership.",
+        "list": [
+          "Google Cloud infrastructure credits",
+          "Access to Google Cloud engineers",
+          "AI/ML tooling via Gemini 3 & Gemini 2.5",
+          "Networking & scaling resources",
+          "Startup ecosystem support"
+        ],
+        "outcome": "This is now our main partnership and the foundation of our global infrastructure."
+      }
+    },
+    "infrastructure": {
+      "title": "Our Infrastructure Today",
+      "googleCloud": {
+        "title": "Google Cloud (Primary Infrastructure Provider)",
+        "description": "All Kakr Labs backend services - including PTERI Authentication, PTERI APIs, PTERI IoT, and developer infrastructure - run exclusively on Google Cloud, ensuring:",
+        "features": [
+          "Multi-zone redundancy",
+          "Enterprise-grade networking",
+          "Hardened VPC isolation",
+          "Encryption at rest & in transit",
+          "Automatic scaling",
+          "Global availability"
+        ],
+        "note": "Google Cloud is the backbone of the PTERI ecosystem."
+      }
+    },
+    "ai": {
+      "title": "AI & Intelligence Partnerships",
+      "gemini": {
+        "title": "Gemini 3 & Gemini 2.5 (Google AI)",
+        "description": "PTERI Intelligence, our AI-powered developer assistant, is built using Gemini 3 and Gemini 2.5. These models enable:",
+        "features": [
+          "AI-generated blockchain calls",
+          "Debugging & code generation",
+          "Authentication flow automation",
+          "Developer onboarding",
+          "IoT provisioning scripts"
+        ],
+        "choice": "We chose Gemini because it gives us:",
+        "reasons": [
+          "Speed",
+          "Intelligence",
+          "Deep contextual reasoning",
+          "Multi-modal capabilities",
+          "Tight Google Cloud integration"
+        ]
+      }
+    },
+    "ecosystem": {
+      "title": "Additional Ecosystem Partners",
+      "litecoin": {
+        "title": "Litecoin Ecosystem",
+        "description": "Our entire platform is built on Litecoin - a secure, decentralized blockchain with:",
+        "features": [
+          "Bitcoin-like architecture",
+          "Predictable issuance",
+          "Fast, low-cost confirmations",
+          "Low fees",
+          "12+ years of uptime",
+          "Regulatory clarity"
+        ]
+      },
+      "flutter": {
+        "title": "Flutter",
+        "description": "Used to power the PTERI Wallet on iOS and Android.",
+        "note": "Cross-platform development framework enabling seamless mobile experiences."
+      }
+    },
+    "why": {
+      "title": "Why Partner With Kakr Labs",
+      "reasons": [
+        "Enterprise security, zero-custody models, and decentralized authentication",
+        "Specialized infrastructure on the Litecoin blockchain",
+        "Multi-product platform (Wallet, APIs, IoT, AI, Authentication)",
+        "Proven partnerships with Microsoft, IBM & Google",
+        "Built entirely on battle-tested, Bitcoin-like infrastructure",
+        "Long-term, high-impact partnerships that push identity forward"
+      ]
+    },
+    "benefits": {
+      "title": "What These Partnerships Enable",
+      "subtitle": "Strategic collaborations that deliver enterprise-grade capabilities and compliance.",
+      "cardTitle": "Partnership Benefits",
+      "compliance": {
+        "title": "Compliance Readiness",
+        "text": "Audit-ready evidence and controls from day one"
+      },
+      "distribution": {
+        "title": "Cloud Distribution",
+        "text": "Secure and global access to PTERI nodes via Azure/IBM"
+      },
+      "credibility": {
+        "title": "Credibility",
+        "text": "Trusted infrastructure support for enterprise clients"
+      },
+      "innovation": {
+        "title": "Innovation Boost",
+        "text": "AI and automation support from leading cloud teams"
+      }
+    },
+    "contact": {
+      "media": {
+        "title": "Verifications & Media Kit",
+        "text": "All partner affiliations are verifiable and backed by program materials.",
+        "linkText": "To request a media kit or onboarding docs:"
+      },
+      "partner": {
+        "title": "Become a Partner",
+        "text": "Ready to build with us? Let's create the future of authentication and identity.",
+        "cta": "Become a Partner"
+      }
+    }
+  },
+  "apiPage": {
+    "badge": "PTERI for Developers",
+    "hero": {
+      "title": "Add Identity and Authorization to Any Workflow",
+      "titlePart1": "Add Identity and ",
+      "titleHighlight": "Authorization",
+      "subtitle": "to Any Workflow",
+      "description": "Use PTERI APIs, SDKs, and MCP integrations to authenticate users, authorize agents, protect credentials, and verify sensitive actions.",
+      "badges": {
+        "uptime": "Enterprise-Grade Infrastructure",
+        "litecoin": "MCP-Ready",
+        "agnostic": "Language-Agnostic"
+      },
+      "cta": {
+        "docs": "Start the Quickstart",
+        "wallet": "View API Reference",
+        "download": "Open Developer Dashboard"
+      }
+    },
+    "devProblem": {
+      "title": "The Developer Problem",
+      "description": "As systems scale, secret-based authorization becomes fragile, difficult to audit, and dangerous to revoke safely.",
+      "failureTitle": "The Failure of Shared Secrets",
+      "leakedCredentials": {
+        "title": "Leaked Credentials",
+        "description": "API keys are copied, logged, leaked, and reused across systems."
+      },
+      "persistentAccess": {
+        "title": "Persistent Access",
+        "description": "Long-lived tokens remain active long after the original intent has expired."
+      },
+      "scopeCreep": {
+        "title": "Excessive Permissions",
+        "description": "Credentials grant more access than a person or agent actually needs."
+      },
+      "unsafeDelegation": {
+        "title": "Unclear Agent Authority",
+        "description": "An agent may have access without proof that a user or organization approved its specific action."
+      }
+    },
+    "authority": {
+      "title": "APIs Built on Verifiable Authority",
+      "signedRequests": {
+        "title": "Signed Requests",
+        "description": "Requests are signed by a device-owned or agent-delegated key — no shared secret needed."
+      },
+      "verifiedAuthority": {
+        "title": "Verified Authority",
+        "description": "Identity, delegation, scope, policy, and expiration are evaluated at request time."
+      },
+      "deterministicPolicy": {
+        "title": "Policy Evaluation",
+        "description": "Applicable policy is evaluated at the moment the action is requested."
+      },
+      "cleanOutcomes": {
+        "title": "Allow or Deny",
+        "description": "Every request produces a verifiable allow or deny result with evidence."
+      }
+    },
+    "quickStart": "Quickstart — Pseudocode",
+    "coreCapabilities": {
+      "title": "Core API Capabilities",
+      "authentication": {
+        "title": "Passwordless MFA",
+        "description": "Add passwordless authentication to existing applications, portals, and workforce workflows."
+      },
+      "authorization": {
+        "title": "Runtime Authorization",
+        "description": "Verify identity, scope, context, and policy before a consequential action is executed."
+      },
+      "aiDelegation": {
+        "title": "Agent Authorization",
+        "description": "Give every AI agent a verifiable identity and narrowly scoped authority that can be managed and revoked."
+      },
+      "payments": {
+        "title": "Payments and Approvals",
+        "description": "Customer-controlled Litecoin payments with cryptographic approval and policy-based spending controls."
+      },
+      "policy": {
+        "title": "Action Evidence",
+        "description": "Produce tamper-evident evidence connecting an action to its identity, authority, and governing policy."
+      }
+    },
+    "howItWorks": {
+      "title": "From Identity to Verified Action",
+      "steps": {
+        "0": "Identify — establish a verifiable identity",
+        "1": "Authenticate — confirm without shared secrets",
+        "2": "Authorize — define scope, policy, expiration",
+        "3": "Verify — evaluate authority at request time",
+        "4": "Allow or Deny",
+        "4sub": "With verifiable evidence"
+      }
+    },
+    "mcp": {
+      "badge": "MCP Integration",
+      "title": "MCP and Tool Security",
+      "description": "PTERI documentation includes MCP-oriented capabilities for verifying authority when agents access tools and services. Agents operate within verifiable, scoped boundaries — auditable and revocable."
+    },
+    "verificationInfrastructure": {
+      "badge": "Verification Infrastructure",
+      "title": "Infrastructure APIs",
+      "description": "Litecoin proof-of-work components used as the independent verification layer beneath PTERI's authorization evidence — kept separate from the identity and authorization APIs above."
+    },
+    "environments": {
+      "title": "Supported Environments",
+      "description": "Works alongside existing identity providers, applications, AI agents, MCP servers, and cloud infrastructure. Start with one sensitive workflow and expand over time."
+    },
+    "nextSteps": {
+      "title": "Start Building",
+      "description": "API reference, SDKs, integration guides, and MCP documentation — all in one place at docs.kakr.ai.",
+      "docs": "View API Reference",
+      "bookCall": "Book an Enterprise Demo"
+    },
+    "finalCta": {
+      "title": "Add PTERI at the Access and Action Boundary",
+      "docs": "View Documentation",
+      "wallet": "Open PTERI App",
+      "start": "Get an API Key"
+    }
+  },
+  "platform": {
+    "header": {
+      "eyebrow": "PTERI Platform",
+      "title": {
+        "deterministic": "One",
+        "identity": "Authorization Model",
+        "for": " for",
+        "humansAI": "Humans and AI"
+      },
+      "subtitle": "Protect workforce access, AI-agent activity, and sensitive enterprise operations with passwordless authentication, scoped authority, and verifiable evidence.",
+      "stats": {
+        "zero": "Zero",
+        "sharedSecrets": "Shared Secrets",
+        "hundredPercent": "100%",
+        "selfCustodial": "Self-Custodial",
+        "binary": "Binary",
+        "outcomesOnly": "Outcomes Only"
+      },
+      "cta": {
+        "download": "Start Building Free",
+        "demo": "View Documentation"
+      }
+    },
+    "proofCard": {
+      "label": "PTERI Verification",
+      "steps": [
+        "Device Key Loaded",
+        "Request Signed",
+        "Cryptographic Anchor",
+        "Authority Verified"
+      ],
+      "result": "Authority Verified — Access Granted"
+    },
+    "flowStrip": {
+      "label": "Device → Cryptographic Proof → Verifiable Action",
+      "steps": [
+        "User Device",
+        "Device Keys",
+        "PTERI API",
+        "Verified Anchor",
+        "Verified ✓"
+      ]
+    },
+    "interactiveDemo": {
+      "overline": "Interactive Demo",
+      "title": "See PTERI [span]In Action[/span]",
+      "description": "Experience the self-custodial web wallet interface used to authorize requests and manage verifiable identity.",
+      "iframeTitle": "PTERI Web Wallet Demo"
+    },
+    "problem": {
+      "overline": "The Root Problem",
+      "title": "Why Identity Keeps [span]Failing[/span]",
+      "description": "Identity failures are structural. As AI and automation accelerate, fragile systems fail more often — and cost more.",
+      "legacy": {
+        "badge": "Legacy Systems",
+        "risk": "HIGH RISK",
+        "footer": "⚠ Probabilistic. Fallible. Not verifiable at the moment of action.",
+        "rows": [
+          { "from": "User Request", "to": "Passwords guessed" },
+          { "from": "Risk Signals", "to": "OTPs intercepted" },
+          { "from": "Infer Identity", "to": "Credentials stolen" },
+          { "from": "Allow / Deny", "to": "Probabilistic guess" }
+        ]
+      },
+      "pteri": {
+        "badge": "PTERI",
+        "risk": "CRYPTOGRAPHIC",
+        "footer": "✓ Deterministic. Binary. Cryptographically proven.",
+        "rows": [
+          { "from": "User Request", "to": "Cryptographic Proof" },
+          { "from": "Device Signs", "to": "Verified on-chain" },
+          { "from": "PTERI Verifies", "to": "Deterministic ID" },
+          { "from": "Allow / Deny", "to": "Binary outcome ✓" }
+        ]
+      }
+    },
+    "authority": {
+      "overline": "Defining Properties",
+      "title": "Identity as[br][span]Cryptographic[br]Authority[/span]",
+      "description": "No shared secrets. No custodial storage. No probability scores. Just cryptographic proof.",
+      "properties": [
+        "Identity bound to on-device cryptographic keys",
+        "Keys generated and held solely by the authority holder",
+        "Zero shared secrets exchanged with any server",
+        "Proof is stateless and independently verifiable",
+        "No confidence scores or reputation systems used"
+      ],
+      "card": {
+        "name": "PTERI Authority Model",
+        "tags": "Zero-Custody · Deterministic · Verifiable",
+        "conclusion": "If authority proven → [strong]Access Granted[/strong]. If not → [strong]Access Denied[/strong].",
+        "items": [
+          { "label": "Device-Bound Keys", "desc": "Generated & stored only on your device" },
+          { "label": "Cryptographic Signatures", "desc": "Every action signed — no shared secrets" },
+          { "label": "Litecoin PoW Anchoring", "desc": "Cryptographically anchored, globally verifiable" },
+          { "label": "Binary Outcome", "desc": "Allow or deny — no ambiguity, no guessing" }
+        ]
+      }
+    },
+    "coreModules": {
+      "overline": "Core Platform Capabilities",
+      "title": "Core Platform [span]Capabilities[/span]",
+      "items": [
+        { "title": "Passwordless MFA", "sub": "Workforce Authentication", "desc": "Add passwordless cryptographic authentication to existing applications, portals, and workforce workflows without requiring a full replacement." },
+        { "title": "Verifiable Identity", "sub": "Identity Management", "desc": "Establish a distinct verifiable identity for people, agents, applications, and devices that can be managed and revoked." },
+        { "title": "Runtime Authorization", "sub": "AI Agents & Agent-to-Agent", "desc": "Define what each agent may do, which resources it may access, and how long its authority remains valid. Enforce policy at the moment of action." },
+        { "title": "Credential Protection", "sub": "Google Cloud Infrastructure", "desc": "Keep keys and authorization material outside prompts, agent memory, and exposed runtime components. Google Cloud-backed with enterprise-grade reliability." },
+        { "title": "Payments and Approvals", "sub": "Customer-Controlled Litecoin", "desc": "Customer-controlled Litecoin payments with policy-based spending controls and cryptographic settlement." },
+        { "title": "Developer and MCP Tools", "sub": "SDK, REST API & MCP", "desc": "Full SDKs and MCP integrations for rapid integration. Start with one sensitive workflow and expand over time." }
+      ]
+    },
+    "teamsAndCases": {
+      "teams": {
+        "overline": "Who It's For",
+        "title": "Built for [span]High-Trust Workflows[/span]",
+        "items": [
+          { "title": "Fintech & Financial Services", "desc": "Add passwordless access and action-level authorization to financial workflows." },
+          { "title": "AI Platforms", "desc": "Give agents verifiable identity and scoped authority for every action." },
+          { "title": "Enterprise SaaS", "desc": "Strengthen existing access controls without replacing your stack." },
+          { "title": "Payment Infrastructure", "desc": "Add cryptographic approval to payments and sensitive financial operations." }
+        ]
+      },
+      "useCases": {
+        "overline": "Use Cases",
+        "title": "[span]Identity[/span] Use Cases",
+        "items": [
+          { "title": "Passwordless Login", "desc": "Replace passwords with cryptographic proof." },
+          { "title": "Replace SMS / TOTP 2FA", "desc": "Eliminate phishable OTPs with wallet-signed auth." },
+          { "title": "Admin & Privileged Access", "desc": "No shared credentials for internal tools." },
+          { "title": "Service & System Identity", "desc": "Replace static API keys with scoped authority." },
+          { "title": "AI Agent Identity", "desc": "Verifiable authority for autonomous AI agents." },
+          { "title": "Self-Custodial Payments", "desc": "Authorize Litecoin with no custodian." }
+        ]
+      }
+    },
+    "devExp": {
+      "overline": "Developer Experience",
+      "title": "Designed for[br][span]Incremental Integration[/span]",
+      "description": "Drop-in cryptographic identity. Works alongside your existing stack — no rewrites required.",
+      "readDocs": "Read the Docs",
+      "features": [
+        { "title": "Drop-in SDK", "desc": "npm install and integrate in minutes. Works alongside OAuth, JWT, and existing auth flows." },
+        { "title": "Incremental Adoption", "desc": "Layer PTERI on top of existing systems. Start with MFA, expand to payments or AI." },
+        { "title": "Language Agnostic", "desc": "SDKs for JS, Python, Java, PHP, Go. REST API works with any stack." },
+        { "title": "MCP2 AI Integration", "desc": "AI-powered MCP2 tools let LLMs and agents call PTERI to sign, verify, or delegate." }
+      ],
+      "codePanel": {
+        "filename": "verify.ts",
+        "tag": "TypeScript",
+        "comments": {
+          "install": "// npm install {'@'}kakr/pteri-sdk",
+          "verify": "// Verify a signed request — no backend secrets needed",
+          "unauthorized": "Authority not proven",
+          "deterministic": "// Deterministic. Binary. No guessing."
+        },
+        "stats": {
+          "zeroKeys": "Zero API keys stored",
+          "anyFramework": "Works with any framework"
+        }
+      }
+    },
+    "finalCta": {
+      "overline": "Start Building",
+      "title": "One Authorization Model.[br][span]Every Workflow.[/span]",
+      "subtitle": "Start with one application, one agent, or one sensitive workflow and add passwordless authentication and runtime authorization without replacing your existing infrastructure.",
+      "ctas": {
+        "identity": "Start Building Free",
+        "blockchain": "View Integration Guides",
+        "sales": "Book an Enterprise Demo"
+      }
+    },
+    "seo": {
+      "title": "PTERI Platform | Passwordless MFA and AI-Agent Authorization",
+      "description": "Protect workforce access, AI-agent activity, and sensitive enterprise operations with passwordless authentication, scoped authority, and verifiable evidence."
+    }
+  },
+  "hubspotForm": {
+    "headingPart1": "We'd love to",
+    "headingHighlight": "hear from you!",
+    "headingPart2": "Please fill out the form and we'll get back to you as soon as possible.",
+    "companyName": "Company Name *",
+    "companyWebsite": "Company Website",
+    "companySize": "Company Size",
+    "companySizeOptions": {
+      "1-10": "1-10 employees",
+      "11-50": "11-50 employees",
+      "51-200": "51-200 employees",
+      "201-1000": "201-1000 employees",
+      "1000+": "1000+ employees"
+    },
+    "industry": "Industry",
+    "pilotGoal": "Primary Pilot Goal",
+    "pilotGoalOptions": {
+      "replaceSms": "Replace SMS-based 2FA",
+      "preventSimSwap": "Prevent SIM swap fraud",
+      "reducePhishing": "Reduce phishing & account takeover",
+      "secureAi": "Secure AI agents",
+      "cloudProvider": "Cloud Provider",
+      "addLitecoin": "Add Litecoin blockchain infrastructure",
+      "evaluateMweb": "Evaluate self-custody wallet tools"
+    },
+    "authMethod": "Current Authentication Method",
+    "authMethodOptions": {
+      "passwordsOnly": "Passwords Only",
+      "passwordsSms": "Passwords + SMS OTP",
+      "passwordsEmail": "Passwords + Email OTP",
+      "totp": "Authenticator App (TOTP)",
+      "passkeys": "Passkeys / WebAuthn",
+      "other": "Other"
+    },
+    "otpVolume": "Estimated Monthly OTP Volume",
+    "verifications": "Estimated Monthly Verifications",
+    "apiCalls": "Estimated Monthly Blockchain API Calls",
+    "fraudLabel": "Have You Experienced Fraud in the Last 12 Months?",
+    "yes": "Yes",
+    "no": "No",
+    "backendLanguage": "Primary Backend Language",
+    "backendLanguageOptions": {
+      "nodejs": "Node.js",
+      "python": "Python",
+      "go": "Go",
+      "java": "Java",
+      "php": "PHP",
+      "ruby": "Ruby",
+      "csharp": "C# / .NET",
+      "other": "Other"
+    },
+    "deployment": "Deployment Preference",
+    "deploymentOptions": {
+      "saas": "Kakr Cloud (SaaS)",
+      "onPrem": "Self-Hosted (On-Prem)",
+      "hybrid": "Hybrid"
+    },
+    "useCase": "Use Case Description",
+    "leadName": "Technical Lead Name *",
+    "leadEmail": "Technical Lead Email *",
+    "securityEmail": "Security Contact Email",
+    "phone": "Phone Number",
+    "searchCountry": "Search country...",
+    "submit": "Submit",
+    "done": "Done",
+    "successTitle": "Thank you!",
+    "successMessage": "Your message has been received. We'll be in touch within 1 business day.",
+    "errorRequired": "Please fill out all required fields (*).",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorFailed": "Submission failed. Please try again."
+  }
+}

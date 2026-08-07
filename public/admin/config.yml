@@ -1,0 +1,438 @@
+# KAKR Newsroom — editor configuration
+#
+# This file defines what an editor sees at /admin. Every field maps to one
+# frontmatter key in content/newsroom/*.md, and every label is written in plain
+# language: handoff §6 requires that the editor never needs to touch frontmatter,
+# config files or Vue components.
+#
+# If you add a field to content.config.ts, add it here too — otherwise it exists in
+# the schema but nobody can set it.
+
+backend:
+  name: github
+  repo: dev-bikash-roy/kakr-ai
+  branch: main
+  # Points at KAKR's own OAuth service (server/api/admin/auth.get.ts) rather than
+  # Netlify's, so the GitHub client secret stays on KAKR infrastructure.
+  base_url: https://kakr.ai
+  auth_endpoint: api/admin/auth
+  commit_messages:
+    create: 'content(newsroom): create "{{slug}}"'
+    update: 'content(newsroom): update "{{slug}}"'
+    delete: 'content(newsroom): delete "{{slug}}"'
+    uploadMedia: 'content(newsroom): upload {{path}}'
+    deleteMedia: 'content(newsroom): remove {{path}}'
+
+# Editorial workflow: Save Draft opens a pull request instead of committing to
+# main, so drafts and approvals have version history and review happens before
+# anything is deployed (handoff §6).
+publish_mode: editorial_workflow
+
+# Uploads are committed to the repository alongside the article, so images are
+# versioned and roll back with the content. No `media_library` block: that key
+# configures third-party providers, and KAKR deliberately uses the repo-backed
+# default so no image ever leaves KAKR infrastructure.
+media_folder: public/uploads/newsroom
+public_folder: /uploads/newsroom
+
+# Preview links point at the branch deployment for the open pull request, so
+# "Preview" shows the real production article template rather than an approximation.
+site_url: https://kakr.ai
+display_url: https://kakr.ai
+logo_url: https://kakr.ai/kakrlabs-logo.png
+
+collections:
+  - name: newsroom
+    label: Newsroom articles
+    label_singular: article
+    description: >-
+      Everything KAKR publishes: announcements, product updates, security
+      research, engineering notes, tutorials and company news. One article here
+      updates its own page, the Newsroom, its category view, the homepage cards,
+      the announcement bar, the RSS feed and the sitemap.
+    folder: content/newsroom
+    media_folder: /public/uploads/newsroom/{{year}}/{{month}}
+    public_folder: /uploads/newsroom/{{year}}/{{month}}
+    create: true
+    # The filename IS the article URL, and it is built from the URL slug field so
+    # the two can never disagree. The build fails if they do.
+    slug: '{{fields.slug}}'
+    identifier_field: title
+    summary: '{{title}}  ·  {{status}}  ·  {{category}}'
+    sortable_fields: [published_at, title, status, category]
+    view_groups:
+      - label: Status
+        field: status
+      - label: Category
+        field: category
+    editor:
+      preview: false
+
+    fields:
+      # ---------------------------------------------------------------- basics
+      - label: Headline
+        name: title
+        widget: string
+        hint: The article H1 and the card title. Aim for under 70 characters.
+
+      - label: URL slug
+        name: slug
+        widget: string
+        pattern:
+          ['^[a-z0-9][a-z0-9-]*$', 'Lowercase letters, numbers and hyphens only — for example: why-agents-need-mission-control']
+        hint: >-
+          Becomes kakr.ai/newsroom/THIS. Do not change it after publishing — the old
+          URL would break. Ask a developer to add a redirect if it must change.
+
+      - label: Summary
+        name: summary
+        widget: text
+        pattern: ['^.{140,220}$', 'Please write between 140 and 220 characters.']
+        hint: >-
+          Shown on cards, under the headline, and in Google and social previews.
+          140–220 characters. Say what the reader gets, not what the article is about.
+
+      - label: Category
+        name: category
+        widget: select
+        default: announcement
+        options:
+          - { label: 'Announcement', value: announcement }
+          - { label: 'Product Update', value: product-update }
+          - { label: 'Security & AI', value: security-ai }
+          - { label: 'Engineering', value: engineering }
+          - { label: 'Tutorial', value: tutorial }
+          - { label: 'Company', value: company }
+        hint: >-
+          Decides which category page the article appears on. Product Update also
+          requires an availability label further down.
+
+      # -------------------------------------------------------------- workflow
+      - label: Status
+        name: status
+        widget: select
+        default: draft
+        options:
+          - { label: 'Draft — not visible to anyone', value: draft }
+          - { label: 'Needs technical review', value: technical-review }
+          - { label: 'Needs security review', value: security-review }
+          - { label: 'Needs brand review', value: brand-review }
+          - { label: 'Scheduled — set the publish date below', value: scheduled }
+          - { label: 'Published — live on kakr.ai', value: published }
+          - { label: 'Archived — removed from the site, kept in history', value: archived }
+        hint: >-
+          Only "Published" appears on the site, and only once the publish date below
+          has passed. Anything else is invisible to visitors, search engines and the
+          RSS feed.
+
+      - label: Publish date and time (UTC)
+        name: published_at
+        widget: datetime
+        date_format: 'YYYY-MM-DD'
+        time_format: 'HH:mm'
+        format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
+        picker_utc: true
+        hint: >-
+          Set this in the future together with Status = Published to schedule an
+          article. It goes live on its own within about five minutes of this time —
+          no developer needed.
+
+      - label: Last updated (UTC)
+        name: updated_at
+        widget: datetime
+        required: false
+        date_format: 'YYYY-MM-DD'
+        time_format: 'HH:mm'
+        format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
+        picker_utc: true
+        hint: Fill this in when you materially change an article that is already live.
+
+      # ---------------------------------------------------------------- author
+      - label: Author name
+        name: author_name
+        widget: string
+        default: KAKR Labs
+
+      - label: Author role
+        name: author_role
+        widget: string
+        required: false
+        hint: 'For example: Security Research, Engineering Team.'
+
+      # ---------------------------------------------------------------- images
+      - label: Hero image
+        name: hero_image
+        widget: image
+        required: false
+        hint: >-
+          Wide 16:9 image, ideally 1600x900. Required if you want to feature this on
+          the homepage. No stock photos of hooded hackers, robot faces or
+          cryptocurrency coins — one clear idea per image.
+
+      - label: Hero image description (alt text)
+        name: hero_alt
+        widget: string
+        required: false
+        hint: >-
+          Describe what the image shows, for screen readers. Required whenever a
+          hero image is set — the build will fail without it.
+
+      - label: Hero caption
+        name: hero_caption
+        widget: string
+        required: false
+
+      - label: Social sharing image
+        name: social_image
+        widget: image
+        required: false
+        hint: >-
+          1200x630. This is the picture people see when the link is shared on X,
+          LinkedIn or Slack. Required before promoting an article.
+
+      # -------------------------------------------------------------- homepage
+      - label: Feature this on the homepage
+        name: featured
+        widget: boolean
+        default: false
+        hint: >-
+          The large lead card in "Latest from KAKR". Only one article is used at a
+          time — the one with the lowest order number below. Needs a hero image.
+
+      - label: Feature order
+        name: featured_rank
+        widget: number
+        required: false
+        value_type: int
+        min: 1
+        hint: Lower wins. Only matters if more than one article is featured.
+
+      # ------------------------------------------------------- announcement bar
+      - label: Announcement bar
+        name: announcement
+        widget: object
+        collapsed: true
+        required: false
+        summary: '{{fields.enabled}} — {{fields.label}} · {{fields.short_title}}'
+        hint: >-
+          The strip across the top of every page. Only one announcement shows at a
+          time; if several are live, the highest priority wins.
+        fields:
+          - label: Show this article in the announcement bar
+            name: enabled
+            widget: boolean
+            default: false
+
+          - label: Badge text
+            name: label
+            widget: string
+            default: NEW
+            hint: The small pill at the start of the bar. Keep it to one short word.
+
+          - label: Bar headline
+            name: short_title
+            widget: string
+            required: false
+            hint: >-
+              A shorter version of the headline for the bar. Leave blank to use the
+              full headline.
+
+          - label: Show from (UTC)
+            name: starts_at
+            widget: datetime
+            date_format: 'YYYY-MM-DD'
+            time_format: 'HH:mm'
+            format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
+            picker_utc: true
+            hint: >-
+              Also acts as the bar's identity. Changing it shows the bar again to
+              people who had dismissed it.
+
+          - label: Hide after (UTC)
+            name: ends_at
+            widget: datetime
+            required: false
+            date_format: 'YYYY-MM-DD'
+            time_format: 'HH:mm'
+            format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
+            picker_utc: true
+            hint: Leave blank to keep it up until you turn it off or announce something else.
+
+          - label: Priority
+            name: priority
+            widget: number
+            default: 0
+            value_type: int
+            hint: Highest number wins when two announcements are live at the same time.
+
+          - label: Visitors can dismiss it
+            name: dismissible
+            widget: boolean
+            default: true
+            hint: >-
+              Dismissing hides only this announcement. The next one you publish still
+              appears.
+
+          - label: Link destination
+            name: destination
+            widget: string
+            required: false
+            hint: >-
+              Leave blank. The bar links to this article automatically. Only fill this
+              in to point the bar somewhere else.
+
+          - label: Dismissal ID override
+            name: id
+            widget: string
+            required: false
+            hint: Advanced. Leave blank unless a developer asks you to set it.
+
+      # ----------------------------------------------------------- product info
+      - label: Availability
+        name: availability
+        widget: select
+        required: false
+        options:
+          - { label: 'Generally Available', value: GA }
+          - { label: 'Public Beta', value: public-beta }
+          - { label: 'Private Beta', value: private-beta }
+          - { label: 'Testing', value: testing }
+          - { label: 'Coming Soon', value: coming-soon }
+        hint: >-
+          Required for Product Updates, and must be left blank on every other
+          category — setting it elsewhere would imply a release claim the article is
+          not making. Must be accurate; the build checks it is present.
+
+      # ------------------------------------------------------------- next steps
+      - label: Primary button
+        name: cta_primary
+        widget: object
+        collapsed: true
+        required: false
+        summary: '{{fields.label}} → {{fields.url}}'
+        fields:
+          - { label: Button text, name: label, widget: string }
+          - label: Link
+            name: url
+            widget: string
+            hint: >-
+              An on-site path like /solutions#contact, or a full https:// address. The
+              build fails if an on-site path does not exist.
+
+      - label: Secondary button
+        name: cta_secondary
+        widget: object
+        collapsed: true
+        required: false
+        summary: '{{fields.label}} → {{fields.url}}'
+        fields:
+          - { label: Button text, name: label, widget: string }
+          - { label: Link, name: url, widget: string }
+
+      # ------------------------------------------------------------------- body
+      - label: Article
+        name: body
+        widget: markdown
+        hint: >-
+          Start section headings at Heading 2 — the article headline is already the
+          page's Heading 1. A table of contents appears automatically once the
+          article passes roughly 1,000 words or four sections.
+
+      # ---------------------------------------------------------------- linking
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+        default: []
+        hint: Shown at the foot of the article. Three to five is plenty.
+
+      - label: Related articles
+        name: related
+        widget: list
+        required: false
+        default: []
+        field:
+          label: URL slug of the related article
+          name: slug
+          widget: string
+        hint: >-
+          Use exact URL slugs. Leave empty to let the site suggest articles from the
+          same category. The build fails on a slug that does not exist.
+
+      # -------------------------------------------------------------- archiving
+      - label: Show a "From the Archive" banner
+        name: archive_label
+        widget: boolean
+        default: false
+        hint: >-
+          For older articles whose framing no longer matches the current product. The
+          article stays live with a visible banner, is excluded from the homepage
+          lead card, and cannot take the announcement bar. This is different from
+          Status = Archived, which removes it from the site entirely.
+
+      - label: Archive note
+        name: archive_note
+        widget: text
+        required: false
+        hint: Explains to the reader why this is historical and what is current instead.
+
+      - label: Original post elsewhere
+        name: external_url
+        widget: string
+        required: false
+        hint: >-
+          A link to the original post on X, shown as a small secondary "Original
+          post" link. It never replaces the article — every article must be readable
+          on kakr.ai.
+
+      # ------------------------------------------------------------------ review
+      - label: Approvals
+        name: reviewers
+        widget: object
+        collapsed: true
+        required: false
+        hint: >-
+          Record who approved what, and when. Technical and security claims cannot be
+          published until the named reviewer has approved the exact wording.
+          Compliance, certification, partnership, SLA, custody, Marketplace and
+          regulatory claims need the appropriate additional approval.
+        fields:
+          - { label: Technical review, name: technical, widget: string, required: false }
+          - { label: Security review, name: security, widget: string, required: false }
+          - { label: Brand review, name: brand, widget: string, required: false }
+          - { label: Legal review, name: legal, widget: string, required: false }
+
+      # --------------------------------------------------------------------- seo
+      - label: Search engine settings
+        name: seo
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leave blank to use the headline and summary above.
+        fields:
+          - label: Page title
+            name: title
+            widget: string
+            required: false
+            hint: Under 60 characters shows fully in Google.
+          - label: Meta description
+            name: description
+            widget: text
+            required: false
+            hint: 150–160 characters.
+          - label: Canonical URL
+            name: canonical
+            widget: string
+            required: false
+            hint: Advanced. Leave blank unless this article exists elsewhere first.
+
+      # ------------------------------------------------------------- fine tuning
+      - label: Reading time override (minutes)
+        name: reading_time_override
+        widget: number
+        required: false
+        value_type: int
+        min: 1
+        hint: >-
+          Leave blank. Reading time is calculated from the article. Only set this if
+          the calculated number is clearly wrong, e.g. an article that is mostly code.

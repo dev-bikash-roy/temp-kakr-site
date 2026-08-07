@@ -1,0 +1,831 @@
+{
+  "welcome": "Bienvenido a Kakr Labs",
+  "description": "Infraestructura Web3 de nivel empresarial construida en la blockchain segura de Litecoin",
+  "navigation": {
+    "solutions": "Soluciones",
+    "platforms": "Plataformas",
+    "industries": "Industrias",
+    "pricing": "Precios",
+    "kakrExplained": "Kakr Explicado"
+  },
+  "language": {
+    "english": "English",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "japanese": "日本語",
+    "arabic": "العربية"
+  },
+  "hero": {
+    "title": "Futuro de Web3",
+    "subtitle": "Construido para empresas que exigen seguridad, escala y control.",
+    "getStarted": "Comenzar",
+    "exploreSolutions": "Explorar Soluciones"
+  },
+  "security": {
+    "title": "Construido en Litecoin. Diseñado para escalar. Seguro por diseño.",
+    "description": "Nuestra infraestructura de código cerrado ofrece la confiabilidad de Bitcoin, la eficiencia de Litecoin y controles de nivel empresarial. Sin cadenas experimentales, sin atajos frágiles, solo tecnología probada en la que puede confiar.",
+    "powCore": "Núcleo Proof-of-Work",
+    "powDescription": "El PoW idéntico a Bitcoin de Litecoin ofrece cero tiempo de inactividad, confianza global y la base más sólida para uso empresarial.",
+    "lightningFast": "Rápido como un Rayo y Bajo Costo",
+    "lightningDescription": "~$0.19 por transacción con confirmaciones de 2.5 minutos",
+    "compliance": "Listo para Cumplimiento",
+    "complianceDescription": "Controles y evidencia de auditoría para respaldar programas de GDPR, HIPAA y NYDFS"
+  },
+  "industries": {
+    "title": "Industrias que Servimos",
+    "description": "Soluciones personalizadas para cada sector"
+  },
+  "demo": {
+    "title": "Experimenta Pteri Explorer",
+    "description": "Realiza un recorrido interactivo de nuestra plataforma y descubre cómo Pteri Explorer puede transformar tu experiencia blockchain",
+    "tourTitle": "Realiza un recorrido por Pteri Explorer",
+    "viewDemo": "VER DEMO"
+  },
+  "pricing": {
+    "title": "Precios simples para",
+    "titleHighlight": "Desarrolladores y Empresas",
+    "subtitle": "Sin tokens. Sin trucos. Precios de servicio directos.",
+    "free": "Gratis",
+    "getStarted": "Comenzar",
+    "contactSales": "Contactar ventas",
+    "mostPopular": "Más popular",
+    "recommended": "Recomendado",
+    "viewFullPricing": "Ver detalles completos de precios",
+    "perMonth": "/mes",
+    "prev": "← Anterior",
+    "next": "Siguiente →",
+    "tabs": {
+      "identity": "Identity Trust Layer",
+      "blockchain": "Infraestructura Blockchain"
+    },
+    "whatYouGet": "Qué incluye",
+    "bestFor": "Ideal para",
+    "identity": {
+      "basic": {
+        "title": "Gratis",
+        "price": "$0",
+        "desc": "Para desarrolladores individuales y pruebas. Sin tarjeta de crédito. Empieza en minutos.",
+        "cta": "Comenzar",
+        "features": [
+          "3 llamadas API por segundo",
+          "1 identidad de agente",
+          "MFA para hasta 5 cuentas",
+          "Acceso a wallet de autocustodia",
+          "Todas las plataformas — Android iOS Web"
+        ],
+        "bestFor": [
+          "Pruebas personales",
+          "Primera integración",
+          "Evaluar la plataforma"
+        ]
+      },
+      "scale": {
+        "title": "Pro",
+        "price": "$49",
+        "desc": "Para desarrolladores y startups que ejecutan varios agentes en entornos de producción.",
+        "cta": "Comenzar",
+        "features": [
+          "30 llamadas API por segundo",
+          "Hasta 10 identidades de agente",
+          "MFA para hasta 25 cuentas",
+          "Insignia de agente verificado (Próximamente)",
+          "Pagos PTERI de por vida",
+          "Soporte prioritario"
+        ],
+        "bestFor": [
+          "Estudios de desarrollo",
+          "Startups con flotas de agentes",
+          "Pymes que despliegan agentes de IA"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Pteri",
+        "price": "$299",
+        "desc": "Para organizaciones que despliegan agentes de IA a gran escala y necesitan cobertura y soporte completos.",
+        "cta": "Contactar ventas",
+        "features": [
+          "300 llamadas API por segundo",
+          "Identidades de agente ilimitadas",
+          "MFA para hasta 200 cuentas",
+          "SLA personalizado",
+          "Opciones de marca blanca",
+          "Soporte dedicado"
+        ],
+        "bestFor": [
+          "Organizaciones de mercado medio",
+          "Sectores regulados",
+          "Requisitos de cumplimiento de RBI y EAU"
+        ]
+      }
+    },
+    "blockchain": {
+      "developer": {
+        "title": "BaaS Developer",
+        "price": "$2,500",
+        "desc": "Para startups que necesitan BaaS de Litecoin potente",
+        "cta": "Comenzar",
+        "features": [
+          "Llamadas API: 300/seg",
+          "100,000 llamadas/mes",
+          "Litecoin Explorer",
+          "Acceso básico al SDK",
+          "Soporte comunitario",
+          "Acceso a Pteri Playground",
+          "Pteri Intelligence",
+          "Despliegue AI MCP"
+        ]
+      },
+      "pro": {
+        "title": "BaaS Pro",
+        "price": "$6,000",
+        "desc": "BaaS de Litecoin completo para productos en crecimiento",
+        "cta": "Comenzar",
+        "features": [
+          "Llamadas API: 800/seg",
+          "1M llamadas/mes",
+          "Explorer mejorado",
+          "Suite SDK completa",
+          "Soporte prioritario",
+          "Usuarios de clave API ilimitados",
+          "Claves controladas por el cliente",
+          "Acceso a nodo",
+          "Despliegue AI MCP"
+        ]
+      },
+      "enterprise": {
+        "title": "BaaS Enterprise",
+        "price": "Personalizado",
+        "desc": "Infraestructura blockchain ilimitada para despliegues empresariales",
+        "cta": "Contactar ventas",
+        "features": [
+          "Llamadas API ilimitadas",
+          "Clúster de nodos dedicado",
+          "Contratos inteligentes personalizados",
+          "BaaS de marca blanca",
+          "Cifrado AES-256",
+          "Garantía SLA",
+          "Almacenamiento empresarial dedicado",
+          "Soporte dedicado 24/7"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "summary": "Autenticación e infraestructura nativa de Litecoin. Sin tokens. Sin SMS. Seguridad de prueba de trabajo.",
+    "platform": "Plataforma",
+    "identity": "Identidad",
+    "payments": "Pagos",
+    "developers": "Developers",
+    "documentation": "Documentación",
+    "playground": "Playground",
+    "apiKeys": "Claves API",
+    "company": "Acerca de",
+    "about": "Acerca de",
+    "press": "Prensa",
+    "partnerships": "Asociaciones",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "security": "Seguridad",
+    "trustCenter": "Centro de Confianza",
+    "privacyPolicy": "Privacidad Policy",
+    "termsOfService": "Términos de Servicio",
+    "cookiePolicy": "Política de Cookies",
+    "downloadApp": "Descargar la App",
+    "aiInsights": "Perspectivas de IA",
+    "sitemap": "Sitemap",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "pteri": {
+    "hero": {
+      "title": "Plataforma PTERI — El Motor de Confianza de Privacidad Unificado"
+    },
+    "overview": {
+      "title": "Descripción General",
+      "col1": "Autocustodia descentralizada\nClaves almacenadas solo en tu dispositivo.\nSin servidor central.",
+      "col2Highlight": "Tus claves, tu control.",
+      "col2": "Claves almacenadas solo en tu dispositivo.\nSin servidor central, sin riesgo de honeypot."
+    },
+    "apis": {
+      "title": "APIs",
+      "items": {
+        "0": {
+          "title": "API de Wallet de Autocustodia",
+          "points": {
+            "0": "Mejora de MFA",
+            "1": "Identidad"
+          }
+        },
+        "1": {
+          "title": "API de Pagos Blockchain",
+          "points": {
+            "0": "Pagos"
+          }
+        },
+        "2": {
+          "title": "API de Servicio Blockchain",
+          "points": {
+            "0": "Inteligencia (Agentes IA & A2A)",
+            "1": "Enterprise"
+          }
+        }
+      },
+      "blockchainService": {
+        "title": "API de Servicio Blockchain",
+        "description": "Servicio de autocustodia sobre verdad inquebrantable."
+      },
+      "controlService": {
+        "title": "Servicio de Control",
+        "description": "Apalancamiento de autocustodia en tu personalización."
+      },
+      "custodyProtocol": {
+        "title": "Protocolo de Custodia",
+        "description": "Servicio continuo protegido a lo largo del tiempo."
+      },
+      "developerTools": "Herramientas para Desarrolladores"
+    },
+    "coreModules": {
+      "label": "Módulos Principales",
+      "title": "Los 6 Módulos Principales",
+      "items": {
+        "0": {
+          "title": "Autenticación PTERI",
+          "sub": "Mejora de MFA",
+          "desc": "Agrega firmas criptográficas deterministas sobre tus flujos MFA/OTP existentes.",
+          "points": {
+            "0": "Soporte OTP híbrido (requerir o generar OTPs)",
+            "1": "Resistente al phishing - compatible con RBI, UAE, NIST, PSD2",
+            "2": "Transforma cualquier cuenta Web2 en seguridad Web3 soberana"
+          }
+        },
+        "1": {
+          "title": "Identidad PTERI",
+          "sub": "Identidad Descentralizada (DID)",
+          "desc": "Identidad descentralizada auto-soberana. Tú posees y controlas tus claves en el dispositivo.",
+          "points": {
+            "0": "Generación y almacenamiento de claves en el dispositivo",
+            "1": "Sin proveedor de identidad central",
+            "2": "Credenciales verificables sin exposición de PII"
+          }
+        },
+        "2": {
+          "title": "Pagos PTERI",
+          "sub": "Pagos Litecoin de autocustodia",
+          "desc": "Pagos Litecoin de autocustodia con credenciales de pago controladas por el cliente. Impulsado por Litecoin PoW + API de Pagos Blockchain.",
+          "points": {
+            "0": "Verdadero peer-to-peer, cero custodia",
+            "1": "Gasto controlado por políticas",
+            "2": "Aprobaciones firmadas criptográficamente"
+          }
+        },
+        "3": {
+          "title": "Inteligencia PTERI",
+          "sub": "Agentes IA & A2A",
+          "desc": "Autoridad criptográfica verificable para agentes autónomos. Interacciones seguras agente-a-agente con evidencia de autorización verificable.",
+          "points": {
+            "0": "Privacidad y delegación mejoradas con ZK",
+            "1": "Impulsado por herramientas IA MCP2",
+            "2": "Principales criptográficos de primera clase para IA"
+          }
+        },
+        "4": {
+          "title": "Enterprise PTERI",
+          "sub": "Infraestructura respaldada por Google Cloud",
+          "desc": "Infraestructura respaldada por Google Cloud con SLAs de 99.99%+ de disponibilidad.",
+          "points": {
+            "0": "Listo para auditorías y compatible con cumplimiento",
+            "1": "Escalable en operaciones globales",
+            "2": "Instancias dedicadas y opciones de marca blanca"
+          }
+        },
+        "5": {
+          "title": "Herramientas para Desarrolladores PTERI",
+          "sub": "SDKs completos, APIs y MCP2",
+          "desc": "SDKs completos, APIs y MCP2 para desarrollo rápido impulsado por IA. Adopción incremental - empieza pequeño, escala la confianza soberana.",
+          "points": {
+            "0": "API de wallet de autocustodia, API de Pagos Blockchain, API de servicio blockchain",
+            "1": "Empieza con MFA, expande a pagos, IA o IoT",
+            "2": "MCP2 impulsado por IA para integración rápida"
+          }
+        }
+      }
+    },
+    "howItWorks": {
+      "label": "Cómo Funciona",
+      "title": "Del dispositivo a la prueba verificable",
+      "steps": {
+        "0": {
+          "label": "Dispositivo del Usuario"
+        },
+        "1": {
+          "label": "Claves Privadas Almacenadas Localmente"
+        },
+        "2": {
+          "label": "Llamada a la API PTERI"
+        },
+        "3": {
+          "label": "Prueba Litecoin PoW"
+        },
+        "4": {
+          "label": "Acción Verificable"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para desplegar el Motor de Confianza de Privacidad?",
+      "description": "Una capa criptográfica para autenticación, pagos, agentes IA y seguridad empresarial.",
+      "getApiKey": "Obtener Clave API Gratuita",
+      "pteriWallet": "PTERI Wallet",
+      "bookDemo": "Reservar Demo Empresarial",
+      "viewDocs": "Ver Documentación"
+    }
+  },
+  "apiPage": {
+    "badge": "PTERI para Desarrolladores",
+    "hero": {
+      "title": "Añade Identidad y Autorización a Cualquier Flujo de Trabajo",
+      "titlePart1": "Añade Identidad y ",
+      "titleHighlight": "Autorización",
+      "subtitle": "a Cualquier Flujo de Trabajo",
+      "description": "Usa las APIs, SDKs e integraciones MCP de PTERI para autenticar usuarios, autorizar agentes, proteger credenciales y verificar acciones sensibles.",
+      "badges": {
+        "uptime": "Infraestructura de Nivel Empresarial",
+        "litecoin": "Listo para MCP",
+        "agnostic": "Independiente del Lenguaje"
+      },
+      "cta": {
+        "docs": "Iniciar la Guía Rápida",
+        "wallet": "Ver Referencia de la API",
+        "download": "Abrir Panel de Desarrollador"
+      }
+    },
+    "devProblem": {
+      "title": "El Problema del Desarrollador",
+      "description": "A medida que los sistemas crecen, la autorización basada en secretos se vuelve frágil, difícil de auditar y arriesgada de revocar de forma segura.",
+      "failureTitle": "El Fallo de los Secretos Compartidos",
+      "leakedCredentials": {
+        "title": "Credenciales Filtradas",
+        "description": "Las claves de API se copian, se registran, se filtran y se reutilizan entre sistemas."
+      },
+      "persistentAccess": {
+        "title": "Acceso Persistente",
+        "description": "Los tokens de larga duración permanecen activos mucho después de que su propósito original ha expirado."
+      },
+      "scopeCreep": {
+        "title": "Permisos Excesivos",
+        "description": "Las credenciales otorgan más acceso del que una persona o un agente realmente necesita."
+      },
+      "unsafeDelegation": {
+        "title": "Autoridad del Agente Poco Clara",
+        "description": "Un agente puede tener acceso sin prueba de que un usuario u organización aprobó su acción específica."
+      }
+    },
+    "authority": {
+      "title": "APIs Construidas sobre Autoridad Verificable",
+      "signedRequests": {
+        "title": "Solicitudes Firmadas",
+        "description": "Las solicitudes se firman con una clave propia del dispositivo o delegada al agente — no se necesita ningún secreto compartido."
+      },
+      "verifiedAuthority": {
+        "title": "Autoridad Verificada",
+        "description": "La identidad, la delegación, el alcance, la política y la expiración se evalúan en el momento de la solicitud."
+      },
+      "deterministicPolicy": {
+        "title": "Evaluación de Políticas",
+        "description": "La política aplicable se evalúa en el momento en que se solicita la acción."
+      },
+      "cleanOutcomes": {
+        "title": "Permitir o Denegar",
+        "description": "Cada solicitud produce un resultado verificable de permitir o denegar, con evidencia."
+      }
+    },
+    "quickStart": "Guía Rápida — Pseudocódigo",
+    "coreCapabilities": {
+      "title": "Capacidades Principales de la API",
+      "authentication": {
+        "title": "MFA sin Contraseña",
+        "description": "Añade autenticación sin contraseña a aplicaciones, portales y flujos de trabajo existentes."
+      },
+      "authorization": {
+        "title": "Autorización en Tiempo de Ejecución",
+        "description": "Verifica identidad, alcance, contexto y política antes de ejecutar una acción de consecuencias."
+      },
+      "aiDelegation": {
+        "title": "Autorización de Agentes",
+        "description": "Otorga a cada agente de IA una identidad verificable y una autoridad de alcance limitado que puede gestionarse y revocarse."
+      },
+      "payments": {
+        "title": "Pagos y Aprobaciones",
+        "description": "Pagos en Litecoin controlados por el cliente, con aprobación criptográfica y credenciales de pago controladas por el cliente."
+      },
+      "policy": {
+        "title": "Evidencia de Acción",
+        "description": "Genera evidencia a prueba de manipulaciones que conecta una acción con su identidad, autoridad y política aplicable."
+      }
+    },
+    "howItWorks": {
+      "title": "De la Identidad a la Acción Verificada",
+      "steps": {
+        "0": "Identificar — establecer una identidad verificable",
+        "1": "Autenticar — confirmar sin secretos compartidos",
+        "2": "Autorizar — definir alcance, política y expiración",
+        "3": "Verificar — evaluar la autoridad en el momento de la solicitud",
+        "4": "Permitir o Denegar",
+        "4sub": "Con evidencia verificable"
+      }
+    },
+    "mcp": {
+      "badge": "Integración MCP",
+      "title": "Seguridad de MCP y Herramientas",
+      "description": "La documentación de PTERI incluye capacidades orientadas a MCP para verificar la autoridad cuando los agentes acceden a herramientas y servicios. Los agentes operan dentro de límites verificables y delimitados — auditables y revocables."
+    },
+    "verificationInfrastructure": {
+      "badge": "Infraestructura de Verificación",
+      "title": "APIs de Infraestructura",
+      "description": "Los componentes de prueba de trabajo de Litecoin y firma controlada por el cliente se usan como capa de verificación independiente bajo la evidencia de autorización de PTERI — mantenida separada de las APIs de identidad y autorización mencionadas arriba."
+    },
+    "environments": {
+      "title": "Entornos Compatibles",
+      "description": "Funciona junto a proveedores de identidad, aplicaciones, agentes de IA, servidores MCP e infraestructura en la nube existentes. Empieza con un flujo de trabajo sensible y expande con el tiempo."
+    },
+    "nextSteps": {
+      "title": "Empieza a Desarrollar",
+      "description": "Referencia de la API, SDKs, guías de integración y documentación de MCP — todo en un solo lugar en docs.kakr.ai.",
+      "docs": "Ver Referencia de la API",
+      "bookCall": "Reservar una Demo Empresarial"
+    },
+    "finalCta": {
+      "title": "Añade PTERI en el Límite de Acceso y Acción",
+      "docs": "Ver Documentación",
+      "wallet": "Abrir la App de PTERI",
+      "start": "Obtener una Clave de API"
+    }
+  },
+  "about": {
+    "badge": "Acerca de",
+    "hero": {
+      "title": "Convirtiendo Energía en Confianza para la Era de la IA",
+      "subtitle": "Kakr Labs está construyendo la infraestructura de confianza fundamental para humanos, agentes de IA y empresas en el futuro agéntico."
+    },
+    "story": {
+      "title": "Nuestra Historia",
+      "p1": "Fundamos Kakr Labs porque los modelos de seguridad heredados — contraseñas, OTPs, proveedores de identidad centralizados y APIs basadas en secretos — continúan fallando a escala masiva. El phishing, los SIM-swaps, las brechas de datos y la delegación insegura de IA crean un enorme riesgo y fricción.",
+      "p2": "La solución no es otra capa sobre sistemas rotos. Es reemplazar la confianza frágil y probabilística con prueba criptográfica determinista respaldada por energía. Por eso construimos PTERI — un motor de confianza de privacidad unificado impulsado por Litecoin Proof-of-Work y credenciales de pago controladas por el cliente."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "headline": "Entregar verdadera autoridad verificable con custodia controlada por el cliente en el momento de cada acción.",
+      "description": "Sin secretos compartidos. Sin honeypots centrales. Sin suposiciones. Solo confianza matemáticamente demostrable que escala desde usuarios individuales hasta empresas globales."
+    },
+    "whatWeBuild": {
+      "title": "Lo que Construimos",
+      "pteriPlatform": {
+        "title": "Plataforma PTERI",
+        "description": "La capa portadora criptográfica para autenticación, identidad descentralizada, pagos de autocustodia, delegación de IA (A2A) y aplicación de políticas."
+      },
+      "pteriWallet": {
+        "title": "PTERI Wallet",
+        "description": "Tu interfaz de control soberano: verdadera billetera Litecoin de autocustodia con seguridad biométrica y firma criptográfica."
+      },
+      "pteriApis": {
+        "title": "APIs PTERI y Herramientas para Desarrolladores",
+        "description": "SDKs, herramientas de integración con MCP y documentación completa en docs.kakr.ai."
+      },
+      "enterprise": {
+        "title": "Soluciones Empresariales",
+        "description": "Infraestructura respaldada por Google Cloud con 99.99%+ de disponibilidad y alineación regulatoria (RBI, UAE, NIST, etc.)."
+      }
+    },
+    "approach": {
+      "title": "Nuestro Enfoque",
+      "zeroCustody": {
+        "title": "Zero-Custody por Diseño",
+        "description": "Tú controlas tus claves. Nosotros nunca las tenemos."
+      },
+      "deterministicProof": {
+        "title": "Evidencia de Autorización Verificable",
+        "description": "Litecoin PoW hace que cada acción sea matemáticamente verificable."
+      },
+      "privacyFirst": {
+        "title": "Privacidad Primero",
+        "description": "Credenciales de pago controladas por el cliente y pruebas de Zero-Knowledge."
+      },
+      "agenticEra": {
+        "title": "Construido para la Era Agéntica",
+        "description": "Delegación segura y acotada a agentes de IA autónomos."
+      },
+      "incrementalAdoption": {
+        "title": "Adopción Incremental",
+        "description": "Capas sobre sistemas existentes sin reescrituras completas."
+      }
+    },
+    "leadership": {
+      "title": "Liderazgo",
+      "teamDescription": "El equipo combina profunda experiencia en sistemas de IA, infraestructura blockchain y seguridad empresarial.",
+      "founder": "Fundador y CEO",
+      "cofounder": "Cofundador y CTO"
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Un mundo sin contraseñas. Donde la identidad es completamente soberana, la autenticación no puede ser phisheada ni hackeada, los pagos son de autocustodia y los agentes de IA operan de forma segura dentro de límites criptográficamente aplicados."
+    },
+    "cta": {
+      "title": "¿Listo para proteger cada identidad y acción?",
+      "explorePlatform": "Explorar la Plataforma PTERI",
+      "downloadWallet": "Descargar Wallet",
+      "readDocs": "Leer la Documentación",
+      "bookDemo": "Reservar una Demo Empresarial"
+    },
+    "corporate": {
+      "name": "Kakr Labs Inc.",
+      "address": "240 W Old Country Rd, Suite 1, Hicksville, NY 11801\nRegistered Office: 30 N Gould St, Sheridan, Wyoming 82801",
+      "poweredBy": "Impulsado por la blockchain probada en batalla de Litecoin.",
+      "copyright": "© 2026 Kakr Labs. Todos los derechos reservados.",
+      "trademarks": "Kakr™ y PTERI™ son marcas registradas de Kakr Labs Inc."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Transformar tus Operaciones?",
+    "description": "Lanza con nuestra PTERI Wallet gratuita o explora un piloto de 3 meses con 50% de descuento para experimentar el futuro de la seguridad descentralizada.",
+    "startTrial": "Iniciar Prueba Gratuita",
+    "scheduleDemo": "Programar Demo"
+  },
+  "platform": {
+    "header": {
+      "eyebrow": "Plataforma PTERI",
+      "title": {
+        "deterministic": "Un",
+        "identity": "Modelo de Autorización",
+        "for": " para",
+        "humansAI": "Humanos y IA"
+      },
+      "subtitle": "Protege el acceso de la fuerza laboral, la actividad de agentes de IA y las operaciones empresariales sensibles con autenticación sin contraseña, autoridad delimitada y evidencia verificable.",
+      "stats": {
+        "zero": "Cero",
+        "sharedSecrets": "Secretos Compartidos",
+        "hundredPercent": "100%",
+        "selfCustodial": "Autocustodiado",
+        "binary": "Binario",
+        "outcomesOnly": "Solo Resultados"
+      },
+      "cta": {
+        "download": "Empieza Gratis",
+        "demo": "Ver Documentación"
+      }
+    },
+    "proofCard": {
+      "label": "Verificación de PTERI",
+      "steps": [
+        "Clave del Dispositivo Cargada",
+        "Solicitud Firmada",
+        "Anclaje Criptográfico",
+        "Autoridad Verificada"
+      ],
+      "result": "Autoridad Verificada — Acceso Concedido"
+    },
+    "flowStrip": {
+      "label": "Dispositivo → Prueba Criptográfica → Acción Verificable",
+      "steps": [
+        "Dispositivo del Usuario",
+        "Claves del Dispositivo",
+        "API de PTERI",
+        "Anclaje Verificado",
+        "Verificado ✓"
+      ]
+    },
+    "interactiveDemo": {
+      "overline": "Demo Interactiva",
+      "title": "Ve a PTERI [span]en Acción[/span]",
+      "description": "Experimenta la interfaz de la billetera web autocustodiada usada para autorizar solicitudes y gestionar identidad verificable.",
+      "iframeTitle": "Demo de la Billetera Web de PTERI"
+    },
+    "problem": {
+      "overline": "El Problema de Fondo",
+      "title": "Por Qué la Identidad Sigue [span]Fallando[/span]",
+      "description": "Los fallos de identidad son estructurales. A medida que la IA y la automatización se aceleran, los sistemas frágiles fallan con más frecuencia — y cuestan más.",
+      "legacy": {
+        "badge": "Sistemas Heredados",
+        "risk": "RIESGO ALTO",
+        "footer": "⚠ Probabilístico. Falible. No verificable en el momento de la acción.",
+        "rows": [
+          {
+            "from": "Solicitud del Usuario",
+            "to": "Contraseñas adivinadas"
+          },
+          {
+            "from": "Señales de Riesgo",
+            "to": "OTPs interceptados"
+          },
+          {
+            "from": "Identidad Inferida",
+            "to": "Credenciales robadas"
+          },
+          {
+            "from": "Permitir / Denegar",
+            "to": "Suposición probabilística"
+          }
+        ]
+      },
+      "pteri": {
+        "badge": "PTERI",
+        "risk": "CRIPTOGRÁFICO",
+        "footer": "✓ Determinista. Binario. Probado criptográficamente.",
+        "rows": [
+          {
+            "from": "Solicitud del Usuario",
+            "to": "Prueba Criptográfica"
+          },
+          {
+            "from": "El Dispositivo Firma",
+            "to": "Verificado en la cadena"
+          },
+          {
+            "from": "PTERI Verifica",
+            "to": "ID Determinista"
+          },
+          {
+            "from": "Permitir / Denegar",
+            "to": "Resultado binario ✓"
+          }
+        ]
+      }
+    },
+    "authority": {
+      "overline": "Propiedades Definitorias",
+      "title": "Identidad como[br][span]Autoridad[br]Criptográfica[/span]",
+      "description": "Sin secretos compartidos. Sin almacenamiento custodiado. Sin puntuaciones de probabilidad. Solo prueba criptográfica.",
+      "properties": [
+        "Identidad vinculada a claves criptográficas en el dispositivo",
+        "Claves generadas y conservadas únicamente por el titular de la autoridad",
+        "Ningún secreto compartido intercambiado con servidor alguno",
+        "La prueba no tiene estado y es verificable de forma independiente",
+        "No se usan puntuaciones de confianza ni sistemas de reputación"
+      ],
+      "card": {
+        "name": "Modelo de Autoridad de PTERI",
+        "tags": "Sin Custodia · Determinista · Verificable",
+        "conclusion": "Si la autoridad se demuestra → [strong]Acceso Concedido[/strong]. Si no → [strong]Acceso Denegado[/strong].",
+        "items": [
+          {
+            "label": "Claves Vinculadas al Dispositivo",
+            "desc": "Generadas y almacenadas solo en tu dispositivo"
+          },
+          {
+            "label": "Firmas Criptográficas",
+            "desc": "Cada acción firmada — sin secretos compartidos"
+          },
+          {
+            "label": "Anclaje PoW de Litecoin",
+            "desc": "Anclado criptográficamente, verificable a nivel mundial"
+          },
+          {
+            "label": "Resultado Binario",
+            "desc": "Permitir o denegar — sin ambigüedad, sin suposiciones"
+          }
+        ]
+      }
+    },
+    "coreModules": {
+      "overline": "Capacidades Principales de la Plataforma",
+      "title": "Capacidades Principales [span]de la Plataforma[/span]",
+      "items": [
+        {
+          "title": "MFA sin Contraseña",
+          "sub": "Autenticación de la Fuerza Laboral",
+          "desc": "Añade autenticación criptográfica sin contraseña a aplicaciones, portales y flujos de trabajo existentes, sin necesidad de una sustitución completa."
+        },
+        {
+          "title": "Identidad Verificable",
+          "sub": "Gestión de Identidad",
+          "desc": "Establece una identidad verificable y distintiva para personas, agentes, aplicaciones y dispositivos, que puede gestionarse y revocarse."
+        },
+        {
+          "title": "Autorización en Tiempo de Ejecución",
+          "sub": "Agentes de IA y Agente a Agente",
+          "desc": "Define qué puede hacer cada agente, a qué recursos puede acceder y durante cuánto tiempo su autoridad sigue siendo válida. Aplica la política en el momento de la acción."
+        },
+        {
+          "title": "Protección de Credenciales",
+          "sub": "Infraestructura de Google Cloud",
+          "desc": "Mantén las claves y el material de autorización fuera de los prompts, la memoria de los agentes y los componentes de tiempo de ejecución expuestos. Respaldado por Google Cloud, con fiabilidad de nivel empresarial."
+        },
+        {
+          "title": "Pagos y Aprobaciones",
+          "sub": "Litecoin Controlado por el Cliente",
+          "desc": "Pagos en Litecoin controlados por el cliente, con aprobación biométrica y liquidación criptográfica."
+        },
+        {
+          "title": "Herramientas para Desarrolladores y MCP",
+          "sub": "SDK, API REST y MCP",
+          "desc": "SDKs completos e integraciones MCP para una integración rápida. Empieza con un flujo de trabajo sensible y expande con el tiempo."
+        }
+      ]
+    },
+    "teamsAndCases": {
+      "teams": {
+        "overline": "Para Quién Es",
+        "title": "Diseñado para [span]Flujos de Trabajo de Alta Confianza[/span]",
+        "items": [
+          {
+            "title": "Fintech y Servicios Financieros",
+            "desc": "Añade acceso sin contraseña y autorización a nivel de acción en flujos de trabajo financieros."
+          },
+          {
+            "title": "Plataformas de IA",
+            "desc": "Otorga a los agentes una identidad verificable y autoridad delimitada para cada acción."
+          },
+          {
+            "title": "Enterprise SaaS",
+            "desc": "Refuerza los controles de acceso existentes sin reemplazar tu stack."
+          },
+          {
+            "title": "Infraestructura de Pagos",
+            "desc": "Añade aprobación criptográfica a los pagos y a las operaciones financieras sensibles."
+          }
+        ]
+      },
+      "useCases": {
+        "overline": "Casos de Uso",
+        "title": "Casos de Uso de [span]Identidad[/span]",
+        "items": [
+          {
+            "title": "Inicio de Sesión sin Contraseña",
+            "desc": "Sustituye las contraseñas por prueba criptográfica."
+          },
+          {
+            "title": "Sustituir 2FA por SMS / TOTP",
+            "desc": "Elimina los OTPs vulnerables al phishing con autenticación firmada por la billetera."
+          },
+          {
+            "title": "Acceso Administrativo y Privilegiado",
+            "desc": "Sin credenciales compartidas para herramientas internas."
+          },
+          {
+            "title": "Identidad de Servicio y Sistema",
+            "desc": "Sustituye las claves de API estáticas por autoridad delimitada."
+          },
+          {
+            "title": "Identidad de Agentes de IA",
+            "desc": "Autoridad verificable para agentes de IA autónomos."
+          },
+          {
+            "title": "Pagos Autocustodiados",
+            "desc": "Autoriza Litecoin sin custodio."
+          }
+        ]
+      }
+    },
+    "devExp": {
+      "overline": "Experiencia de Desarrollador",
+      "title": "Diseñado para[br][span]una Integración Incremental[/span]",
+      "description": "Identidad criptográfica lista para usar. Funciona junto a tu stack existente — sin necesidad de reescrituras.",
+      "readDocs": "Leer la Documentación",
+      "features": [
+        {
+          "title": "SDK Listo para Usar",
+          "desc": "Instala con npm install e intégralo en minutos. Funciona junto a OAuth, JWT y los flujos de autenticación existentes."
+        },
+        {
+          "title": "Adopción Incremental",
+          "desc": "Superpón PTERI sobre los sistemas existentes. Empieza con MFA y expande hacia pagos o IA."
+        },
+        {
+          "title": "Independiente del Lenguaje",
+          "desc": "SDKs para JS, Python, Java, PHP y Go. La API REST funciona con cualquier stack."
+        },
+        {
+          "title": "Integración de IA MCP2",
+          "desc": "Las herramientas MCP2 impulsadas por IA permiten que los LLMs y agentes llamen a PTERI para firmar, verificar o delegar."
+        }
+      ],
+      "codePanel": {
+        "filename": "verify.ts",
+        "tag": "TypeScript",
+        "comments": {
+          "install": "// npm install {'@'}kakr/pteri-sdk",
+          "verify": "// Verifica una solicitud firmada — no se necesitan secretos en el backend",
+          "unauthorized": "Autoridad no demostrada",
+          "deterministic": "// Determinista. Binario. Sin suposiciones."
+        },
+        "stats": {
+          "zeroKeys": "Cero claves de API almacenadas",
+          "anyFramework": "Funciona con cualquier framework"
+        }
+      }
+    },
+    "finalCta": {
+      "overline": "Empieza a Desarrollar",
+      "title": "Un Modelo de Autorización.[br][span]Todos los Flujos de Trabajo.[/span]",
+      "subtitle": "Empieza con una aplicación, un agente o un flujo de trabajo sensible, y añade autenticación sin contraseña y autorización en tiempo de ejecución sin reemplazar tu infraestructura existente.",
+      "ctas": {
+        "identity": "Empieza Gratis",
+        "blockchain": "Ver Guías de Integración",
+        "sales": "Reservar una Demo Empresarial"
+      }
+    },
+    "seo": {
+      "title": "Plataforma PTERI | MFA sin Contraseña y Autorización de Agentes de IA",
+      "description": "Protege el acceso de la fuerza laboral, la actividad de agentes de IA y las operaciones empresariales sensibles con autenticación sin contraseña, autoridad delimitada y evidencia verificable."
+    }
+  }
+}

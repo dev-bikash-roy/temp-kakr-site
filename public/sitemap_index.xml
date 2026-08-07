@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://kakr.ai/sitemap.xml</loc>
+  </sitemap>
+  <!-- Generated from the newsroom collection at request time. Article URLs are
+       created by editors, so they cannot live in the hand-maintained sitemap.xml. -->
+  <sitemap>
+    <loc>https://kakr.ai/newsroom/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

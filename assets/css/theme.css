@@ -1,0 +1,209 @@
+/* =========================================================
+   KAKR Theme Tokens
+
+   Change site-wide brand colors here.
+   Tailwind colors in tailwind.config.js read these same values,
+   so classes like text-emerald-400, bg-cyan-500/10, and btn styles
+   all stay connected to this single source.
+   ========================================================= */
+
+:root {
+  /* Reserved footprint for the fixed chat launcher (bottom-right).
+     Audit p4.3 / p15.5: the widget must never cover buttons, FAQ controls, or
+     footer links. Anything that would otherwise sit underneath it should add
+     padding-bottom: var(--chat-safe-bottom). Launcher is 64px + its offset. */
+  --chat-safe-bottom: 104px;
+
+  /* ── Shared design tokens (visual audit p2 "Global consistency system") ──
+     Buttons, header geometry, borders, and radii used across every surface. */
+  --btn-height: 52px;              /* primary + secondary */
+  --btn-height-header: 44px;       /* compact header button */
+  --btn-font-size: 15px;
+  --btn-line-height: 20px;
+  --header-height: 72px;           /* desktop */
+  --header-height-mobile: 64px;
+  --content-max-width: 1200px;
+  --nav-font-size: 15px;
+  --nav-line-height: 22px;
+  --nav-item-gap: 24px;
+  --token-border: #26342F;
+  --card-radius: 16px;
+  --eyebrow-size: 12px;
+  --eyebrow-line-height: 16px;
+  --eyebrow-tracking: 0.08em;
+  --muted-text: #94A3B8;
+  --section-copy-max-width: 720px;
+
+  /* Brand green */
+  --kakr-brand-50: 236 253 245;
+  --kakr-brand-100: 209 250 229;
+  --kakr-brand-200: 167 243 208;
+  --kakr-brand-300: 110 231 183;
+  --kakr-brand-400: 52 211 153;
+  --kakr-brand-500: 16 185 129;
+  --kakr-brand-600: 5 150 105;
+  --kakr-brand-700: 4 120 87;
+  --kakr-brand-800: 6 95 70;
+  --kakr-brand-900: 6 78 59;
+
+  /* Accent cyan */
+  --kakr-accent-50: 236 254 255;
+  --kakr-accent-100: 207 250 254;
+  --kakr-accent-200: 165 243 252;
+  --kakr-accent-300: 103 232 249;
+  --kakr-accent-400: 34 211 238;
+  --kakr-accent-500: 6 182 212;
+  --kakr-accent-600: 8 145 178;
+  --kakr-accent-700: 14 116 144;
+  --kakr-accent-800: 21 94 117;
+  --kakr-accent-900: 22 78 99;
+
+  /* Neutral surfaces */
+  --kakr-page: 10 10 10;
+  --kakr-page-soft: 5 13 26;
+  --kakr-surface: 9 11 20;
+  --kakr-surface-raised: 15 23 42;
+  --kakr-border: 255 255 255;
+  --kakr-text: 255 255 255;
+  --kakr-text-muted: 148 163 184;
+
+  /* Semantic aliases */
+  --kakr-button-bg: var(--kakr-brand-600);
+  --kakr-button-bg-hover: var(--kakr-brand-500);
+  --kakr-button-text: 255 255 255;
+  --kakr-link: var(--kakr-brand-400);
+  --kakr-link-hover: var(--kakr-brand-300);
+  --kakr-focus: var(--kakr-accent-400);
+  --kakr-success: var(--kakr-brand-500);
+  --kakr-error: 248 113 113;
+
+  --kakr-gradient-brand: linear-gradient(135deg, rgb(var(--kakr-brand-500)) 0%, rgb(var(--kakr-accent-500)) 100%);
+  --kakr-gradient-button: linear-gradient(135deg, rgb(var(--kakr-button-bg)) 0%, rgb(var(--kakr-brand-700)) 100%);
+  --kakr-gradient-button-hover: linear-gradient(135deg, rgb(var(--kakr-button-bg-hover)) 0%, rgb(var(--kakr-brand-600)) 100%);
+  --kakr-gradient-text: linear-gradient(90deg, rgb(var(--kakr-accent-400)) 0%, rgb(var(--kakr-brand-400)) 100%);
+  --kakr-shadow-button: 0 0 16px rgb(var(--kakr-button-bg) / 0.25);
+  --kakr-shadow-button-hover: 0 12px 40px rgb(var(--kakr-brand-400) / 0.45);
+
+  /* ── Typography Scale ──────────────────────────────────
+     Change these to resize hero text site-wide.
+     All pages that use .page-hero-title / .page-hero-subtitle
+     will update automatically.
+  ──────────────────────────────────────────────────────── */
+
+  /* Hero H1 — main page title */
+  --hero-title-size: clamp(2rem, 4.5vw, 3.75rem);
+  --hero-title-weight: 900;
+  --hero-title-line-height: 1.08;
+  --hero-title-letter-spacing: -0.035em;
+
+  /* Hero highlight / gradient subtitle line */
+  --hero-subtitle-size: clamp(1.1rem, 2vw, 1.6rem);
+  --hero-subtitle-weight: 800;
+  --hero-subtitle-line-height: 1.15;
+
+  /* Hero body description */
+  --hero-desc-size: clamp(1rem, 1.4vw, 1.2rem);
+  --hero-desc-line-height: 1.65;
+
+  /* Section headings (h2) */
+  --section-heading-size: clamp(1.75rem, 3.5vw, 3rem);
+  --section-heading-weight: 800;
+
+  /* Card / feature titles */
+  --card-title-size: 1rem;
+  --card-desc-size: 0.875rem;
+
+  /* Legacy template aliases */
+  --primary-color: rgb(var(--kakr-brand-500));
+  --secondary-color: rgb(var(--kakr-accent-500));
+  --heading-color: #191d28;
+  --grey-color: #5d6374;
+  --white-color: #ffffff;
+  --bg-white: #ffffff;
+  --bg-dark: rgb(var(--kakr-surface));
+  --bg-grey: #f3f7fe;
+  --bg-gradient: var(--kakr-gradient-brand);
+}
+
+/* =========================================================
+   Global Button System
+   .btn-primary  — green gradient CTA (matches header)
+   .btn-ghost    — transparent with white border
+   .btn-white    — solid white (dark text)
+   ========================================================= */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  /* Audit p2: primary and secondary buttons share a fixed 52px height and
+     15/20 700 type so geometry is identical across every page. */
+  min-height: var(--btn-height);
+  padding: 0 1.75rem;
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  font-weight: 700;
+  color: #000000;
+  border-radius: 9999px;
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 0 16px rgba(52, 211, 153, 0.3);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 0 28px rgba(52, 211, 153, 0.5);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--btn-height);
+  padding: 0 1.75rem;
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 9999px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-white:hover {
+  background: #e2e8f0;
+}
