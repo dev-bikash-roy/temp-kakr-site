@@ -160,7 +160,7 @@
         "login": {
           "title": "Decentralized Login & 2FA",
           "desc": "PTERI Wallet doubles as your login device to approve logins and sign authentication challenges.",
-          "tagline": "Your wallet is now your unhackable login key.",
+          "tagline": "Your wallet becomes your cryptographic login key.",
           "points": [
             "Approve logins",
             "Sign challenges",

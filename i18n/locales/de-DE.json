@@ -117,7 +117,7 @@
         "bestFor": [
           "Mittelständische Organisationen",
           "Regulierte Branchen",
-          "RBI- und VAE-Compliance-Anforderungen"
+          "Unterstuetzung regulierter Authentifizierungs- und Autorisierungsanforderungen"
         ]
       }
     },
@@ -257,7 +257,7 @@
           "desc": "Legen Sie deterministische kryptografische Signaturen über Ihre bestehenden MFA/OTP-Flows.",
           "points": {
             "0": "Hybride OTP-Unterstützung (OTPs anfordern oder generieren)",
-            "1": "Phishing-resistent - konform mit RBI, UAE, NIST, PSD2",
+            "1": "Phishing-resistent - entwickelt zur Unterstuetzung regulierter Authentifizierungsanforderungen",
             "2": "Wandeln Sie jedes Web2-Konto in souveräne Web3-Sicherheit um"
           }
         },
@@ -294,7 +294,7 @@
         "4": {
           "title": "PTERI Enterprise",
           "sub": "Google Cloud-gestützte Infrastruktur",
-          "desc": "Google Cloud-gestützte Infrastruktur mit 99,99%+ Verfügbarkeits-SLAs.",
+          "desc": "Google Cloud-gestützte Infrastruktur, ausgelegt auf hohe Verfügbarkeit.",
           "points": {
             "0": "Prüfungsbereit und compliance-freundlich",
             "1": "Skalierbar über globale Operationen",
@@ -496,7 +496,7 @@
       },
       "enterprise": {
         "title": "Unternehmenslösungen",
-        "description": "Google Cloud-gestützte Infrastruktur mit 99,99%+ Verfügbarkeit und regulatorischer Ausrichtung (RBI, UAE, NIST usw.)."
+        "description": "Google Cloud-gestützte Infrastruktur, ausgelegt auf hohe Verfügbarkeit und zur Unterstützung regulierter Authentifizierungs- und Autorisierungsanforderungen."
       }
     },
     "approach": {

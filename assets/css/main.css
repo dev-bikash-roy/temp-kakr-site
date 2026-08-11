@@ -179,6 +179,17 @@
   -webkit-backface-visibility: hidden;
 }
 
+/* Safety net: reveals [data-aos] content if the AOS bundle fails to load
+   (see the inline script in nuxt.config.ts). Class-based rather than
+   inline-style so it never touches the `style` attribute Vue's hydration
+   diff checks on each element — that previously raced hydration and logged
+   spurious "Hydration style mismatch" warnings. */
+html.aos-force-reveal [data-aos] {
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* ── Global typography utility classes ──────────────────
    Use these on hero sections across all pages for
    consistent sizing. Change the variables in theme.css

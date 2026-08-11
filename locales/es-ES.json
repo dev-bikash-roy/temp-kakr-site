@@ -1926,7 +1926,7 @@
         "login": {
           "title": "Login Descentralizado y 2FA",
           "desc": "PTERI Wallet funciona como tu dispositivo de inicio de sesi�n para aprobar logins y firmar desaf�os de autenticaci�n.",
-          "tagline": "Tu billetera es ahora tu llave de acceso inhackeable.",
+          "tagline": "Tu billetera se convierte en tu llave de acceso criptográfica.",
           "points": [
             "Aprobar logins",
             "Firmar desaf�os",

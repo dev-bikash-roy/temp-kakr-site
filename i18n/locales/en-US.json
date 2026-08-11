@@ -230,7 +230,7 @@
     },
     "azurePowered": {
       "title": "Azure-Powered",
-      "description": "Global infrastructure on Microsoft Azure with 99.99% uptime and encryption in transit and at rest."
+      "description": "Global infrastructure on Microsoft Azure designed for high availability, with encryption in transit and at rest."
     },
     "lightningFast": {
       "title": "Lightning Fast",
@@ -338,7 +338,7 @@
         "bestFor": [
           "Mid-market organizations",
           "Regulated industries",
-          "RBI and UAE compliance needs"
+          "Support for regulated authentication and authorization requirements"
         ]
       }
     },
@@ -440,7 +440,7 @@
     "getProductUpdates": "Get product updates",
     "productUpdatesDescription": "on wallet 2FA, BaaS, and enterprise launches.",
     "subscribe": "Subscribe",
-    "copyright": "© {year} Kakr Labs. Powered by Litecoin’s 100% uptime blockchain.",
+    "copyright": "© {year} Kakr Labs. Powered by the Litecoin blockchain, running continuously since 2011.",
     "allRightsReserved": "All rights reserved.",
     "trademarks": "Kakr™ and PTERI™ are trademarks of Kakr labs Inc.",
     "sitemap": "Sitemap",
@@ -464,9 +464,9 @@
     },
     "overview": {
       "title": "Overview",
-      "col1": "Decentralized self-custody\nKeys stored only on your device.\nNo central server.",
+      "col1": "Decentralized self-custody\nKeys stored only on your device.",
       "col2Highlight": "Your keys, your control.",
-      "col2": "Keys stored only on your device.\nNo central server, No honeypot risk."
+      "col2": "Keys stored only on your device."
     },
     "apis": {
       "title": "APIs",
@@ -516,7 +516,7 @@
           "desc": "Layer deterministic cryptographic signatures on top of your existing MFA/OTP flows.",
           "points": {
             "0": "Hybrid OTP support (require or generate OTPs)",
-            "1": "Phishing-resistant - compliant with RBI, UAE, NIST, PSD2",
+            "1": "Phishing-resistant - designed to support regulated authentication requirements",
             "2": "Add cryptographically verifiable authorization to any existing account"
           }
         },
@@ -553,7 +553,7 @@
         "4": {
           "title": "PTERI Enterprise",
           "sub": "Google Cloud-backed infrastructure",
-          "desc": "Google Cloud-backed infrastructure with 99.99%+ uptime SLAs.",
+          "desc": "Google Cloud-backed infrastructure designed for high availability.",
           "points": {
             "0": "Audit-ready and compliance-friendly",
             "1": "Scalable across global operations",
@@ -755,7 +755,7 @@
       },
       "enterprise": {
         "title": "Enterprise Solutions",
-        "description": "Google Cloud-backed infrastructure with 99.99%+ uptime and regulatory alignment (RBI, UAE, NIST, etc.)."
+        "description": "Google Cloud-backed infrastructure designed for high availability, built to support regulated authentication and authorization requirements."
       }
     },
     "approach": {

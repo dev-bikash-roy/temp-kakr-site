@@ -208,12 +208,24 @@ const { data: article } = await useNewsroomArticle(slug.value)
  * A draft, a future-scheduled item and a genuinely missing slug are all a 404.
  * Distinguishing them in the response would tell an unauthenticated visitor that
  * an unpublished article exists at that slug (handoff §12).
+ *
+ * Infrastructure errors (non-404) are re-thrown by useNewsroomArticle and
+ * propagate here naturally — the page will never show a misleading 404 for a
+ * server-side failure.
  */
 if (!article.value) {
   throw createError({ statusCode: 404, statusMessage: 'Article not found', fatal: true })
 }
 
-const { all: cards } = await useNewsroomList()
+// Cards for related articles and prev/next navigation. A failure here is non-fatal:
+// the article itself is still shown and related/adjacent links are simply absent.
+let cards = ref<import('~/composables/useNewsroom').NewsroomCard[]>([])
+try {
+  const list = await useNewsroomList()
+  cards = list.all
+} catch {
+  // Swallow — cards are supplementary UI, not required to display the article.
+}
 
 const categoryText = computed(() => categoryLabel(article.value!.category))
 const publishedText = computed(() => formatArticleDate(article.value!.published_at))

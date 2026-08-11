@@ -114,7 +114,7 @@
         "bestFor": [
           "Organizaciones de mercado medio",
           "Sectores regulados",
-          "Requisitos de cumplimiento de RBI y EAU"
+          "Soporte para requisitos regulados de autenticación y autorización"
         ]
       }
     },
@@ -254,7 +254,7 @@
           "desc": "Agrega firmas criptográficas deterministas sobre tus flujos MFA/OTP existentes.",
           "points": {
             "0": "Soporte OTP híbrido (requerir o generar OTPs)",
-            "1": "Resistente al phishing - compatible con RBI, UAE, NIST, PSD2",
+            "1": "Resistente al phishing - diseñado para respaldar requisitos regulados de autenticación",
             "2": "Transforma cualquier cuenta Web2 en seguridad Web3 soberana"
           }
         },
@@ -291,7 +291,7 @@
         "4": {
           "title": "Enterprise PTERI",
           "sub": "Infraestructura respaldada por Google Cloud",
-          "desc": "Infraestructura respaldada por Google Cloud con SLAs de 99.99%+ de disponibilidad.",
+          "desc": "Infraestructura respaldada por Google Cloud, diseñada para alta disponibilidad.",
           "points": {
             "0": "Listo para auditorías y compatible con cumplimiento",
             "1": "Escalable en operaciones globales",
@@ -493,7 +493,7 @@
       },
       "enterprise": {
         "title": "Soluciones Empresariales",
-        "description": "Infraestructura respaldada por Google Cloud con 99.99%+ de disponibilidad y alineación regulatoria (RBI, UAE, NIST, etc.)."
+        "description": "Infraestructura respaldada por Google Cloud, diseñada para alta disponibilidad y para respaldar requisitos regulados de autenticación y autorización."
       }
     },
     "approach": {

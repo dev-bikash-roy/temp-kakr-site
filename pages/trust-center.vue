@@ -138,22 +138,11 @@
              </div>
           </div>
 
-          <!-- Compliance & Regulatory Alignment -->
+          <!-- Security and Regulatory Considerations -->
           <div class="rounded-[2rem] p-8 border border-emerald-500/10 hover:border-emerald-500/30 transition-all" style="background: rgba(16,185,129,0.03);">
-            <h2 class="text-xl font-bold text-white mb-2">Compliance & Regulatory Alignment</h2>
-            <p class="text-sm text-white/60 mb-6 leading-relaxed">Compliance with regulatory bodies and standards (NIST SP 800-63-4).</p>
-            
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                <h4 class="text-sm font-bold text-white mb-1">RBI April 2026</h4>
-                <p class="text-xs text-white/60 leading-relaxed">Compliance data with regulatory bodies live April 1, 2026.</p>
-              </div>
-              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                <h4 class="text-sm font-bold text-white mb-1">UAE March 2026</h4>
-                <p class="text-xs text-white/60 leading-relaxed">Adhering to standards natively with CBUAE guidelines.</p>
-              </div>
-            </div>
-            
+            <h2 class="text-xl font-bold text-white mb-2">Security and Regulatory Considerations</h2>
+            <p class="text-sm text-white/60 mb-6 leading-relaxed">PTERI can support organizations implementing stronger authentication, scoped authorization, credential protection, and evidence requirements. Applicability depends on the organization, jurisdiction, architecture, and implementation. This is not legal advice.</p>
+
             <div class="border-t border-white/5 pt-4 flex justify-end">
                <a href="https://docs.kakr.ai/docs/threat-model-and-cryptography/9.6-security-as-a-property-of-architecture" target="_blank" class="text-sm font-medium hover:text-white transition-colors flex items-center gap-1 group">Read the Security Architecture <i class="las la-arrow-right group-hover:translate-x-1 transition-transform"></i></a>
             </div>

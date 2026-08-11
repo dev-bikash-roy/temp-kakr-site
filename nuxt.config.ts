@@ -190,10 +190,19 @@ export default defineNuxtConfig({
           // Safety net: AOS's CSS sets [data-aos] elements to opacity:0 and
           // relies on its JS adding .aos-init/.aos-animate to reveal them.
           // If the JS bundle ever fails to load, every animated section stays
-          // invisible and the site looks empty. This inline script lives in the
-          // HTML itself (so it survives a bundle failure) and force-reveals
-          // that content if AOS hasn't initialized shortly after load.
-          innerHTML: `(function(){function r(){if(document.documentElement.classList.contains('aos-initialized'))return;var e=document.querySelectorAll('[data-aos]');for(var i=0;i<e.length;i++){var s=e[i].style;s.setProperty('transition','none','important');s.setProperty('opacity','1','important');s.setProperty('transform','none','important')}}setTimeout(r,2500);window.addEventListener('load',function(){setTimeout(r,1500)})})();`
+          // invisible and the site looks empty. This inline script lives in
+          // the HTML itself (so it survives a bundle failure) and, once AOS
+          // has had a fair chance to come up, force-reveals that content.
+          //
+          // It only ever adds a class to <html> — never touches the
+          // per-element `style` attribute. Vue's hydration diff checks that
+          // attribute against each [data-aos] element's SSR markup; an
+          // earlier version of this script mutated it directly and raced
+          // hydration, producing a spurious "Hydration style mismatch" on
+          // every animated element whenever the first load was slow. The
+          // actual reveal happens via the CSS rule in assets/css/main.css,
+          // which Vue's hydration check never inspects.
+          innerHTML: `(function(){function r(){if(document.documentElement.classList.contains('aos-initialized'))return;document.documentElement.classList.add('aos-force-reveal')}setTimeout(r,2500);window.addEventListener('load',function(){setTimeout(r,1500)})})();`
         },
         {
           type: 'application/ld+json',

@@ -1927,7 +1927,7 @@
         "login": {
           "title": "Dezentraler Login & 2FA",
           "desc": "PTERI Wallet dient als Ihr Anmeldeger�t, um Logins zu genehmigen und Authentifizierungs-Challenges zu signieren.",
-          "tagline": "Ihr Wallet ist jetzt Ihr unhackbarer Login-Schl�ssel.",
+          "tagline": "Ihr Wallet wird zu Ihrem kryptografischen Login-Schl�ssel.",
           "points": [
             "Logins genehmigen",
             "Challenges signieren",

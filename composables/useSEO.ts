@@ -1,4 +1,3 @@
-import type { UseSeoMetaInput } from '@unhead/vue'
 import { unref } from 'vue'
 import type { MaybeRef } from 'vue'
 import type {
@@ -321,22 +320,9 @@ export function useSEO(initialConfig: MaybeReactiveSEOConfig = {}) {
     const cleanPath = normalizePath(route.path)
     const currentUrl = `${baseUrl}${cleanPath}`
 
-    // Generate meta tags
-    const openGraphTags = generateOpenGraphTags({
-      title: seoConfig.title,
-      description: seoConfig.description,
-      image: seoConfig.image,
-      type: seoConfig.type,
-      url: currentUrl
-    }, baseUrl)
-
-    const twitterTags = generateTwitterCardTags({
-      title: seoConfig.title,
-      description: seoConfig.description,
-      image: seoConfig.image
-    }, baseUrl)
-
-    // Prepare meta array
+    // Prepare meta array — only basic meta tags here.
+    // OG and Twitter tags are set separately below with explicit keys so they
+    // properly override the global defaults in nuxt.config.ts.
     const metaTags: Array<{ name?: string; property?: string; content: string; key?: string }> = [
       { name: 'description', content: seoConfig.description!, key: 'description' },
       // A non-production host is never indexable, whatever the page asked for.
@@ -359,16 +345,6 @@ export function useSEO(initialConfig: MaybeReactiveSEOConfig = {}) {
     if (seoConfig.author) {
       metaTags.push({ name: 'author', content: seoConfig.author, key: 'author' })
     }
-
-    // Add Open Graph tags
-    Object.entries(openGraphTags).forEach(([key, value]) => {
-      metaTags.push({ property: key, content: value || '' })
-    })
-
-    // Add Twitter tags
-    Object.entries(twitterTags).forEach(([key, value]) => {
-      metaTags.push({ name: key, content: value || '' })
-    })
 
     // Prepare link tags
     const linkTags: Array<{ rel: string; href: string; key?: string }> = []
@@ -395,7 +371,14 @@ export function useSEO(initialConfig: MaybeReactiveSEOConfig = {}) {
       })
     }
 
-    // Apply SEO using Nuxt's useHead + useSeoMeta for reliable SSG output
+    // Resolve the image to an absolute URL once — used for all OG/Twitter tags below.
+    const imageAbsolute = (seoConfig.image || defaultSEO.image || '').startsWith('/')
+      ? `${baseUrl}${seoConfig.image || defaultSEO.image}`
+      : (seoConfig.image || defaultSEO.image || '')
+
+    // Apply SEO using Nuxt's useHead for reliable SSR output.
+    // All OG and Twitter image tags use the same keyed approach so page-level
+    // values always override the global defaults set in nuxt.config.ts.
     useHead({
       title: seoConfig.title,
       meta: metaTags,
@@ -403,34 +386,29 @@ export function useSEO(initialConfig: MaybeReactiveSEOConfig = {}) {
       script: scripts
     })
 
-    // Also use useSeoMeta for guaranteed OG/Twitter tag rendering in SSG
-    const imageAbsolute = (seoConfig.image || defaultSEO.image || '').startsWith('/')
-      ? `${baseUrl}${seoConfig.image || defaultSEO.image}`
-      : (seoConfig.image || defaultSEO.image || '')
-
-    useSeoMeta({
-      ogTitle: seoConfig.title,
-      ogDescription: seoConfig.description,
-      ogImage: imageAbsolute,
-      ogImageWidth: '1200',
-      ogImageHeight: '630',
-      ogType: (seoConfig.type as any) || 'website',
-      ogUrl: currentUrl,
-      twitterCard: 'summary_large_image',
-      twitterTitle: seoConfig.title,
-      twitterDescription: seoConfig.description,
-      twitterImage: imageAbsolute,
-    })
-
-    // Override the keyed global og:image tags with page-specific values
+    // Override the keyed global og:image / twitter:image tags with page-specific
+    // absolute URLs.  Using explicit keys ensures these entries deduplicate
+    // against both the nuxt.config global defaults and any other setSEO call
+    // rather than accumulating as duplicate tags.
     useHead({
       meta: [
+        { property: 'og:title', content: seoConfig.title || '', key: 'og-title' },
+        { property: 'og:description', content: seoConfig.description || '', key: 'og-description' },
+        { property: 'og:type', content: seoConfig.type || 'website', key: 'og-type' },
+        { property: 'og:url', content: currentUrl, key: 'og-url' },
         { property: 'og:image', content: imageAbsolute, key: 'og-image' },
         { property: 'og:image:secure_url', content: imageAbsolute, key: 'og-image-secure' },
         { property: 'og:image:width', content: '1200', key: 'og-image-width' },
         { property: 'og:image:height', content: '630', key: 'og-image-height' },
         { property: 'og:image:type', content: getImageMimeType(imageAbsolute), key: 'og-image-type' },
+        { property: 'og:image:alt', content: seoConfig.title || 'KAKR Labs', key: 'og-image-alt' },
+        { name: 'twitter:card', content: 'summary_large_image', key: 'twitter-card' },
+        { name: 'twitter:title', content: seoConfig.title || '', key: 'twitter-title' },
+        { name: 'twitter:description', content: seoConfig.description || '', key: 'twitter-description' },
         { name: 'twitter:image', content: imageAbsolute, key: 'twitter-image' },
+        { name: 'twitter:image:alt', content: seoConfig.title || 'KAKR Labs', key: 'twitter-image-alt' },
+        { name: 'twitter:site', content: '@kakrlabs', key: 'twitter-site' },
+        { name: 'twitter:creator', content: '@kakrlabs', key: 'twitter-creator' },
       ]
     })
   }

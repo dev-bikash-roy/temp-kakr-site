@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>KAKR Newsroom</title>
+    <link>https://temp-kakr-ai.vercel.app/newsroom</link>
+    <atom:link href="https://temp-kakr-ai.vercel.app/newsroom/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Product releases, security research, engineering insights, and practical guidance for building accountable AI systems.</description>
+    <language>en-US</language>
+    <copyright>Kakr Labs</copyright>
+    <lastBuildDate>Thu, 06 Aug 2026 09:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Why Every AI Agent Needs Mission Control</title>
+      <link>https://temp-kakr-ai.vercel.app/newsroom/why-every-ai-agent-needs-mission-control</link>
+      <guid isPermaLink="true">https://temp-kakr-ai.vercel.app/newsroom/why-every-ai-agent-needs-mission-control</guid>
+      <description>AI agents can access systems, use tools, and make payments. Mission control is the discipline of deciding, before they act, which agent it is, what it may do, what it may spend, and what evidence it leaves behind.</description>
+      <category>Security &amp; AI</category>
+      <dc:creator>KAKR Labs</dc:creator>
+      <pubDate>Thu, 06 Aug 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://temp-kakr-ai.vercel.app/uploads/newsroom/2026/08/why-every-ai-agent-needs-mission-control-social.png" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>What Is Runtime Authorization for AI Agents?</title>
+      <link>https://temp-kakr-ai.vercel.app/newsroom/what-is-runtime-authorization-for-ai-agents</link>
+      <guid isPermaLink="true">https://temp-kakr-ai.vercel.app/newsroom/what-is-runtime-authorization-for-ai-agents</guid>
+      <description>A valid credential proves who is asking. It does not prove what they are allowed to do right now. Here is how runtime authorization closes that gap for AI agents.</description>
+      <category>Engineering</category>
+      <dc:creator>KAKR Labs</dc:creator>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://temp-kakr-ai.vercel.app/uploads/newsroom/2026/08/what-is-runtime-authorization-for-ai-agents-social.png" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>PTERI Playground: Test Flows Without Production Keys</title>
+      <link>https://temp-kakr-ai.vercel.app/newsroom/pteri-playground-overview</link>
+      <guid isPermaLink="true">https://temp-kakr-ai.vercel.app/newsroom/pteri-playground-overview</guid>
+      <description>A look back at the PTERI Playground announcement, and where the Playground fits today for developers who want to try identity and authorization flows before wiring anything into a real environment.</description>
+      <category>Product Updates</category>
+      <dc:creator>KAKR Labs</dc:creator>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
+      <enclosure url="https://temp-kakr-ai.vercel.app/uploads/newsroom/2026/08/pteri-playground-overview-social.png" type="image/png" length="0" />
+    </item>
+  </channel>
+</rss>

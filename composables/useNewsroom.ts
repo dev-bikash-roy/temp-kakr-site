@@ -198,15 +198,48 @@ export async function useNewsroomList() {
  * Full article including body. Returns `null` for anything not publicly
  * published so the page can raise its own 404, and — as with the card list — the
  * gating happens server-side.
+ *
+ * Uses `useState` + a loaded flag rather than `useAsyncData` for the same reason
+ * the card list does: with `payloadExtraction: false`, `useAsyncData` carries the
+ * key in `__NUXT_DATA__` with a null value on the first SSR pass, the client sees
+ * the key as "already fetched", never re-requests, and `data.value` stays null —
+ * causing every hard refresh to 404. `useState` serialises through
+ * `payload.state`, which survives the transfer reliably.
  */
-export function useNewsroomArticle(slug: string) {
-  return useFetch(`/api/newsroom/article`, {
-    key: `newsroom-article-${slug}`,
-    query: { slug },
-    // A 404 from the endpoint is an expected outcome, not a failure to surface.
-    default: () => null,
-    onResponseError: () => {},
-  })
+export async function useNewsroomArticle(slug: string) {
+  // Key is slug-scoped so navigating between articles doesn't reuse stale data.
+  const article = useState<Record<string, unknown> | null>(`newsroom-article-${slug}`, () => null)
+  const loaded = useState<boolean>(`newsroom-article-${slug}-loaded`, () => false)
+
+  /**
+   * `useRequestFetch()`, not bare `$fetch` — same reason as the card list.
+   * A relative fetch on the server must be dispatched in-process via the active
+   * H3 event; without this, Vercel's ISR renderer resolves to localhost and fails.
+   */
+  const request = useRequestFetch()
+
+  if (!loaded.value) {
+    try {
+      article.value = await request<Record<string, unknown>>('/api/newsroom/article', { query: { slug } })
+    } catch (error) {
+      const status = (error as { statusCode?: number; response?: { status?: number } })?.statusCode
+        ?? (error as { response?: { status?: number } })?.response?.status
+
+      // A genuine 404 means "no such published article" — article stays null.
+      if (status === 404) {
+        article.value = null
+      } else {
+        // Any other failure (DB error, cold start, etc.) must surface as a real
+        // error rather than a misleading 404, so we re-throw. The page will catch
+        // this via the error ref check and show the correct status code.
+        loaded.value = true
+        throw error
+      }
+    }
+    loaded.value = true
+  }
+
+  return { data: article }
 }
 
 /**
