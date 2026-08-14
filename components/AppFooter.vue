@@ -82,7 +82,7 @@
             <li><NuxtLink to="/about" class="footer-link">{{ t.about }}</NuxtLink></li>
             <li><NuxtLink to="/partnerships" class="footer-link">{{ t.partnerships }}</NuxtLink></li>
             <li><NuxtLink to="/contact" class="footer-link">{{ t.contact }}</NuxtLink></li>
-            <li><a href="/solutions#contact" class="footer-link">{{ t.bookDemo }}</a></li>
+            <li><a href="/contact?intent=pilot" class="footer-link">{{ t.bookDemo }}</a></li>
           </ul>
         </div>
 
@@ -109,7 +109,6 @@
           <NuxtLink to="/terms-of-service" class="footer-legal-link">{{ t.terms }}</NuxtLink>
           <NuxtLink to="/cookie-policy" class="footer-legal-link">{{ t.cookiePolicy }}</NuxtLink>
           <a href="/sitemap.xml" target="_blank" class="footer-legal-link">{{ t.sitemap }}</a>
-          <a href="https://kakrlabs1.statuspage.io/" target="_blank" rel="noopener" class="footer-legal-link">Status</a>
         </div>
       </div>
 

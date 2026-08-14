@@ -72,5 +72,13 @@ export async function getPublishedArticle(event: H3Event, slug: string) {
   if (!slug || !/^[a-z0-9][a-z0-9-]*$/.test(slug)) return null
 
   const article = await publishedQuery(event).where('slug', '=', slug).first()
-  return article ?? null
+  if (!article) return null
+
+  // `reviewers` (technical/security/brand/legal approval state — handoff §12)
+  // is editorial-gate metadata, never a public field. The query above already
+  // restricts to published articles, but that alone doesn't stop the raw
+  // record's other internal fields from reaching the public JSON payload, so
+  // strip it explicitly rather than relying on the gate alone.
+  const { reviewers, ...publicArticle } = article as Record<string, unknown>
+  return publicArticle
 }

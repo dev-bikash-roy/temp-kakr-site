@@ -244,7 +244,7 @@
              <a href="mailto:contact@kakr.ai" class="px-8 py-3.5 rounded-xl font-bold text-sm text-black bg-white hover:bg-slate-200 transition-colors shadow-lg flex items-center gap-2">
                {{ content.cta.btn1 }} <i class="las la-envelope text-lg"></i>
              </a>
-             <a href="/contact" class="btn-primary">
+             <a href="/contact?intent=partnership" class="btn-primary">
                {{ content.cta.btn2 }}
              </a>
           </div>

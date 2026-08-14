@@ -153,7 +153,7 @@
           <div class="flex flex-wrap gap-3">
             <a href="https://pteri.org/Register" target="_blank" class="px-6 py-3 rounded-xl font-bold text-sm text-black bg-white hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]">{{ $t('pteri.cta.getApiKey') }}</a>
             <a href="https://pteri.kakr.org" target="_blank" class="px-6 py-3 rounded-xl font-bold text-sm" style="background: transparent; border: 1px solid rgba(255,255,255,0.12); color: #94a3b8;">{{ $t('pteri.cta.pteriWallet') }}</a>
-            <a href="/contact" class="px-6 py-3 rounded-xl font-bold text-sm" style="background: transparent; border: 1px solid rgba(255,255,255,0.12); color: #94a3b8;">{{ $t('pteri.cta.bookDemo') }}</a>
+            <a href="/contact?intent=demo" class="px-6 py-3 rounded-xl font-bold text-sm" style="background: transparent; border: 1px solid rgba(255,255,255,0.12); color: #94a3b8;">{{ $t('pteri.cta.bookDemo') }}</a>
             <a href="https://docs.kakr.ai" target="_blank" class="px-6 py-3 rounded-xl font-bold text-sm" style="background: transparent; border: 1px solid rgba(255,255,255,0.12); color: #94a3b8;">{{ $t('pteri.cta.viewDocs') }}</a>
           </div>
         </div>

@@ -19,7 +19,7 @@
           </span>
         </div>
 
-        <div class="max-w-4xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="max-w-4xl">
           <h1 class="font-black leading-[1.03] tracking-[-0.035em] text-white mb-6" style="font-size: clamp(2.5rem, 6.5vw, 5rem);">
             Customer-Controlled Identity.<br />
             <span style="background: linear-gradient(135deg, #34d399 0%, #10b981 60%, #6ee7b7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(52,211,153,0.4));">Scoped Authorization.</span>

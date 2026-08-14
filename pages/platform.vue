@@ -17,13 +17,13 @@
             </span>
           </div>
 
-          <h1 class="hero__heading plt-anim plt-anim--2">
-            {{ $t('platform.header.title.deterministic') }}<br>
-            <span class="heading-gradient">{{ $t('platform.header.title.identity') }}</span><br>
+          <h1 class="hero__heading">
+            {{ $t('platform.header.title.deterministic') }} <br>
+            <span class="heading-gradient">{{ $t('platform.header.title.identity') }}</span> <br>
             <span class="heading-white">{{ $t('platform.header.title.for') }} {{ $t('platform.header.title.humansAI') }}</span>
           </h1>
 
-          <p class="hero__sub plt-anim plt-anim--3" v-html="t('platform.header.subtitle').replaceAll('[em]', '<em>').replaceAll('[/em]', '</em>')"></p>
+          <p class="hero__sub" v-html="t('platform.header.subtitle').replaceAll('[em]', '<em>').replaceAll('[/em]', '</em>')"></p>
 
           <div class="hero__badges plt-anim plt-anim--4">
             <div class="stat-badge"><span class="stat-badge__val">{{ $t('platform.header.stats.zero') }}</span><span class="stat-badge__lbl">{{ $t('platform.header.stats.sharedSecrets') }}</span></div>
@@ -31,7 +31,7 @@
             <div class="stat-badge"><span class="stat-badge__val">{{ $t('platform.header.stats.binary') }}</span><span class="stat-badge__lbl">{{ $t('platform.header.stats.outcomesOnly') }}</span></div>
           </div>
 
-          <div class="hero__ctas plt-anim plt-anim--5">
+          <div class="hero__ctas">
             <a href="https://pteri.org/Register" target="_blank" class="cta-primary">
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 0l-3 3m3-3l3 3M3 20h18"/></svg>
               {{ $t('platform.header.cta.download') }}

@@ -9,7 +9,7 @@
             {{ content.hero.badge }}
           </div>
           <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight text-white ">
-            {{ content.hero.title_start }}<br/>
+            {{ content.hero.title_start }} <br/>
             <span class="text-green-600">
               {{ content.hero.title_end }}
             </span>

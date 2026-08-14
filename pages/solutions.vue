@@ -16,14 +16,14 @@
             </span>
           </div>
 
-          <h1 class="hero__heading sol-anim sol-anim--2">
+          <h1 class="hero__heading">
             <span class="heading-white">{{ t.heroTitle.split(' ').slice(0, -1).join(' ') }}&nbsp;</span><span class="heading-gradient">{{ t.heroTitle.split(' ').slice(-1)[0] }}</span>
           </h1>
 
-          <p class="hero__sub sol-anim sol-anim--3">{{ t.heroSubtitle }}</p>
+          <p class="hero__sub">{{ t.heroSubtitle }}</p>
 
-          <div class="hero__ctas sol-anim sol-anim--4">
-            <a href="/contact" class="cta-primary">
+          <div class="hero__ctas">
+            <a href="/contact?intent=pilot" class="cta-primary">
               {{ t.ctaBtn3 }}
             </a>
             <a href="https://docs.kakr.ai/" target="_blank" class="cta-ghost">
@@ -291,7 +291,7 @@ const t = computed(() => {
       regIntro: 'Authentication standards are moving away from OTP and SMS:',
       reg1Label: 'Regulatory direction:', reg1Desc: 'Regulators in multiple markets are moving away from OTP-only authentication toward stronger multi-factor methods.',
       reg2Label: 'SMS and email OTP:', reg2Desc: 'Increasingly treated as weak factors, because their delivery channels can be intercepted or redirected.',
-      reg3Label: 'Published standards:', reg3Desc: '(NIST SP 800-63-4, PSD2, NIS2) emphasize phishing-resistant, cryptographic-grade authentication.',
+      reg3Label: 'Published standards:', reg3Desc: 'Emerging regulatory guidance in multiple jurisdictions emphasizes phishing-resistant, cryptographic-grade authentication.',
       reg4Label: 'Additional threats:', reg4Desc: 'eSIM/SIM-swap fraud and AI agents operating without verifiable scoped authority.',
       solutionsTitle: 'PTERI Solutions',
       mfaTitle: 'Passwordless MFA', mfaProblem: 'Legacy OTP-based MFA is vulnerable to phishing and regulatory non-compliance.',
@@ -329,7 +329,7 @@ const t = computed(() => {
       regIntro: 'Authentifizierungsstandards bewegen sich weg von OTP und SMS:',
       reg1Label: 'Regulatorische Richtung:', reg1Desc: 'Aufsichtsbehoerden in mehreren Maerkten bewegen sich weg von reiner OTP-Authentifizierung hin zu staerkeren Multi-Faktor-Verfahren.',
       reg2Label: 'SMS- und E-Mail-OTP:', reg2Desc: 'Werden zunehmend als schwache Faktoren betrachtet, da ihre Uebertragungswege abgefangen oder umgeleitet werden koennen.',
-      reg3Label: 'Veroeffentlichte Standards:', reg3Desc: '(NIST SP 800-63-4, PSD2, NIS2) betonen phishing-resistente, kryptografische Authentifizierung.',
+      reg3Label: 'Veroeffentlichte Standards:', reg3Desc: 'Neue regulatorische Vorgaben in mehreren Rechtsordnungen betonen phishing-resistente, kryptografische Authentifizierung.',
       reg4Label: 'Weitere Bedrohungen:', reg4Desc: 'eSIM/SIM-Swap-Betrug und KI-Agenten, die ohne nachweisbar begrenzte Befugnis handeln.',
       solutionsTitle: 'PTERI Loesungen',
       mfaTitle: 'MFA-Verbesserung', mfaProblem: 'Legacy OTP-basierte MFA ist anfaellig fuer Phishing.',
@@ -340,9 +340,9 @@ const t = computed(() => {
       paymentsPoints: ['Echtes Peer-to-Peer ohne Verwahrung', 'Kundenseitig kontrollierte Zahlungsdaten', 'Souveraene Kontrolle ueber Gelder'],
       aiTitle: 'KI-Agenten und sichere A2A-Interaktionen', aiProblem: 'Unsichere Agenten riskieren Identitaetsdiebstahl.',
       aiSolution: 'KI-Agenten verifizierbare kryptografische Autoritaet geben.',
-      aiPoints: ['Deterministischer Beweis zur Aktionszeit', 'ZK-verbesserter Datenschutz', 'Betrieben von PTERI Intelligence und MCP2'],
+      aiPoints: ['Deterministischer Beweis zur Aktionszeit', 'ZK-verbesserter Datenschutz', 'Betrieben von PTERI Intelligence und MCP'],
       enterpriseTitle: 'Enterprise-Bereitstellung', enterpriseDesc: 'Google Cloud-Infrastruktur mit Verfuegbarkeits-SLAs, pruefbereit und global skalierbar.',
-      devKitTitle: 'Entwickler-Kit und MCP2', devKitDesc: 'Vollstaendige SDKs + KI-gestuetzte MCP2-Tools.',
+      devKitTitle: 'Entwickler-Kit und MCP', devKitDesc: 'Vollstaendige SDKs + KI-gestuetzte MCP-Tools.',
       useCasesTitle: 'Reale Anwendungsfaelle',
       useCases: [
         { title: 'Banking und Finanzen', desc: 'Sichere Kundenanmeldungen und Unterstuetzung regulierter Authentifizierungsanforderungen im Finanzsektor.', icon: 'la-piggy-bank', iconBg: 'bg-emerald-500/10 text-emerald-500', span: '' },
@@ -367,7 +367,7 @@ const t = computed(() => {
       regIntro: 'Los estandares de autenticacion se estan alejando de OTP y SMS:',
       reg1Label: 'Direccion regulatoria:', reg1Desc: 'Los reguladores de varios mercados se estan alejando de la autenticacion basada solo en OTP hacia metodos multifactor mas fuertes.',
       reg2Label: 'OTP por SMS y correo electronico:', reg2Desc: 'Cada vez mas se consideran factores debiles, porque sus canales de entrega pueden ser interceptados o redirigidos.',
-      reg3Label: 'Estandares publicados:', reg3Desc: '(NIST SP 800-63-4, PSD2, NIS2) enfatizan la autenticacion criptografica resistente al phishing.',
+      reg3Label: 'Estandares publicados:', reg3Desc: 'La orientacion regulatoria emergente en varias jurisdicciones enfatiza la autenticacion criptografica resistente al phishing.',
       reg4Label: 'Amenazas adicionales:', reg4Desc: 'Fraude eSIM/SIM-swap y agentes de IA que operan sin autoridad verificable y limitada.',
       solutionsTitle: 'Soluciones PTERI',
       mfaTitle: 'Mejora de MFA', mfaProblem: 'El MFA basado en OTP es vulnerable al phishing.',
@@ -378,9 +378,9 @@ const t = computed(() => {
       paymentsPoints: ['Peer-to-peer real sin custodia', 'Credenciales de pago controladas por el cliente', 'Control soberano de fondos'],
       aiTitle: 'Agentes IA e Interacciones A2A Seguras', aiProblem: 'Los agentes no seguros arriesgan suplantacion y robo de datos.',
       aiSolution: 'Dar a los agentes IA autoridad criptografica verificable.',
-      aiPoints: ['Prueba determinista en tiempo de accion', 'Privacidad y delegacion ZK', 'Impulsado por PTERI Intelligence y MCP2'],
+      aiPoints: ['Prueba determinista en tiempo de accion', 'Privacidad y delegacion ZK', 'Impulsado por PTERI Intelligence y MCP'],
       enterpriseTitle: 'Despliegue Empresarial', enterpriseDesc: 'Infraestructura Google Cloud con SLAs de disponibilidad, lista para auditoria.',
-      devKitTitle: 'Kit de Desarrollador y MCP2', devKitDesc: 'SDKs completos + herramientas MCP2 con IA.',
+      devKitTitle: 'Kit de Desarrollador y MCP', devKitDesc: 'SDKs completos + herramientas MCP con IA.',
       useCasesTitle: 'Casos de Uso Reales',
       useCases: [
         { title: 'Banca y Finanzas', desc: 'Inicios de sesion seguros y respaldo a requisitos regulados de autenticacion en el sector financiero.', icon: 'la-piggy-bank', iconBg: 'bg-emerald-500/10 text-emerald-500', span: '' },
@@ -405,7 +405,7 @@ const t = computed(() => {
       regIntro: '認証標準はOTPとSMSから離れつつあります：',
       reg1Label: '規制の方向性：', reg1Desc: '複数の市場の規制当局は、OTPのみの認証からより強力な多要素認証へと移行しつつあります。',
       reg2Label: 'SMSおよびメールOTP：', reg2Desc: '配信経路が傍受または転送される可能性があるため、弱い要素とみなされることが増えています。',
-      reg3Label: '公開されている標準：', reg3Desc: '(NIST SP 800-63-4、PSD2、NIS2) はフィッシング耐性のある暗号認証を重視しています。',
+      reg3Label: '公開されている標準：', reg3Desc: '複数の法域における新たな規制指針は、フィッシング耐性のある暗号認証を重視しています。',
       reg4Label: '追加の脅威：', reg4Desc: 'eSIM/SIMスワップ詐欺と、検証可能な限定権限なしに動作するAIエージェント。',
       solutionsTitle: 'PTERIソリューション',
       mfaTitle: 'MFA強化', mfaProblem: 'レガシーOTPベースのMFAはフィッシングに脆弱です。',
@@ -416,9 +416,9 @@ const t = computed(() => {
       paymentsPoints: ['ゼロカストディの真のP2P', '顧客管理の決済情報', '資金の主権的管理'],
       aiTitle: 'AIエージェントと安全なA2Aインタラクション', aiProblem: '安全でないエージェントはなりすましやデータ盗難のリスクがあります。',
       aiSolution: 'AIエージェントに検証可能な暗号権限を付与します。',
-      aiPoints: ['アクション時の決定論的証明', 'ZK強化プライバシーと委任', 'PTERI IntelligenceとMCP2で動作'],
+      aiPoints: ['アクション時の決定論的証明', 'ZK強化プライバシーと委任', 'PTERI IntelligenceとMCPで動作'],
       enterpriseTitle: 'エンタープライズ展開', enterpriseDesc: 'Google Cloudインフラ、稼働率SLA、監査対応、グローバルスケール。',
-      devKitTitle: '開発者キットとMCP2', devKitDesc: '完全なSDK + AI搭載MCP2ツール。',
+      devKitTitle: '開発者キットとMCP', devKitDesc: '完全なSDK + AI搭載MCPツール。',
       useCasesTitle: '実世界のユースケース',
       useCases: [
         { title: 'バンキングと金融', desc: '安全なログインと、金融分野における規制対応の認証要件の支援。', icon: 'la-piggy-bank', iconBg: 'bg-emerald-500/10 text-emerald-500', span: '' },
@@ -443,7 +443,7 @@ const t = computed(() => {
       regIntro: 'معايير المصادقة تتجه بعيدا عن OTP و SMS:',
       reg1Label: 'الاتجاه التنظيمي:', reg1Desc: 'تتجه الجهات التنظيمية في اسواق متعددة بعيدا عن المصادقة القائمة على OTP فقط نحو اساليب متعددة العوامل اقوى.',
       reg2Label: 'OTP عبر SMS والبريد الالكتروني:', reg2Desc: 'يعد بشكل متزايد عاملا ضعيفا لان قنوات التوصيل قد تتعرض للاعتراض او التحويل.',
-      reg3Label: 'المعايير المنشورة:', reg3Desc: '(NIST SP 800-63-4, PSD2, NIS2) تركز على مصادقة تشفيرية مقاومة للتصيد.',
+      reg3Label: 'المعايير المنشورة:', reg3Desc: 'التوجهات التنظيمية الناشئة في عدة ولايات قضائية تركز على مصادقة تشفيرية مقاومة للتصيد.',
       reg4Label: 'تهديدات اضافية:', reg4Desc: 'احتيال eSIM/SIM-swap ووكلاء الذكاء الاصطناعي الذين يعملون دون سلطة محددة قابلة للتحقق.',
       solutionsTitle: 'حلول PTERI',
       mfaTitle: 'تحسين MFA', mfaProblem: 'MFA القائم على OTP القديم عرضة للتصيد.',
@@ -454,9 +454,9 @@ const t = computed(() => {
       paymentsPoints: ['نظير الى نظير حقيقي بدون حضانة', 'بيانات اعتماد دفع يتحكم بها العميل', 'سيطرة سيادية على الاموال'],
       aiTitle: 'وكلاء الذكاء الاصطناعي وتفاعلات A2A الامنة', aiProblem: 'الوكلاء غير الامنين يخاطرون بانتحال الشخصية وسرقة البيانات.',
       aiSolution: 'امنح وكلاء الذكاء الاصطناعي سلطة تشفيرية قابلة للتحقق.',
-      aiPoints: ['اثبات حتمي في وقت الاجراء', 'خصوصية وتفويض ZK', 'مدعوم بـ PTERI Intelligence وMCP2'],
+      aiPoints: ['اثبات حتمي في وقت الاجراء', 'خصوصية وتفويض ZK', 'مدعوم بـ PTERI Intelligence وMCP'],
       enterpriseTitle: 'النشر المؤسسي', enterpriseDesc: 'بنية تحتية Google Cloud مع اتفاقيات مستوى خدمة للتوافر، جاهزة للتدقيق وقابلة للتوسع عالميا.',
-      devKitTitle: 'مجموعة ادوات المطور وMCP2', devKitDesc: 'SDKs كاملة + ادوات MCP2 مدعومة بالذكاء الاصطناعي.',
+      devKitTitle: 'مجموعة ادوات المطور وMCP', devKitDesc: 'SDKs كاملة + ادوات MCP مدعومة بالذكاء الاصطناعي.',
       useCasesTitle: 'حالات الاستخدام الواقعية',
       useCases: [
         { title: 'البنوك والمالية', desc: 'تسجيلات دخول امنة ودعم متطلبات المصادقة المنظمة في القطاع المالي.', icon: 'la-piggy-bank', iconBg: 'bg-emerald-500/10 text-emerald-500', span: '' },

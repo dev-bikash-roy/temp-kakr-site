@@ -363,10 +363,10 @@ export default defineNuxtConfig({
       crawlLinks: false,
       failOnError: false,
       routes: [
-        '/', '/about', '/api-policy', '/compliance-infrastructure', '/contact',
+        '/', '/about', '/api-policy', '/contact',
         '/contact-sales', '/decentralized-as-a-service', '/disclaimer', '/faqs',
         '/financial-services', '/government-public-sector', '/healthcare', '/help', '/identity',
-        '/industry', '/kakr-explained', '/partnerships', '/pilot-programm',
+        '/industry', '/kakr-explained', '/partnerships',
         '/plans-pricing', '/platforms', '/PodcastSection', '/press', '/press2',
         '/pricing', '/privacy-policy', '/platform', '/retail-ecommerce', '/roadmap',
         '/solutions', '/technology-saas', '/telecom-esim', '/terms-of-service',
@@ -402,6 +402,15 @@ export default defineNuxtConfig({
       // @nuxt/content force-writes `prerender: true` for it during its own module
       // setup, which runs after this config is merged, so it would win. It is
       // overridden from `modules/newsroom-content-privacy.ts` instead.
+
+      // Retired per the Aug 14 handoff §3 route table. None of these three are
+      // linked from the live header or footer nav (verified), so this only
+      // catches direct/search traffic — which a 301 preserves rather than 404s.
+      // The page files are left in place rather than deleted, so this is
+      // reversible without recovering anything from history.
+      '/pilot-programm': { redirect: { to: '/contact?intent=pilot', statusCode: 301 } },
+      '/security-overview': { redirect: { to: '/trust-center', statusCode: 301 } },
+      '/compliance-infrastructure': { redirect: { to: '/trust-center', statusCode: 301 } },
 
       // The editor is a private surface: never indexed, never cached, and never
       // reachable from public navigation.

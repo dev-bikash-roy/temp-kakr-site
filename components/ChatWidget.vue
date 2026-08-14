@@ -352,8 +352,11 @@ const sendMessage = async () => {
 <style scoped>
 .chat-widget {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  /* env() falls back to 0 on non-iOS browsers, so this is just 24px there;
+     on notched/home-indicator devices it keeps the launcher clear of the
+     inset area (handoff §7 "respect env(safe-area-inset-*)"). */
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  right: calc(24px + env(safe-area-inset-right));
   /* Below modal overlays (which use 9999) so dialogs such as the contact-form
      success card are never blocked by the launcher, but above page content.
      Audit p4.3 / p15.5: the widget must not obscure content or mobile CTAs —
@@ -455,6 +458,8 @@ const sendMessage = async () => {
   color: white;
   cursor: pointer;
   padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -546,7 +546,7 @@
           "desc": "Verifiable cryptographic authority for autonomous agents. Secure agent-to-agent interactions with verifiable authorization evidence.",
           "points": {
             "0": "ZK-enhanced privacy and delegation",
-            "1": "Powered by MCP2 AI tools",
+            "1": "Powered by MCP AI tools",
             "2": "First-class cryptographic principals for AI"
           }
         },
@@ -562,12 +562,12 @@
         },
         "5": {
           "title": "PTERI Developer Tools",
-          "sub": "Full SDKs, APIs, and MCP2",
-          "desc": "Full SDKs, APIs, and MCP2 for rapid, AI-powered development. Incremental adoption - start small, scale sovereign trust.",
+          "sub": "Full SDKs, APIs, and MCP",
+          "desc": "Full SDKs, APIs, and MCP for rapid, AI-powered development. Incremental adoption - start small, scale sovereign trust.",
           "points": {
             "0": "Self-custody wallet API, PTERI Payments API, blockchain service API",
             "1": "Start with MFA, expand to payments, AI, or IoT",
-            "2": "AI-powered MCP2 for rapid integration"
+            "2": "AI-powered MCP for rapid integration"
           }
         }
       }
@@ -789,7 +789,7 @@
     },
     "vision": {
       "title": "Our Vision",
-      "description": "A world without passwords. Where identity is fully verifiable and user-controlled, authentication cannot be phished or hacked, payments are self-custodial, and AI agents operate safely within cryptographically enforced boundaries."
+      "description": "A world without passwords. Where identity is fully verifiable and user-controlled, authentication is phishing-resistant by design, payments are self-custodial, and AI agents operate safely within cryptographically enforced boundaries."
     },
     "cta": {
       "title": "Ready to secure every identity and action?",
@@ -956,7 +956,7 @@
     },
     "authority": {
       "overline": "Defining Properties",
-      "title": "Identity as[br][span]Cryptographic[br]Authority[/span]",
+      "title": "Identity as [br][span]Cryptographic [br]Authority[/span]",
       "description": "No shared secrets. No custodial storage. No probability scores. Just cryptographic proof.",
       "properties": [
         "Identity bound to on-device cryptographic keys",
@@ -1081,7 +1081,7 @@
     },
     "devExp": {
       "overline": "Developer Experience",
-      "title": "Designed for[br][span]Incremental Integration[/span]",
+      "title": "Designed for [br][span]Incremental Integration[/span]",
       "description": "Drop-in cryptographic identity. Works alongside your existing stack — no rewrites required.",
       "readDocs": "Read the Docs",
       "features": [
@@ -1098,8 +1098,8 @@
           "desc": "SDKs for JS, Python, Java, PHP, Go. REST API works with any stack."
         },
         {
-          "title": "MCP2 AI Integration",
-          "desc": "AI-powered MCP2 tools let LLMs and agents call PTERI to sign, verify, or delegate."
+          "title": "MCP AI Integration",
+          "desc": "AI-powered MCP tools let LLMs and agents call PTERI to sign, verify, or delegate."
         }
       ],
       "codePanel": {
@@ -1119,7 +1119,7 @@
     },
     "finalCta": {
       "overline": "Start Building",
-      "title": "One Authorization Model.[br][span]Every Workflow.[/span]",
+      "title": "One Authorization Model. [br][span]Every Workflow.[/span]",
       "subtitle": "Start with one application, one agent, or one sensitive workflow and add passwordless authentication and runtime authorization without replacing your existing infrastructure.",
       "ctas": {
         "identity": "Start Building Free",

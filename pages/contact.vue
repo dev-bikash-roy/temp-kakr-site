@@ -9,7 +9,7 @@
       <section class="relative pt-24 pb-20 overflow-hidden">
         <div class="absolute inset-0 pointer-events-none z-0" style="background-image: url('/hero-bg.svg'); background-size: cover; background-position: top center; opacity: 0.1;"></div>
         
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-8">
             Get in Touch
           </div>
@@ -115,7 +115,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import HubspotCalendar from "@/components/HubspotCalendar.vue";
 import { useSEO } from '~/composables/useSEO'
 
@@ -132,31 +131,6 @@ const focusPoints = [
   { title: 'PTERI APIs', desc: 'Full SDKs and documentation.' },
   { title: 'Enterprise', desc: 'Google Cloud-backed infrastructure.' }
 ]
-
-onMounted(() => {
-  const loadForm = () => {
-    if ((window as any).hbspt) {
-      ;(window as any).hbspt.forms.create({
-        region: 'na2',
-        portalId: '245270532',
-        formId: 'addaed80-8534-4ae5-9642-4ce1cf2b98fc',
-        target: '.hs-form-container-contact',
-      })
-    }
-  }
-
-  if ((window as any).hbspt) {
-    loadForm()
-  } else {
-    const script = document.createElement('script')
-    script.src = 'https://js-na2.hsforms.net/forms/embed/v2.js'
-    script.async = true
-    script.defer = true
-    script.charset = 'utf-8'
-    script.onload = loadForm
-    document.head.appendChild(script)
-  }
-})
 </script>
 
 <style scoped>

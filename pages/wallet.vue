@@ -15,11 +15,11 @@
         </div>
 
         <div class="max-w-3xl" :class="isRtl ? 'text-right' : 'text-left'">
-          <h1 class="font-black leading-[1.03] tracking-[-0.035em] text-white mb-6 page-hero-title wlt-anim wlt-anim--2">
+          <h1 class="font-black leading-[1.03] tracking-[-0.035em] text-white mb-6 page-hero-title">
             {{ content.titlePart1 }}<span style="background: linear-gradient(135deg, #34d399 0%, #10b981 60%, #6ee7b7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(52,211,153,0.4));">{{ content.titlePart2 }}</span>{{ content.titlePart3 }}
           </h1>
-          <p class="max-w-xl leading-relaxed mb-8 wlt-anim wlt-anim--3" style="font-size: 1.2rem; color: rgba(209,250,229,0.75);">{{ content.description }}</p>
-          <div class="flex flex-wrap gap-3 mb-10 wlt-anim wlt-anim--4">
+          <p class="max-w-xl leading-relaxed mb-8" style="font-size: 1.2rem; color: rgba(209,250,229,0.75);">{{ content.description }}</p>
+          <div class="flex flex-wrap gap-3 mb-10">
             <a href="https://apps.apple.com/us/app/pteri-wallet/id6751649780" target="_blank" class="btn-primary">{{ content.downloadIOS }}</a>
             <a href="https://play.google.com/store/apps/details?id=org.kakr.pteri" target="_blank" class="btn-ghost">{{ content.downloadAndroid }}</a>
             <a href="https://pteri.kakr.org" target="_blank" class="btn-ghost">{{ content.viewDocs }}</a>

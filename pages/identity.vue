@@ -12,9 +12,9 @@
           </div>
         </div>
 
-        <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="text-center max-w-4xl mx-auto">
           <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
-            Deterministic Identity for<br class="hidden md:block" />
+            Deterministic Identity for <br class="hidden md:block" />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400">Humans & AI</span>
           </h1>
           <p class="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed mt-8">
@@ -416,7 +416,7 @@ const content = computed(() => {
             'Identity is bound to cryptographic keys',
             'Keys are generated and held by the authority holder',
             'No shared secrets are exchanged',
-            'Proof is stateless and independently verifiable',
+            'Proof is designed to be stateless and independently verifiable',
             'No confidence scores or reputation systems are used'
         ],
         punchline: 'Every identity decision resolves deterministically to allow or deny. There is no guessing involved.'

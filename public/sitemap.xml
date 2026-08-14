@@ -28,7 +28,8 @@
   <url><loc>https://kakr.ai/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/contact-sales</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/start-pilot</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kakr.ai/pilot-programm</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <!-- /pilot-programm is a 301 to /contact?intent=pilot (handoff §3) — a redirect
+       target, not a canonical page, so it does not belong in the sitemap. -->
 
   <url><loc>https://kakr.ai/pteri</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://kakr.ai/kakr-explained</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
@@ -42,8 +43,9 @@
   <url><loc>https://kakr.ai/identity</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/authentication</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/payments</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kakr.ai/security-overview</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kakr.ai/compliance-infrastructure</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <!-- /security-overview and /compliance-infrastructure are 301s to /trust-center
+       (handoff §3) — redirect targets, not canonical pages, so they don't belong
+       in the sitemap. -->
   <url><loc>https://kakr.ai/decentralized-as-a-service</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/blockchain-infrastructure</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/iot-security</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>

@@ -25,7 +25,7 @@
         <span class="bg-gradient-to-r from-green-600 via-green-500 to-green-600 bg-clip-text text-transparent">
           {{ explainedTranslations.hero.titlePrefix }}
         </span>
-        <span class="sr-only">{{ explainedTranslations.hero.titleSuffix }}</span>
+        <span class="sr-only">{{ ' ' + explainedTranslations.hero.titleSuffix }}</span>
         <span class="type-line">
           <span class="text-neutral-900 dark:text-neutral-100" ref="typedTarget"></span>
           <span class="type-cursor" aria-hidden="true">|</span>

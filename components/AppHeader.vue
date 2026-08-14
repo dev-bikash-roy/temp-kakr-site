@@ -242,7 +242,7 @@
         <!-- Mobile controls -->
         <div class="lg:hidden flex items-center gap-2 ml-auto">
           <div class="relative">
-            <button @click="toggleMobileSubmenu('mobileLang')" class="flex items-center gap-1 p-2 rounded-lg text-white hover:bg-white/10 uppercase font-semibold text-xs">
+            <button @click="toggleMobileSubmenu('mobileLang')" class="flex items-center justify-center gap-1 min-h-[44px] min-w-[44px] p-2 rounded-lg text-white hover:bg-white/10 uppercase font-semibold text-xs">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
               {{ locale }}
               <svg class="w-3 h-3 text-slate-400 transition-transform" :class="{ 'rotate-180': mobileSubmenu === 'mobileLang' }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
@@ -260,7 +260,14 @@
             </div>
           </div>
 
-          <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-white hover:bg-white/10 transition-colors">
+          <button
+            ref="mobileMenuTrigger"
+            @click="mobileMenuOpen = !mobileMenuOpen"
+            class="flex items-center justify-center min-h-[44px] min-w-[44px] p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
+            :aria-expanded="mobileMenuOpen"
+            aria-controls="mobile-menu-drawer"
+            :aria-label="mobileMenuOpen ? 'Close menu' : 'Open menu'"
+          >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -280,13 +287,21 @@
         leave-from-class="translate-x-0"
         leave-to-class="-translate-x-full"
       >
-        <div v-show="mobileMenuOpen" class="lg:hidden fixed inset-0 z-[60] flex">
+        <div
+          v-show="mobileMenuOpen"
+          id="mobile-menu-drawer"
+          ref="mobileMenuDrawer"
+          class="lg:hidden fixed inset-0 z-[60] flex"
+          role="dialog"
+          aria-modal="true"
+          @keydown="onDrawerKeydown"
+        >
           <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" @click="mobileMenuOpen = false"></div>
 
           <div class="relative w-[85%] max-w-sm bg-black shadow-2xl flex flex-col border-r border-white/10" style="height: 100%; height: 100dvh; max-height: 100dvh;">
             <div class="h-16 flex items-center px-6 border-b border-white/10 shrink-0">
               <img src="/kakrlabs-logo.png" alt="Kakr Labs" class="h-9 w-auto" />
-              <button @click="mobileMenuOpen = false" class="ml-auto text-slate-400 hover:text-white">
+              <button ref="mobileMenuClose" @click="mobileMenuOpen = false" class="ml-auto flex items-center justify-center min-h-[44px] min-w-[44px] text-slate-400 hover:text-white" aria-label="Close menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
             </div>
@@ -382,7 +397,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
+import { ref, onMounted, onUnmounted, computed, watch, nextTick } from 'vue'
 
 const { locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
@@ -393,6 +408,46 @@ const activeMenu = ref(null)
 const mobileMenuOpen = ref(false)
 const mobileSubmenu = ref(null)
 let closeTimer = null
+
+// Mobile drawer: focus trap, Escape-to-close, and focus restoration
+// (handoff §8 — mobile navigation requires all three).
+const mobileMenuTrigger = ref(null)
+const mobileMenuClose = ref(null)
+const mobileMenuDrawer = ref(null)
+
+function onDrawerKeydown(e) {
+  if (e.key === 'Escape') {
+    mobileMenuOpen.value = false
+    return
+  }
+  if (e.key !== 'Tab' || !mobileMenuDrawer.value) return
+
+  const focusable = mobileMenuDrawer.value.querySelectorAll(
+    'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  )
+  if (!focusable.length) return
+  const first = focusable[0]
+  const last = focusable[focusable.length - 1]
+
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault()
+    last.focus()
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault()
+    first.focus()
+  }
+}
+
+watch(mobileMenuOpen, (val) => {
+  if (typeof document === 'undefined') return
+  if (val) {
+    // Move focus into the drawer once it's actually visible.
+    nextTick(() => mobileMenuClose.value?.focus())
+  } else {
+    // Restore focus to the trigger that opened it.
+    mobileMenuTrigger.value?.focus()
+  }
+})
 
 const availableLocales = computed(() => {
   return locales.value
@@ -637,7 +692,6 @@ const t = computed(() => translations[locale.value] || translations.en)
 const company = computed(() => [
   { name: t.value.about, link: '/about', desc: 'Our mission and team' },
   { name: t.value.partnerships, link: '/partnerships', desc: 'Work together with Kakr' },
-  { name: t.value.newsroom, link: '/newsroom', desc: t.value.newsroomDesc },
   { name: t.value.contact, link: '/contact', desc: 'Get in touch with us' }
 ])
 
@@ -659,7 +713,6 @@ const product = computed(() => [
   { name: 'Platform Overview', link: '/platform', desc: 'The full Kakr platform' },
   { name: t.value.pteri, link: '/platform#pteri', desc: 'Verifiable identity engine' },
   { name: t.value.identity, link: '/platform#authority', desc: 'Verifiable digital identity' },
-  { name: t.value.intelligence, link: 'https://pteri.org/chat/pteri-intelligence', desc: 'Risk & fraud intelligence', external: true },
   { name: t.value.pricing, link: '/platform#pricing', desc: 'Plans for every scale' },
   { name: t.value.agentMarketplace, link: '', desc: t.value.agentMarketplaceDesc, soon: true }
 ])
@@ -667,8 +720,8 @@ const product = computed(() => [
 const solutions = computed(() => [
   { name: t.value.whoItsFor, link: '/solutions#use-cases', desc: 'Workforce, AI agents, IoT & more' },
   { name: t.value.identityUseCases, link: '/solutions#pteri-solutions', desc: 'Passwordless MFA, AI agents, payments & more' },
-  { name: t.value.coreModules, link: 'https://docs.kakr.ai/docs/product-and-access/13.1-pricing-plans?_highlight=enterprise#pteri-enterprise', desc: 'Existing-system protection & MCP tooling', external: true },
-  { name: t.value.seeItInAction, link: '/solutions#contact', desc: 'Get matched with the right solution' }
+  { name: t.value.coreModules, link: '/api-hub', desc: 'Existing-system protection & MCP tooling' },
+  { name: t.value.seeItInAction, link: '/contact?intent=pilot', desc: 'Get matched with the right solution' }
 ])
 
 // Methods

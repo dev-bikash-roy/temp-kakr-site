@@ -14,7 +14,7 @@
             </span>
           </div>
 
-          <div class="api-anim api-anim--2">
+          <div>
             <h1 class="api-hero__heading">
               {{ $t('apiPage.hero.titlePart1') }}<span class="api-heading-gradient">{{ $t('apiPage.hero.titleHighlight') }}</span>
             </h1>
@@ -32,7 +32,7 @@
             <span class="api-stat-badge"><i class="las la-code"></i> {{ $t('apiPage.hero.badges.agnostic') }}</span>
           </div>
 
-          <div class="api-hero__ctas api-anim api-anim--4">
+          <div class="api-hero__ctas">
             <a href="https://docs.kakr.ai" target="_blank" class="api-cta-primary group">
               {{ $t('apiPage.hero.cta.docs') }}
               <i class="las la-arrow-right group-hover:translate-x-1 transition-transform"></i>
@@ -463,7 +463,7 @@ const apiHubServiceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   'name': 'PTERI Developer APIs & SDK',
-  'description': 'Enterprise-grade Web3 APIs and SDKs for building secure identity, authentication, payments, and AI agent integrations. REST, gRPC, and MCP2 protocol support.',
+  'description': 'Enterprise-grade Web3 APIs and SDKs for building secure identity, authentication, payments, and AI agent integrations. REST, gRPC, and MCP protocol support.',
   'url': 'https://kakr.ai/api-hub',
   'provider': { '@id': 'https://kakr.ai/#organization' },
   'serviceType': 'Blockchain API & Developer Platform',

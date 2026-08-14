@@ -11,7 +11,7 @@
         </div>
         <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
           {{ content.hero.title }}
-          <span class="block text-green-600 mt-2">{{ content.hero.titleHighlight }}</span>
+          <span class="block text-green-600 mt-2"> {{ content.hero.titleHighlight }}</span>
         </h1>
         <p class="text-xl sm:text-2xl text-white/90  max-w-4xl mx-auto leading-relaxed mb-6">
           {{ content.hero.subtitle }}

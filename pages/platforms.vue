@@ -10,7 +10,7 @@
             <span class="text-blue-700 dark:text-blue-300 text-sm font-medium">{{ platformsTranslations.hero.badge }}</span>
           </div>
           
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" data-aos="fade-up">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             {{ platformsTranslations.hero.titlePrefix }} <br>
             <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               <span aria-live="polite">{{ typedText }}</span><span class="caret" aria-hidden="true"></span>

@@ -9,7 +9,7 @@
       <!-- Header -->
       <div class="pricing-section__header text-center mb-10" data-aos="fade-up">
         <h2 class="pricing-section__title text-4xl sm:text-5xl font-bold text-white leading-tight">
-          {{ $t('pricing.title') }}<br />
+          {{ $t('pricing.title') }} <br />
           <span style="background: linear-gradient(90deg, #22d3ee 0%, #4ade80 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{{ $t('pricing.titleHighlight') }}</span>
         </h2>
         <p class="text-slate-400 mt-4 max-w-xl mx-auto">{{ $t('pricing.subtitle') }}</p>

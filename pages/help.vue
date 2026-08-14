@@ -173,8 +173,8 @@ const popularGuides = [
   },
   {
     title: 'Security & Compliance',
-    desc: 'GDPR and HIPAA‑aligned controls and audit evidence.',
-    link: 'https://www.kakr.org/compliance-infrastructure'
+    desc: 'Controls and audit evidence designed to support GDPR and HIPAA-related requirements.',
+    link: 'https://kakr.ai/trust-center'
   },
   {
     title: 'Pricing model explained',

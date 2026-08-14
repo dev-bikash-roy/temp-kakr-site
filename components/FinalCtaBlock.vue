@@ -20,7 +20,7 @@
             </a>
 
             <!-- Book a Demo -->
-            <a href="/contact" class="group w-full sm:w-auto">
+            <a href="/contact?intent=demo" class="group w-full sm:w-auto">
               <button class="btn-secondary text-base sm:text-lg p-5 relative overflow-hidden border border-emerald-500/30 hover:border-emerald-400 w-full sm:w-[200px]">
                 <span class="relative z-10">Book a Demo</span>
                 <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

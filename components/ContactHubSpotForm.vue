@@ -93,6 +93,7 @@
 <script setup lang="ts">
 import { reactive, ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const { locale } = useI18n()
 
@@ -174,6 +175,23 @@ const form = reactive({
   message: '',
   consent: false,
 })
+
+// Preselect the reason from ?intent= so "Request a Pilot" / "Book a Demo" /
+// "Partnership" CTAs across the site land on the right option instead of
+// forcing the visitor to pick it again. Mapped to the closest existing
+// reason value rather than introducing new ones, since this field is
+// submitted straight through to a HubSpot property of unknown enum
+// constraints.
+const route = useRoute()
+const INTENT_TO_REASON: Record<string, string> = {
+  pilot: 'Request a Demo',
+  demo: 'Request a Demo',
+  partnership: 'Partnership / Collaboration',
+}
+const intent = typeof route.query.intent === 'string' ? route.query.intent.toLowerCase() : ''
+if (intent && INTENT_TO_REASON[intent]) {
+  form.reason = INTENT_TO_REASON[intent]
+}
 
 async function submitForm() {
   errorMsg.value = ''
@@ -270,7 +288,9 @@ async function submitForm() {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
   color: #fff;
-  font-size: 0.875rem;
+  /* 16px minimum — anything smaller triggers iOS Safari's auto-zoom on focus
+     (handoff §7 "16px inputs to prevent iOS zoom"). */
+  font-size: 1rem;
   padding: 0.85rem 1.1rem;
   outline: none;
   transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;

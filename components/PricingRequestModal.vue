@@ -286,7 +286,8 @@ async function submit() {
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: 10px;
   color: #fff;
-  font-size: 0.875rem;
+  /* 16px minimum — anything smaller triggers iOS Safari's auto-zoom on focus. */
+  font-size: 1rem;
   padding: 0.75rem 1rem;
   outline: none;
   font-family: inherit;

@@ -19,9 +19,9 @@
           </span>
         </div>
 
-        <div class="max-w-4xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="max-w-4xl">
           <h1 class="font-black leading-[1.03] tracking-[-0.035em] text-white mb-6" style="font-size: clamp(2rem, 5vw, 4rem);">
-            {{ $t('about.hero.title').split(' ').slice(0, 4).join(' ') }}<br>
+            {{ $t('about.hero.title').split(' ').slice(0, 4).join(' ') }} <br>
             <span style="background: linear-gradient(135deg, #34d399 0%, #10b981 60%, #6ee7b7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(52,211,153,0.4));">{{ $t('about.hero.title').split(' ').slice(4).join(' ') }}</span>
           </h1>
           <p class="leading-relaxed max-w-2xl" style="color: rgba(209,250,229,0.75); font-size: 1.2rem;">
@@ -174,7 +174,7 @@
           <a href="https://pteri.org" target="_blank" class="btn-primary flex items-center gap-2">{{ $t('about.cta.explorePlatform') }} <i class="las la-arrow-right"></i></a>
           <a href="https://pteri.kakr.org" target="_blank" class="px-6 py-3 rounded-xl font-bold text-sm bg-transparent hover:bg-emerald-500/5 border border-white/20 hover:border-emerald-500/60 text-white hover:text-emerald-400 transition-all">{{ $t('about.cta.downloadWallet') }}</a>
           <a href="https://docs.kakr.ai" target="_blank" class="px-6 py-3 rounded-xl font-bold text-sm bg-transparent hover:bg-emerald-500/5 border border-white/20 hover:border-emerald-500/60 text-white hover:text-emerald-400 transition-all">{{ $t('about.cta.readDocs') }}</a>
-          <a href="/contact" class="px-6 py-3 rounded-xl font-bold text-sm bg-transparent hover:bg-emerald-500/5 border border-white/20 hover:border-emerald-500/60 text-white hover:text-emerald-400 transition-all">{{ $t('about.cta.bookDemo') }}</a>
+          <a href="/contact?intent=demo" class="px-6 py-3 rounded-xl font-bold text-sm bg-transparent hover:bg-emerald-500/5 border border-white/20 hover:border-emerald-500/60 text-white hover:text-emerald-400 transition-all">{{ $t('about.cta.bookDemo') }}</a>
         </div>
       </div>
     </section>

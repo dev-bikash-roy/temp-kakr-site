@@ -940,7 +940,8 @@ Security Contact Email: ${form.securityEmail || 'N/A'}
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 10px;
   color: #fff;
-  font-size: 0.875rem;
+  /* 16px minimum — anything smaller triggers iOS Safari's auto-zoom on focus. */
+  font-size: 1rem;
   padding: 0.7rem 1rem;
   outline: none;
   transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
@@ -950,7 +951,7 @@ Security Contact Email: ${form.securityEmail || 'N/A'}
 }
 @media (max-width: 640px) {
   .hs-input {
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 0.78rem 0.9rem;
     border-radius: 8px;
   }

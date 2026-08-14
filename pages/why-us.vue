@@ -230,7 +230,7 @@ const different = [
   'Security-first design at the protocol layer.',
   'Most deployed LTC stack for auth, payments, systems.',
   'End-to-end: wallets, rails, infrastructure APIs, consistently high uptime.',
-  'No user data collection - nothing to steal.',
+  'Minimal data collection by design.',
   'AI-powered deployment - infra in minutes.'
 ]
 

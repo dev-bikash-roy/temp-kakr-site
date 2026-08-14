@@ -140,7 +140,7 @@
 
         <div class="mt-8 text-center">
           <p class="text-2xl font-bold text-white ">
-            Zero downtime. Zero maintenance. Zero exposed secrets.
+            Built for high availability, low maintenance overhead, and no server-held shared secrets.
           </p>
         </div>
       </div>
@@ -188,7 +188,7 @@
     <section class="py-20 px-4 bg-black">
       <div class="container mx-auto max-w-6xl">
         <h2 class="text-4xl md:text-5xl font-black text-center mb-16 text-white ">
-          Why Kakr Labs Is Better Than<br/>Running Your Own Node
+          Why Kakr Labs Is Better Than <br/>Running Your Own Node
         </h2>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

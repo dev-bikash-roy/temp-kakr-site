@@ -12,7 +12,7 @@
       </div>
 
       <div class="container-custom relative z-10 text-center pt-20">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight font-display max-w-5xl mx-auto leading-tight" data-aos="fade-up">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight font-display max-w-5xl mx-auto leading-tight">
           {{ content.hero.headline }}
         </h1>
         <p class="text-lg text-blue-300 font-medium tracking-wide uppercase mb-10" data-aos="fade-up" data-aos-delay="50">

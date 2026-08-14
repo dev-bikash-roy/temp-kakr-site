@@ -8,4 +8,3 @@ Disallow: /admin/
 
 Sitemap: https://kakr.ai/sitemap.xml
 Sitemap: https://kakr.ai/newsroom/sitemap.xml
-Sitemap: https://www.kakr.ai/sitemap.xml

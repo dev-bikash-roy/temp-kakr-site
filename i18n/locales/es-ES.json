@@ -527,7 +527,7 @@
     },
     "vision": {
       "title": "Nuestra Visión",
-      "description": "Un mundo sin contraseñas. Donde la identidad es completamente soberana, la autenticación no puede ser phisheada ni hackeada, los pagos son de autocustodia y los agentes de IA operan de forma segura dentro de límites criptográficamente aplicados."
+      "description": "Un mundo sin contraseñas. Donde la identidad es completamente soberana, la autenticación es resistente al phishing por diseño, los pagos son de autocustodia y los agentes de IA operan de forma segura dentro de límites criptográficamente aplicados."
     },
     "cta": {
       "title": "¿Listo para proteger cada identidad y acción?",
@@ -652,7 +652,7 @@
     },
     "authority": {
       "overline": "Propiedades Definitorias",
-      "title": "Identidad como[br][span]Autoridad[br]Criptográfica[/span]",
+      "title": "Identidad como [br][span]Autoridad [br]Criptográfica[/span]",
       "description": "Sin secretos compartidos. Sin almacenamiento custodiado. Sin puntuaciones de probabilidad. Solo prueba criptográfica.",
       "properties": [
         "Identidad vinculada a claves criptográficas en el dispositivo",
@@ -777,7 +777,7 @@
     },
     "devExp": {
       "overline": "Experiencia de Desarrollador",
-      "title": "Diseñado para[br][span]una Integración Incremental[/span]",
+      "title": "Diseñado para [br][span]una Integración Incremental[/span]",
       "description": "Identidad criptográfica lista para usar. Funciona junto a tu stack existente — sin necesidad de reescrituras.",
       "readDocs": "Leer la Documentación",
       "features": [
@@ -815,7 +815,7 @@
     },
     "finalCta": {
       "overline": "Empieza a Desarrollar",
-      "title": "Un Modelo de Autorización.[br][span]Todos los Flujos de Trabajo.[/span]",
+      "title": "Un Modelo de Autorización. [br][span]Todos los Flujos de Trabajo.[/span]",
       "subtitle": "Empieza con una aplicación, un agente o un flujo de trabajo sensible, y añade autenticación sin contraseña y autorización en tiempo de ejecución sin reemplazar tu infraestructura existente.",
       "ctas": {
         "identity": "Empieza Gratis",

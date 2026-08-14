@@ -530,7 +530,7 @@
     },
     "vision": {
       "title": "Unsere Vision",
-      "description": "Eine Welt ohne Passwörter. Wo Identität vollständig verifizierbar und nutzerkontrolliert ist, Authentifizierung nicht gephisht oder gehackt werden kann, Zahlungen selbstverwaltet sind und KI-Agenten sicher innerhalb kryptografisch durchgesetzter Grenzen operieren."
+      "description": "Eine Welt ohne Passwörter. Wo Identität vollständig verifizierbar und nutzerkontrolliert ist, Authentifizierung durch Design phishing-resistent ist, Zahlungen selbstverwaltet sind und KI-Agenten sicher innerhalb kryptografisch durchgesetzter Grenzen operieren."
     },
     "cta": {
       "title": "Bereit, jede Identität und Aktion zu sichern?",
@@ -655,7 +655,7 @@
     },
     "authority": {
       "overline": "Definierende Merkmale",
-      "title": "Identität als[br][span]kryptografische[br]Befugnis[/span]",
+      "title": "Identität als [br][span]kryptografische [br]Befugnis[/span]",
       "description": "Keine geteilten Geheimnisse. Keine verwahrte Speicherung. Keine Wahrscheinlichkeitswerte. Nur kryptografischer Nachweis.",
       "properties": [
         "Identität an gerätegebundene kryptografische Schlüssel geknüpft",
@@ -780,7 +780,7 @@
     },
     "devExp": {
       "overline": "Entwicklererfahrung",
-      "title": "Entwickelt für[br][span]schrittweise Integration[/span]",
+      "title": "Entwickelt für [br][span]schrittweise Integration[/span]",
       "description": "Sofort einsetzbare kryptografische Identität. Funktioniert parallel zu Ihrem bestehenden Stack — keine Neuentwicklung nötig.",
       "readDocs": "Dokumentation lesen",
       "features": [
@@ -818,7 +818,7 @@
     },
     "finalCta": {
       "overline": "Jetzt entwickeln",
-      "title": "Ein Autorisierungsmodell.[br][span]Jeder Workflow.[/span]",
+      "title": "Ein Autorisierungsmodell. [br][span]Jeder Workflow.[/span]",
       "subtitle": "Beginnen Sie mit einer Anwendung, einem Agenten oder einem sensiblen Workflow und fügen Sie passwortlose Authentifizierung sowie Laufzeit-Autorisierung hinzu — ohne Ihre bestehende Infrastruktur zu ersetzen.",
       "ctas": {
         "identity": "Kostenlos starten",

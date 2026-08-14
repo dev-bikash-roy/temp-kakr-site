@@ -24,8 +24,8 @@
           </p>
 
           <!-- H1 — one page-level heading, kept as HTML (not in SVG) -->
-          <h1 id="hero-title" class="home-hero__title font-bold tracking-tight text-white hero-anim hero-anim--title">
-            {{ content.hero.titlePart1 }}<br />
+          <h1 id="hero-title" class="home-hero__title font-bold tracking-tight text-white">
+            {{ content.hero.titlePart1 }} <br />
             <span
               class="relative z-10"
               style="background: linear-gradient(90deg, #34d399 0%, #10b981 50%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"
@@ -33,12 +33,12 @@
           </h1>
 
           <!-- Description -->
-          <p class="home-hero__subtitle text-slate-300 leading-relaxed hero-anim hero-anim--sub">
+          <p class="home-hero__subtitle text-slate-300 leading-relaxed">
             {{ content.hero.subtitle }}
           </p>
 
           <!-- CTA Buttons — min 44px height enforced via btn classes -->
-          <div class="home-hero__actions flex flex-col sm:flex-row flex-wrap gap-3 hero-anim hero-anim--cta">
+          <div class="home-hero__actions flex flex-col sm:flex-row flex-wrap gap-3">
             <a
               href="https://pteri.org/Register"
               target="_blank"
@@ -492,7 +492,7 @@ else:
           <a href="https://pteri.org/Register" target="_blank" class="btn-primary">
             {{ content.finalCta?.getStarted || 'Start Building Free' }}
           </a>
-          <a href="/contact" class="btn-ghost">
+          <a href="/contact?intent=pilot" class="btn-ghost">
             {{ content.finalCta?.demo || 'Request a Pilot' }}
           </a>
         </div>
