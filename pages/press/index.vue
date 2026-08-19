@@ -201,7 +201,7 @@ const content = computed(() => {
       },
       seo: {
         description: 'Official announcements, press resources, and contact information for Kakr Labs and PTERI.',
-        image: '/press-page-og.png'
+        image: '/og/og-press.png'
       }
     },
     de: {
@@ -268,7 +268,7 @@ const content = computed(() => {
       },
       seo: {
         description: 'Offizielle Ankündigungen, Presseressourcen und Kontaktinformationen für Kakr Labs und PTERI.',
-        image: '/press-page-og.png'
+        image: '/og/og-press.png'
       }
     },
     es: {
@@ -335,7 +335,7 @@ const content = computed(() => {
       },
       seo: {
         description: 'Anuncios oficiales, recursos de prensa e información de contacto para Kakr Labs y PTERI.',
-        image: '/press-page-og.png'
+        image: '/og/og-press.png'
       }
     },
     ja: {
@@ -402,7 +402,7 @@ const content = computed(() => {
       },
       seo: {
         description: 'Kakr LabsおよびPTERIに関する公式発表、プレスリソース、連絡先情報。',
-        image: '/press-page-og.png'
+        image: '/og/og-press.png'
       }
     },
     ar: {
@@ -469,7 +469,7 @@ const content = computed(() => {
       },
       seo: {
         description: 'الإعلانات الرسمية، وموارد الصحافة، ومعلومات الاتصال لـ Kakr Labs و PTERI.',
-        image: '/press-page-og.png'
+        image: '/og/og-press.png'
       }
     }
   }

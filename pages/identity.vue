@@ -508,7 +508,7 @@ const content = computed(() => {
       seo: {
         title: 'Deterministic Identity & Authentication | Kakr Labs',
         description: 'PTERI replaces passwords and OTPs with self-custodial cryptographic identity for humans, enterprises, and AI agents, ensuring secure authority at scale.',
-        image: '/identity-page-og.png'
+        image: '/og/og-identity.png'
       },
       systemsNote: 'PTERI identity is designed for incremental adoption.'
     },
@@ -610,7 +610,7 @@ const content = computed(() => {
       seo: {
         title: 'Deterministische Identität & Authentifizierung | Kakr Labs',
         description: 'PTERI ersetzt Passwörter und OTPs durch selbstverwaltete kryptografische Identität für Menschen, Unternehmen und KI-Agenten.',
-        image: '/identity-page-og.png'
+        image: '/og/og-identity.png'
       },
       faqs: {
         title: 'Identitäts-FAQs',
@@ -720,7 +720,7 @@ const content = computed(() => {
       seo: {
         title: 'Identidad Determinista y Autenticación | Kakr Labs',
         description: 'PTERI reemplaza contraseñas y OTPs con identidad criptográfica de autocustodia para humanos, empresas y agentes de IA.',
-        image: '/identity-page-og.png'
+        image: '/og/og-identity.png'
       },
       faqs: {
         title: 'Preguntas Frecuentes de Identidad',
@@ -830,7 +830,7 @@ const content = computed(() => {
       seo: {
         title: '決定論的アイデンティティ＆認証 | Kakr Labs',
         description: 'PTERIは、人間、企業、およびAIエージェントのために、パスワードとOTPを自己管理型の暗号学的アイデンティティに置き換えます。',
-        image: '/identity-page-og.png'
+        image: '/og/og-identity.png'
       },
       faqs: {
         title: 'アイデンティティFAQ',
@@ -940,7 +940,7 @@ const content = computed(() => {
       seo: {
         title: 'الهوية الحتمية والمصادقة | Kakr Labs',
         description: 'يستبدل PTERI كلمات المرور و OTP بهوية تشفيرية ذاتية الحفظ للبشر والمؤسسات ووكلاء الذكاء الاصطناعي.',
-        image: '/identity-page-og.png'
+        image: '/og/og-identity.png'
       },
       faqs: {
         title: 'أسئلة شائعة حول الهوية',

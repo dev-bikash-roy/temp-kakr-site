@@ -564,12 +564,12 @@
       },
       "subtitle": "パスワードレス認証、スコープされた権限、検証可能な証跡により、従業員のアクセス、AIエージェントの活動、機密性の高い企業業務を保護します。",
       "stats": {
-        "zero": "ゼロ",
-        "sharedSecrets": "共有シークレット",
-        "hundredPercent": "100%",
-        "selfCustodial": "自己管理型",
-        "binary": "二値",
-        "outcomesOnly": "結果のみ"
+        "zero": "パスワードレス",
+        "sharedSecrets": "設計思想として",
+        "hundredPercent": "顧客管理",
+        "selfCustodial": "認証情報",
+        "binary": "決定論的",
+        "outcomesOnly": "許可または拒否"
       },
       "cta": {
         "download": "無料で構築を始める",

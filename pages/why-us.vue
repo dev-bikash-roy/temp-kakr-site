@@ -212,7 +212,8 @@ const { setSEO } = useSEO()
 
 setSEO({
   title: 'Why Choose Kakr Labs - Secure Litecoin Infrastructure',
-  description: 'Discover why enterprises choose Kakr Labs for secure, scalable, and compliant Web3 infrastructure built on the Litecoin blockchain.'
+  description: 'Discover why enterprises choose Kakr Labs for secure, scalable, and compliant Web3 infrastructure built on the Litecoin blockchain.',
+  image: '/og/og-why-us.png',
 })
 /**
  * Page content / lists

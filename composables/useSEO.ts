@@ -78,7 +78,7 @@ function getImageMimeType(imageUrl: string): string {
 const defaultSEO: SEOConfig = {
   title: 'Kakr Labs - Enterprise Web3 Infrastructure',
   description: 'Enterprise-grade Web3 infrastructure built on the secure Litecoin blockchain. Offering BaaS, APIs, SDKs, and wallet-approved 2FA for secure, scalable blockchain applications.',
-  image: '/home-og.png',
+  image: '/og/og-home.png',
   type: 'website',
   keywords: ['Litecoin', 'blockchain infrastructure', 'Web3', 'BaaS', 'enterprise blockchain', 'API', 'SDK', 'Pteri platform', 'MCP', 'decentralized 2FA', 'privacy-focused transaction controls']
 }

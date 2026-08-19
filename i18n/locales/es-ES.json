@@ -561,12 +561,12 @@
       },
       "subtitle": "Protege el acceso de la fuerza laboral, la actividad de agentes de IA y las operaciones empresariales sensibles con autenticación sin contraseña, autoridad delimitada y evidencia verificable.",
       "stats": {
-        "zero": "Cero",
-        "sharedSecrets": "Secretos Compartidos",
-        "hundredPercent": "100%",
-        "selfCustodial": "Autocustodiado",
-        "binary": "Binario",
-        "outcomesOnly": "Solo Resultados"
+        "zero": "Sin Contraseña",
+        "sharedSecrets": "Por Diseño",
+        "hundredPercent": "Gestionado por el Cliente",
+        "selfCustodial": "Credenciales",
+        "binary": "Determinista",
+        "outcomesOnly": "Permitir o Denegar"
       },
       "cta": {
         "download": "Empieza Gratis",

@@ -258,6 +258,7 @@ useHead({
 setSEO({
   title: 'Authentication - PTERI Passwordless',
   description: 'Passwordless authentication built on cryptographic proof. Replace passwords, OTPs, and MFA with verifiable cryptographic signatures.',
+  image: '/og/og-authentication.png',
 })
 </script>
 

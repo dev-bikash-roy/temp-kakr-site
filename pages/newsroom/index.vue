@@ -195,7 +195,7 @@ const canonicalPath = computed(() => {
 setSEO({
   title: seoTitle,
   description: NEWSROOM_DESCRIPTION,
-  image: '/home-og.png',
+  image: '/og/og-newsroom.png',
 })
 
 /**

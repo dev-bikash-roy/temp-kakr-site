@@ -39,7 +39,7 @@
               <img
                 :key="getIndex(offset)"
                 :src="images[getIndex(offset)]"
-                alt="PTERI Wallet Screenshot"
+                alt="PTERI App Screenshot"
                 class="w-full h-full object-cover"
                 style="border-radius: inherit;"
               />

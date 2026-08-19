@@ -10,7 +10,7 @@ setSEO({
   description: 'Secure patient data and support your HIPAA compliance program with Kakr Labs\' Litecoin-based healthcare solutions. Protect portals, enable telemedicine, and track pharmaceuticals with proof-of-work-secured infrastructure.',
   keywords: ['healthcare blockchain', 'HIPAA Web3', 'medical blockchain infrastructure', 'patient data security', 'telemedicine blockchain', 'pharmaceutical tracking', 'healthcare 2FA', 'medical records blockchain'],
   type: 'service',
-  image: '/healthcare-solutions-og.jpg',
+  image: '/og/og-healthcare.png',
   robots: 'noindex, follow',
   structuredData: [
     {

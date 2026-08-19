@@ -214,8 +214,15 @@
           <!-- APIs Built on Authority -->
           <div class="bg-[#0f0f0f] rounded-[2rem] p-8 sm:p-10 border border-emerald-500/20 hover:border-emerald-500/40 transition-colors relative overflow-hidden group shadow-[0_0_40px_rgba(16,185,129,0.05)]">
             <div class="absolute inset-0 bg-emerald-500/5 group-hover:bg-emerald-500/10 transition-colors"></div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 relative z-10 flex items-center gap-3"><i class="las la-shield-alt text-emerald-400 text-3xl"></i> {{ $t('apiPage.authority.title') }}</h2>
-            <ul class="space-y-6 relative z-10">
+            <!-- No decorative icon: this was the only heading on the page carrying
+                 one, it vertically mis-centred against the two-line title, and
+                 handoff §6 rules out generic lock/shield decoration. -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 relative z-10">{{ $t('apiPage.authority.title') }}</h2>
+            <!-- pl-0 cancels the global `ul { padding-left: 1.5em }` from
+                 typography.css. That indent exists for bulleted prose lists;
+                 this one is list-style:none, so it only pushed the items 24px
+                 out of alignment with the heading above them. -->
+            <ul class="space-y-6 relative z-10 pl-0">
               <li>
                 <h4 class="text-sm font-bold text-emerald-300 mb-1">{{ $t('apiPage.authority.signedRequests.title') }}</h4>
                 <p class="text-xs text-white/70 leading-relaxed">{{ $t('apiPage.authority.signedRequests.description') }}</p>
@@ -492,7 +499,7 @@ const apiHubServiceSchema = {
 setSEO({
   title: 'PTERI Developer APIs | Identity, Authorization, MCP, and Verification',
   description: 'Use PTERI APIs, SDKs, and MCP integrations to authenticate users, authorize agents, protect credentials, and verify sensitive actions.',
-  image: '/api-page-og.png',
+  image: '/og/og-api-hub.png',
   structuredData: [apiHubServiceSchema]
 })
 </script>

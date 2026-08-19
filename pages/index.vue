@@ -135,7 +135,7 @@
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-5">{{ content.enterpriseSystems.headline }}</h2>
             <p class="text-slate-400 text-base leading-relaxed mb-8">{{ content.enterpriseSystems.description }}</p>
             <div class="flex flex-col sm:flex-row gap-3">
-              <a href="https://docs.kakr.ai/docs/product-and-access/13.1-pricing-plans?_highlight=ent#pteri-enterprise" target="_blank" rel="noopener noreferrer" class="btn-primary">{{ content.enterpriseSystems.cta1 }}</a>
+              <a href="/trust-center" class="btn-primary">{{ content.enterpriseSystems.cta1 }}</a>
               <a href="https://docs.kakr.ai/" target="_blank" class="btn-ghost">{{ content.enterpriseSystems.cta2 }}</a>
             </div>
           </div>
@@ -1593,7 +1593,7 @@ const pteriSoftwareSchema = {
 setSEO({
   title: 'KAKR Labs | Identity and Authorization Security for Humans and AI',
   description: 'KAKR Labs builds identity and authorization security for people, AI agents, and enterprise systems. PTERI provides passwordless MFA, runtime authorization, credential protection, and verifiable action evidence.',
-  image: '/home-og.png',
+  image: '/og/og-home.png',
   structuredData: [homepageFaqSchema, pteriSoftwareSchema]
 })
 
@@ -1627,7 +1627,7 @@ const securityPointsData = {
     { title: 'Cryptographic Identity', desc: 'Every identity — human or AI agent — is verified cryptographically, not with a shared secret.' },
     { title: 'Scoped Authorization', desc: 'Authority is limited to a specific action, value, and time window rather than unrestricted access.' },
     { title: 'Runtime Policy Verification', desc: 'Policy is evaluated at the moment an action is requested, not only at login.' },
-    { title: 'Tamper-Evident Evidence', desc: 'Approved actions produce cryptographic evidence that cannot be altered after the fact.' },
+    { title: 'Tamper-Evident Evidence', desc: 'Approved actions produce cryptographic evidence designed to reveal tampering rather than prevent detection of it.' },
     { title: 'Independent Trust Architecture', desc: 'Evidence can be anchored beyond a single vendor-controlled database for additional integrity and resilience.' },
   ],
   de: [

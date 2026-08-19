@@ -10,7 +10,7 @@ setSEO({
   description: 'Web3 infrastructure for technology companies and SaaS platforms. Developer-friendly APIs, SDKs, and blockchain integration tools on Litecoin. Build faster with enterprise-grade infrastructure.',
   keywords: ['technology blockchain', 'SaaS Web3 infrastructure', 'developer infrastructure', 'blockchain integration', 'API development', 'SDK tools', 'enterprise SaaS', 'Web3 development'],
   type: 'service',
-  image: '/technology-saas-og.jpg',
+  image: '/og/og-technology-saas.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

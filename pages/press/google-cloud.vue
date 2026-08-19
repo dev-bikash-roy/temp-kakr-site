@@ -104,6 +104,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Kakr Labs Announces Collaboration with Google Cloud to Advance Decentralized Trust Infrastructure for AI Systems | Kakr Labs Press Release',
   description: 'Official press release from Kakr Labs announcing its collaboration with Google Cloud to advance decentralized trust infrastructure for AI systems.',
+  image: '/og/og-press-google-cloud.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

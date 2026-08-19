@@ -175,7 +175,8 @@ const { setSEO } = useSEO()
 
 setSEO({
   title: 'Government & Public Sector Solutions - Kakr Labs | Secure Web3 Infrastructure',
-  description: 'Secure citizen services and support your NIST-aligned compliance program with Kakr Labs\' Litecoin-based infrastructure. Transparent, immutable records for the public sector.'
+  description: 'Secure citizen services and support your NIST-aligned compliance program with Kakr Labs\' Litecoin-based infrastructure. Transparent, immutable records for the public sector.',
+  image: '/og/og-government-public-sector.png',
 })
 
 const translations = computed(() => {

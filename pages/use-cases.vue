@@ -758,7 +758,7 @@ setSEO({
   title: 'Use Cases & Solutions - Litecoin Infrastructure for Every Industry | Kakr Labs',
   description: 'Discover how Litecoin-based decentralized and blockchain infrastructure services transform finance, security, telecom, healthcare, and enterprise development. Built for scale, security, and real-world adoption.',
   keywords: ['Litecoin infrastructure', 'DaaS', 'BaaS', 'blockchain solutions', 'Web3', 'verifiable identity', 'enterprise blockchain', 'PTERI Wallet'],
-  image: '/solutions-page-og.png'
+  image: '/og/og-use-cases.png'
 })
 
 /** Theme toggle (persists; respects system pref) */

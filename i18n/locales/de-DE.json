@@ -564,12 +564,12 @@
       },
       "subtitle": "Schützen Sie Workforce-Zugriff, KI-Agenten-Aktivität und sensible Unternehmensvorgänge mit passwortloser Authentifizierung, begrenzter Befugnis und verifizierbarem Nachweis.",
       "stats": {
-        "zero": "Null",
-        "sharedSecrets": "Geteilte Geheimnisse",
-        "hundredPercent": "100 %",
-        "selfCustodial": "Selbstverwaltet",
-        "binary": "Binär",
-        "outcomesOnly": "Nur Ergebnisse"
+        "zero": "Passwortlos",
+        "sharedSecrets": "Per Design",
+        "hundredPercent": "Kundenverwaltet",
+        "selfCustodial": "Zugangsdaten",
+        "binary": "Deterministisch",
+        "outcomesOnly": "Zulassen oder Verweigern"
       },
       "cta": {
         "download": "Kostenlos starten",

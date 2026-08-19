@@ -391,7 +391,7 @@ setSEO({
   title: 'PTERI Platforms - Enterprise Web3 Solutions on Litecoin | Kakr Labs',
   description: 'Explore the PTERI platform suite: Passwordless 2FA Wallet, AI Playground, and Data solutions. Built on Litecoin\'s secure, proof-of-work blockchain.',
   keywords: ['PTERI Wallet', 'PTERI Playground', 'PTERI Intelligence', 'blockchain platforms', 'Litecoin', 'Web3', '2FA', 'MCP', 'enterprise blockchain', 'decentralized security'],
-  image: 'https://www.kakr.ai/Pteri-Flowchart.png'
+  image: '/og/og-platforms.png'
 })
 
 const platformsTranslations = computed(() => {

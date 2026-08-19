@@ -479,7 +479,7 @@ setSEO({
   description: 'Interactive Web3 development environment for the Litecoin blockchain. Test APIs, prototype applications, and explore PTERI features with zero setup.',
   keywords: ['Web3 playground', 'blockchain development', 'Litecoin development', 'API testing', 'blockchain playground', 'developer tools', 'Web3 sandbox'],
   type: 'product',
-  image: '/playground-og.jpg',
+  image: '/og/og-playground.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

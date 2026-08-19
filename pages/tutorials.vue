@@ -110,7 +110,7 @@ setSEO({
   title: 'PTERI Tutorials | KAKR Labs',
   description:
     'Step-by-step guides for passwordless authentication, AI-agent authorization, MCP integration, policy enforcement, and verifiable action evidence.',
-  image: '/home-og.png',
+  image: '/og/og-tutorials.png',
   canonical: '/tutorials',
   keywords: ['pteri tutorials', 'passwordless mfa guide', 'ai agent authorization', 'mcp integration guide'],
 })

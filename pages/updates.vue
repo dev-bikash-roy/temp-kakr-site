@@ -68,7 +68,7 @@ setSEO({
   title: 'PTERI Product Updates | KAKR Labs',
   description:
     'Launched capabilities, API changes, app releases, SDK updates, and availability changes for PTERI.',
-  image: '/home-og.png',
+  image: '/og/og-product-updates.png',
   canonical: '/updates',
 })
 </script>

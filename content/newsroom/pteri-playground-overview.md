@@ -10,7 +10,7 @@ author_name: KAKR Labs
 author_role: Team
 hero_image: /uploads/newsroom/2026/08/pteri-playground-overview-hero.webp
 hero_alt: Four stages of using the Playground — open, configure, run, inspect — with the run stage highlighted
-social_image: /uploads/newsroom/2026/08/pteri-playground-overview-social.png
+social_image: /og/og-newsroom-pteri-playground-overview.png
 featured: false
 availability: GA
 archive_label: true

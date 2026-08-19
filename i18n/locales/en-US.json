@@ -865,12 +865,12 @@
       },
       "subtitle": "Protect workforce access, AI-agent activity, and sensitive enterprise operations with passwordless authentication, scoped authority, and verifiable evidence.",
       "stats": {
-        "zero": "Zero",
-        "sharedSecrets": "Shared Secrets",
-        "hundredPercent": "100%",
-        "selfCustodial": "Self-Custodial",
-        "binary": "Binary",
-        "outcomesOnly": "Outcomes Only"
+        "zero": "Passwordless",
+        "sharedSecrets": "By Design",
+        "hundredPercent": "Customer-Held",
+        "selfCustodial": "Credentials",
+        "binary": "Deterministic",
+        "outcomesOnly": "Allow or Deny"
       },
       "cta": {
         "download": "Start Building Free",

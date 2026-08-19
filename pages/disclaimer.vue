@@ -8,7 +8,7 @@ setSEO({
   title: 'Disclaimer - Kakr Labs',
   description: 'Read the official disclaimer of Kakr Labs regarding the use of our blockchain technology and Web3 solutions.',
   keywords: ['Kakr Labs disclaimer', 'blockchain disclaimer', 'Web3 solutions legal', 'Litecoin blockchain policy', 'tokenization terms'],
-  image: 'https://www.kakr.ai/assets/img/disclaimer-kakrlabs.jpg'
+  image: '/og/og-disclaimer.png'
 })
 // ✅ Include Stylesheets & Scripts
 

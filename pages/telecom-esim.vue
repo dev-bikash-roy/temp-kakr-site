@@ -11,7 +11,7 @@ setSEO({
   description: 'Web3 infrastructure for telecom and eSIM providers. Secure mobile identity, fraud prevention, and decentralized authentication solutions on the Litecoin blockchain, proof-of-work secured since 2011.',
   keywords: ['telecom blockchain', 'eSIM Web3 solutions', 'mobile identity', 'telecom infrastructure', 'mobile security', 'eSIM technology', 'telecom fraud prevention'],
   type: 'service',
-  image: '/telecom-esim-og.jpg',
+  image: '/og/og-telecom-esim.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

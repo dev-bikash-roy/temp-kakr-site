@@ -258,6 +258,7 @@ const { setSEO } = useSEO()
 
 setSEO({
   title: 'Security Center - Kakr Labs',
-  description: 'Kakr Labs Security Center. View our security philosophy, certifications, and infrastructure standards.'
+  description: 'Kakr Labs Security Center. View our security philosophy, certifications, and infrastructure standards.',
+  image: '/og/og-security-overview.png',
 })
 </script>

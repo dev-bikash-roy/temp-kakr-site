@@ -357,7 +357,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'PTERI Platform | Passwordless MFA and AI-Agent Authorization',
   description: 'Protect workforce access, AI-agent activity, and sensitive enterprise operations with passwordless authentication, scoped authority, and verifiable evidence.',
-  image: '/platform-og.png',
+  image: '/og/og-platform.png',
 })
 
 // Scroll to hash after AOS finishes repositioning elements

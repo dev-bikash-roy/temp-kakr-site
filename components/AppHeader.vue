@@ -468,6 +468,7 @@ const translations = {
     company: 'Company',
     about: 'About',
     partnerships: 'Partnerships',
+    trustCenter: 'Trust Center',
     contact: 'Contact',
     getStarted: 'Get Started',
     downloadApp: 'Download the App',
@@ -489,6 +490,7 @@ const translations = {
     apiDocs: 'Documentation',
     sdks: 'SDKs',
     devDashboard: 'Developer Dashboard',
+    supportCenter: 'Support Center',
     statusPage: 'System Status',
     agentMarketplace: 'Agent Marketplace',
     agentMarketplaceDesc: 'Discover, onboard, and monetize trusted AI agents.',
@@ -514,6 +516,7 @@ const translations = {
     company: '会社',
     about: '会社概要',
     partnerships: 'パートナーシップ',
+    trustCenter: 'トラストセンター',
     contact: 'お問い合わせ',
     getStarted: '始める',
     downloadApp: 'アプリをダウンロード',
@@ -535,6 +538,7 @@ const translations = {
     apiDocs: 'APIドキュメント',
     sdks: 'SDK',
     devDashboard: '開発者ダッシュボード',
+    supportCenter: 'サポートセンター',
     statusPage: 'システムステータス',
     agentMarketplace: 'エージェントマーケットプレイス',
     agentMarketplaceDesc: '信頼できるAIエージェントを発見、導入、収益化。',
@@ -560,6 +564,7 @@ const translations = {
     company: 'Unternehmen',
     about: 'Über uns',
     partnerships: 'Partnerschaften',
+    trustCenter: 'Trust Center',
     contact: 'Kontakt',
     getStarted: 'Loslegen',
     downloadApp: 'App herunterladen',
@@ -581,6 +586,7 @@ const translations = {
     apiDocs: 'API-Dokumentation',
     sdks: 'SDKs',
     devDashboard: 'Entwickler-Dashboard',
+    supportCenter: 'Support-Center',
     statusPage: 'Systemstatus',
     agentMarketplace: 'Agent-Marktplatz',
     agentMarketplaceDesc: 'Vertrauenswürdige KI-Agenten entdecken, einbinden und monetarisieren.',
@@ -606,6 +612,7 @@ const translations = {
     company: 'Empresa',
     about: 'Acerca de',
     partnerships: 'Asociaciones',
+    trustCenter: 'Centro de Confianza',
     contact: 'Contacto',
     getStarted: 'Comenzar',
     downloadApp: 'Descargar la aplicación',
@@ -627,6 +634,7 @@ const translations = {
     apiDocs: 'Documentación de la API',
     sdks: 'SDKs',
     devDashboard: 'Panel de desarrollador',
+    supportCenter: 'Centro de Soporte',
     statusPage: 'Estado del sistema',
     agentMarketplace: 'Mercado de Agentes',
     agentMarketplaceDesc: 'Descubre, integra y monetiza agentes de IA confiables.',
@@ -652,6 +660,7 @@ const translations = {
     company: 'الشركة',
     about: 'حول',
     partnerships: 'الشراكات',
+    trustCenter: 'مركز الثقة',
     contact: 'اتصل بنا',
     getStarted: 'ابدأ الآن',
     downloadApp: 'تحميل التطبيق',
@@ -673,6 +682,7 @@ const translations = {
     apiDocs: 'توثيق API',
     sdks: 'مجموعات SDK',
     devDashboard: 'لوحة تحكم المطور',
+    supportCenter: 'مركز الدعم',
     statusPage: 'حالة النظام',
     agentMarketplace: 'سوق الوكلاء',
     agentMarketplaceDesc: 'اكتشف ووظّف وحقّق الدخل من وكلاء الذكاء الاصطناعي الموثوقين.',
@@ -692,6 +702,7 @@ const t = computed(() => translations[locale.value] || translations.en)
 const company = computed(() => [
   { name: t.value.about, link: '/about', desc: 'Our mission and team' },
   { name: t.value.partnerships, link: '/partnerships', desc: 'Work together with Kakr' },
+  { name: t.value.trustCenter, link: '/trust-center', desc: 'Security architecture and evidence' },
   { name: t.value.contact, link: '/contact', desc: 'Get in touch with us' }
 ])
 
@@ -706,18 +717,19 @@ const developers = computed(() => [
   { name: t.value.productUpdates, link: '/updates', desc: t.value.productUpdatesDesc },
   { name: t.value.tutorials, link: '/tutorials', desc: t.value.tutorialsDesc },
   { name: t.value.devDashboard, link: 'https://pteri.org/', desc: 'Manage keys and usage', external: true },
+  { name: t.value.supportCenter, link: 'https://support.kakr.ai/', desc: 'Help articles and support', external: true },
   { name: t.value.statusPage, link: 'https://kakrlabs1.statuspage.io/', desc: 'Live system status', external: true }
 ])
 
 const product = computed(() => [
   { name: 'Platform Overview', link: '/platform', desc: 'The full Kakr platform' },
-  { name: t.value.pteri, link: '/platform#pteri', desc: 'Verifiable identity engine' },
-  { name: t.value.identity, link: '/platform#authority', desc: 'Verifiable digital identity' },
-  { name: t.value.pricing, link: '/platform#pricing', desc: 'Plans for every scale' },
-  { name: t.value.agentMarketplace, link: '', desc: t.value.agentMarketplaceDesc, soon: true }
+  { name: 'PTERI Verification', link: '/platform#pteri', desc: 'Verifiable identity engine' },
+  { name: 'Identity and Authorization', link: '/platform#authority', desc: 'Verifiable digital identity' },
+  { name: t.value.pricing, link: '/platform#pricing', desc: 'Plans for every scale' }
 ])
 
 const solutions = computed(() => [
+  { name: 'Solutions Overview', link: '/solutions', desc: 'People, agents, and enterprise systems' },
   { name: t.value.whoItsFor, link: '/solutions#use-cases', desc: 'Workforce, AI agents, IoT & more' },
   { name: t.value.identityUseCases, link: '/solutions#pteri-solutions', desc: 'Passwordless MFA, AI agents, payments & more' },
   { name: t.value.coreModules, link: '/api-hub', desc: 'Existing-system protection & MCP tooling' },

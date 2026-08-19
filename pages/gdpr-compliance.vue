@@ -136,7 +136,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'GDPR Compliance - Kakr Labs',
   description: 'Kakr Labs GDPR compliance statement. Learn how we protect your data rights and comply with EU data protection regulations.',
-  image: '/legal-og.png',
+  image: '/og/og-gdpr-compliance.png',
   keywords: ['gdpr compliance', 'kakr labs gdpr', 'data protection', 'eu privacy', 'gdpr rights']
 })
 </script>

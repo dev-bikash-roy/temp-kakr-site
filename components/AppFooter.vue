@@ -50,9 +50,10 @@
           <ul class="space-y-3">
             <li><NuxtLink to="/" class="footer-link">{{ t.home }}</NuxtLink></li>
             <li><NuxtLink to="/platform" class="footer-link">{{ t.pteriPlatform }}</NuxtLink></li>
-            <li><a href="/platform#authority" class="footer-link">{{ t.identity }}</a></li>
-            <li><a href="/platform#pricing" class="footer-link">{{ t.pricing }}</a></li>
+            <li><a href="/platform#authority" class="footer-link">Identity and Authorization</a></li>
             <li><NuxtLink to="/wallet" class="footer-link">{{ t.wallet }}</NuxtLink></li>
+            <li><NuxtLink to="/api-hub" class="footer-link">API Hub</NuxtLink></li>
+            <li><a href="/platform#pricing" class="footer-link">{{ t.pricing }}</a></li>
             <li><NuxtLink to="/faqs" class="footer-link">{{ t.faq }}</NuxtLink></li>
           </ul>
         </div>

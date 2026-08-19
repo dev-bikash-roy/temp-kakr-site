@@ -545,7 +545,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Privacy Policy - Kakr Labs',
   description: 'Kakr Labs Privacy Policy. Learn how we collect, use, and protect your personal information.',
-  image: '/home-og.png',
+  image: '/og/og-privacy-policy.png',
 })
 </script>
 

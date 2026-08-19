@@ -410,7 +410,7 @@ setSEO({
   description: 'Fast RPC endpoints, decentralized authentication integration, and reliable enterprise infrastructure on Litecoin. Zero maintenance, proof-of-work secured.',
   keywords: ['blockchain infrastructure', 'enterprise blockchain', 'Litecoin RPC', 'Web3 infrastructure', 'blockchain API', 'developer tools', 'BaaS platform', 'blockchain nodes'],
   type: 'service',
-  image: '/blockchain-infrastructure-og.jpg',
+  image: '/og/og-blockchain-infrastructure.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

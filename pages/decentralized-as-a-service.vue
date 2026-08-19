@@ -638,6 +638,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'DaaS & BaaS by Kakr Labs - Decentralized Infrastructure',
   description: 'Scalable Web3 infrastructure without the noise. Secure, verifiable infrastructure built on Litecoin for enterprise and dev teams.',
+  image: '/og/og-decentralized-as-a-service.png',
   keywords: ['DaaS', 'BaaS', 'Litecoin', 'decentralized infrastructure', 'Web3', 'blockchain as a service', 'decentralization as a service']
 })
 </script>

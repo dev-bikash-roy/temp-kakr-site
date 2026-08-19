@@ -609,11 +609,11 @@ useSEO({
   title: computed(() => content.value.seo.title),
   description: computed(() => content.value.seo.description),
   openGraph: {
-     image: '/press-release-banner.png'
+     image: '/og/og-press-google-cloud-partnership.png'
   },
   twitterCard: {
      card: 'summary_large_image',
-     image: '/press-release-banner.png'
+     image: '/og/og-press-google-cloud-partnership.png'
   }
 })
 </script>

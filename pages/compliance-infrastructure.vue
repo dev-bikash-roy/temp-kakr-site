@@ -252,7 +252,8 @@ const { setSEO } = useSEO()
 
 setSEO({
   title: 'Compliance & Infrastructure - Kakr labs Inc.',
-  description: 'Kakr labs Inc. - Built for Security, Privacy & Uptime. Zero-data, non-custodial design on Litecoin. Enterprise cloud infrastructure on Azure & IBM Cloud with encryption in transit and at rest.'
+  description: 'Kakr labs Inc. - Built for Security, Privacy & Uptime. Zero-data, non-custodial design on Litecoin. Enterprise cloud infrastructure on Azure & IBM Cloud with encryption in transit and at rest.',
+  image: '/og/og-compliance-infrastructure.png',
 })
 
 definePageMeta({

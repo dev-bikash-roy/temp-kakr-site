@@ -69,7 +69,7 @@ setSEO({
   title: 'Blog | KAKR Labs',
   description:
     'Product releases, security research, engineering insights, and practical guidance for building accountable AI systems.',
-  image: '/home-og.png',
+  image: '/og/og-newsroom.png',
   // Points search engines at the Newsroom so the two URLs do not compete while
   // /blog remains live for compatibility.
   canonical: '/newsroom',

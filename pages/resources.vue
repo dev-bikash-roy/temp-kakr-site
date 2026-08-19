@@ -123,7 +123,7 @@ setSEO({
   title: 'KAKR Resources | Newsroom, Product Updates, Tutorials, and Documentation',
   description:
     'The KAKR Newsroom, product updates, tutorials, product documentation and developer dashboard in one place.',
-  image: '/home-og.png',
+  image: '/og/og-resources.png',
   canonical: '/resources',
 })
 </script>

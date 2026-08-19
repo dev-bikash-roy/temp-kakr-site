@@ -384,7 +384,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Cookie Policy - Kakr Labs',
   description: 'Kakr Labs Cookie Policy. Learn how we use cookies and similar technologies on our website.',
-  image: '/home-og.png',
+  image: '/og/og-cookie-policy.png',
 })
 </script>
 

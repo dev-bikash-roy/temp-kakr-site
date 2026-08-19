@@ -258,6 +258,7 @@ onMounted(() => {
 setSEO({
   title: computed(() => content.value.seo.title),
   description: computed(() => content.value.seo.description),
+  image: '/og/og-start-pilot.png',
   keywords: ['pilot program', '60-day pilot', 'blockchain infrastructure', 'identity evaluation', 'Kakr Labs', 'PTERI']
 })
 </script>

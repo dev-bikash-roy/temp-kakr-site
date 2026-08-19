@@ -10,7 +10,7 @@ author_name: KAKR Labs
 author_role: Engineering Team
 hero_image: /uploads/newsroom/2026/08/what-is-runtime-authorization-for-ai-agents-hero.webp
 hero_alt: Four stages of an authorization decision — authenticate, request, evaluate, decide — with the evaluate stage highlighted
-social_image: /uploads/newsroom/2026/08/what-is-runtime-authorization-for-ai-agents-social.png
+social_image: /og/og-newsroom-runtime-authorization-ai-agents.png
 featured: true
 featured_rank: 1
 tags:

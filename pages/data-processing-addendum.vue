@@ -395,7 +395,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Data Processing Addendum (DPA) - Kakr Labs',
   description: 'Kakr Labs Data Processing Addendum. Legal agreement for data processing, GDPR compliance, and data protection terms for enterprise customers.',
-  image: '/legal-og.png',
+  image: '/og/og-data-processing-addendum.png',
   keywords: ['data processing addendum', 'dpa', 'kakr labs dpa', 'gdpr dpa', 'data processing agreement']
 })
 </script>

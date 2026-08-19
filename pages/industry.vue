@@ -316,7 +316,7 @@ setSEO({
   title: 'Industry-Specific Blockchain Security Solutions | Kakr Labs',
   description: 'Enterprise-grade security solutions for finance, healthcare, telecom, and more. Built on Litecoin\'s secure, proof-of-work blockchain.',
   keywords: ['blockchain security', 'industry solutions', '2FA', 'Litecoin', 'PTERI', 'fintech', 'healthcare', 'government', 'telecom'],
-  image: '/api-page-og.png'
+  image: '/og/og-industries.png'
 })
 
 const industryTranslations = computed(() => {

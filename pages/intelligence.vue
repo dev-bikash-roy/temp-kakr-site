@@ -211,7 +211,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'PTERI Intelligence - AI-Powered Web3 Development | Kakr Labs',
   description: 'Build blockchain applications 10x faster with PTERI Intelligence. Our AI co-pilot generates code, API calls, and authentication flows automatically.',
-  image: '/pteri-page-og.png'
+  image: '/og/og-pteri-intelligence.png'
 })
 
 const content = computed(() => {

@@ -174,7 +174,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'PTERI | Identity and Authorization Security for Humans and AI',
   description: 'Bring cryptographically verifiable identity and authorization security to your existing infrastructure with PTERI. Customer-controlled keys and Litecoin-powered cryptographic trust for identity, payments, and AI agents.',
-  image: '/platform-og.png',
+  image: '/og/og-pteri.png',
 })
 
 const apiCards = computed(() => [

@@ -750,7 +750,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Terms of Service - Kakr Labs',
   description: 'Kakr Labs Terms of Service. Read our terms and conditions for using our Web3 infrastructure, APIs, and services.',
-  image: '/home-og.png',
+  image: '/og/og-terms-of-service.png',
 })
 </script>
 

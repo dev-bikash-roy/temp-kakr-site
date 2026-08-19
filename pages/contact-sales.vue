@@ -9,7 +9,7 @@ setSEO({
   title: "Get in Touch with Kakr Labs: Your Gateway to Web3 and Blockchain Solutions",
   description: "Get in touch with Kakr Labs. Contact us for inquiries, partnerships, or support. Our team is here to help you with your Web3 and blockchain needs.",
   keywords: ["Contact Kakr Labs", "Web3 support", "blockchain inquiries", "partnerships", "Kakr Labs contact", "reach out to Kakr Labs", "blockchain development support"],
-  image: "https://www.kakr.org/assets/img/contact-kakr.jpg"
+  image: '/og/og-contact-sales.png'
 })
 // ✅ Include Stylesheets & Swiper from CDN
 useHead({

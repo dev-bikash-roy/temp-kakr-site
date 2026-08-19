@@ -793,7 +793,7 @@ watchEffect(() => {
   setSEO({
     title: content.value.seo.title,
     description: content.value.seo.description,
-    image: '/partnerships-og.png'
+    image: '/og/og-partnerships.png'
   })
 })
 </script>

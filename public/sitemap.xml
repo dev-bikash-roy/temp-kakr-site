@@ -14,7 +14,8 @@
        /newsroom/sitemap.xml instead, so article URLs stay in sync without an edit
        here. Kept out of this file to avoid duplicate entries. -->
   <url><loc>https://kakr.ai/playground</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://kakr.ai/help</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <!-- /help is retired: 301 to support.kakr.ai (handoff §3). A redirect target
+       must not appear in the sitemap. -->
   <url><loc>https://kakr.ai/faqs</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kakr.ai/trust-center</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <!-- /blog is intentionally absent: it stays live for inbound links but canonicals

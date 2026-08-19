@@ -313,7 +313,7 @@ const iotServiceSchema = {
 setSEO({
   title: 'PTERI IoT Security - Decentralized Trust for Connected Devices | Kakr Labs',
   description: 'Secure billions of IoT devices with blockchain-backed identity, authentication, and firmware signing backed by customer-controlled keys. Powered by the Litecoin network.',
-  image: '/pteri-page-og.png',
+  image: '/og/og-iot-security.png',
   structuredData: [iotServiceSchema]
 })
 

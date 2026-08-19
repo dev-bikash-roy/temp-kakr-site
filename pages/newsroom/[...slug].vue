@@ -297,7 +297,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: article.value.seo?.title || `${article.value.title} | KAKR Labs`,
   description: article.value.seo?.description || article.value.summary,
-  image: article.value.social_image || article.value.hero_image || '/home-og.png',
+  image: article.value.social_image || article.value.hero_image || '/og/og-newsroom.png',
   type: 'article',
   canonical: article.value.seo?.canonical,
   author: article.value.author_name,
@@ -305,7 +305,7 @@ setSEO({
     generateArticleSchema({
       headline: article.value.title,
       description: article.value.seo?.description || article.value.summary,
-      image: article.value.social_image || article.value.hero_image || '/home-og.png',
+      image: article.value.social_image || article.value.hero_image || '/og/og-newsroom.png',
       url: canonicalUrl.value,
       datePublished: article.value.published_at,
       dateModified: article.value.updated_at,

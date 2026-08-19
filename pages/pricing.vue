@@ -155,6 +155,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'KAKR.ai PTERI Pricing | Enterprise-Grade AI Security Without the Wallet Bleed',
   description: 'Transparent pricing for passwordless MFA, AI-agent authorization, and verifiable action evidence.',
+  image: '/og/og-pricing.png',
   keywords: ['pricing', 'blockchain authentication', 'Web3 infrastructure', 'Litecoin', 'identity security', 'Kakr Labs']
 })
 const showModal = ref(false)

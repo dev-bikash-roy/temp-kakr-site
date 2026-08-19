@@ -10,7 +10,7 @@ author_role: Security Research
 hero_image: /uploads/newsroom/2026/08/why-every-ai-agent-needs-mission-control-hero.webp
 hero_alt: Five stages of agent governance — identity, authority, limits, approval, evidence — with the approval stage highlighted
 hero_caption: The five decisions that turn an autonomous agent into a governed one.
-social_image: /uploads/newsroom/2026/08/why-every-ai-agent-needs-mission-control-social.png
+social_image: /og/og-newsroom-ai-agent-mission-control.png
 featured: false
 announcement:
   enabled: true

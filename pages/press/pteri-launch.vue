@@ -90,6 +90,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Kakr Labs Announces PTERI Platform for Cryptographic Trust Infrastructure | Kakr Labs Press Release',
   description: 'Official press release from Kakr Labs announcing the launch of PTERI, a universal trust system that unifies cryptographic identity, authentication, payments, AI agents, and APIs.',
+  image: '/og/og-press-pteri-launch.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

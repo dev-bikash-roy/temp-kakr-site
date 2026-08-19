@@ -126,11 +126,11 @@ export const SOCIAL_CONFIG = {
 
 // Image configurations for different contexts
 export const IMAGE_CONFIG = {
-  DEFAULT_OG: '/kakr-og.jpg',
-  HOMEPAGE_OG: '/homepage-og.jpg',
-  SERVICES_OG: '/services-og.jpg',
-  INDUSTRY_OG: '/industry-og.jpg',
-  CONTACT_OG: '/contact-og.jpg',
+  DEFAULT_OG: '/og/og-home.png',
+  HOMEPAGE_OG: '/og/og-home.png',
+  SERVICES_OG: '/og/og-solutions.png',
+  INDUSTRY_OG: '/og/og-industries.png',
+  CONTACT_OG: '/og/og-contact.png',
 
   // Image dimensions for validation
   OG_DIMENSIONS: {

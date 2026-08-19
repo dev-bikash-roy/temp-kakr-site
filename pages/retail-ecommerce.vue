@@ -11,7 +11,7 @@ setSEO({
   description: 'Web3 infrastructure for retail and e-commerce. Secure payment processing, loyalty programs, and supply chain solutions on Litecoin blockchain. Reduce fraud, increase customer trust.',
   keywords: ['retail blockchain', 'e-commerce Web3', 'retail infrastructure', 'blockchain payments', 'supply chain tracking', 'loyalty programs blockchain', 'retail security', 'payment processing'],
   type: 'service',
-  image: '/retail-ecommerce-og.jpg',
+  image: '/og/og-retail-ecommerce.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

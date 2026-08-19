@@ -295,7 +295,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Developer Platform - Web3 APIs, SDKs & Documentation | Kakr Labs',
   description: 'Build on Kakr Labs Web3 infrastructure. Access comprehensive APIs, SDKs, documentation, and tools for blockchain development on Litecoin.',
-  image: '/developers-og.png',
+  image: '/og/og-developers.png',
   keywords: ['web3 developer', 'blockchain api', 'litecoin sdk', 'developer tools', 'kakr labs api', 'pteri sdk'],
   robots: 'noindex, follow'
 })

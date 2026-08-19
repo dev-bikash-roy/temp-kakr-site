@@ -10,7 +10,7 @@ setSEO({
   description: 'Secure your financial operations with Kakr Labs\' Litecoin-based infrastructure. Reduce fraud, support compliance programs (PCI DSS, NYDFS), reduce costs with enterprise-grade blockchain solutions.',
   keywords: ['financial services blockchain', 'fintech Web3 infrastructure', 'banking blockchain solutions', 'financial compliance blockchain', 'payment fraud prevention', 'PCI DSS blockchain', 'NYDFS blockchain', 'cross-border payments'],
   type: 'service',
-  image: '/financial-services-og.jpg',
+  image: '/og/og-financial-services.png',
   structuredData: [
     {
       '@context': 'https://schema.org',

@@ -312,7 +312,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Acceptable Use Policy - Kakr Labs',
   description: 'Kakr Labs Acceptable Use Policy. Guidelines for using our Web3 infrastructure, APIs, and services responsibly and in compliance with our terms.',
-  image: '/legal-og.png',
+  image: '/og/og-acceptable-use-policy.png',
   keywords: ['acceptable use policy', 'kakr labs terms', 'api usage policy', 'service guidelines', 'web3 policy']
 })
 </script>

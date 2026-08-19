@@ -8,7 +8,7 @@ function normalizeSiteUrl(url: string) {
 
 const siteUrl = normalizeSiteUrl(process.env.SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://kakr.ai'))
 const homeUrl = `${siteUrl}/`
-const homeOgImageUrl = `${siteUrl}/home-og.png`
+const homeOgImageUrl = `${siteUrl}/og/og-home.png`
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -365,7 +365,7 @@ export default defineNuxtConfig({
       routes: [
         '/', '/about', '/api-policy', '/contact',
         '/contact-sales', '/decentralized-as-a-service', '/disclaimer', '/faqs',
-        '/financial-services', '/government-public-sector', '/healthcare', '/help', '/identity',
+        '/financial-services', '/government-public-sector', '/healthcare', '/identity',
         '/industry', '/kakr-explained', '/partnerships',
         '/plans-pricing', '/platforms', '/PodcastSection', '/press', '/press2',
         '/pricing', '/privacy-policy', '/platform', '/retail-ecommerce', '/roadmap',
@@ -403,14 +403,17 @@ export default defineNuxtConfig({
       // setup, which runs after this config is merged, so it would win. It is
       // overridden from `modules/newsroom-content-privacy.ts` instead.
 
-      // Retired per the Aug 14 handoff §3 route table. None of these three are
-      // linked from the live header or footer nav (verified), so this only
-      // catches direct/search traffic — which a 301 preserves rather than 404s.
-      // The page files are left in place rather than deleted, so this is
-      // reversible without recovering anything from history.
+      // Retired per the Aug 14 handoff §3 route table. None of these are linked
+      // from the live header or footer nav (verified), so this only catches
+      // direct/search traffic — which a 301 preserves rather than 404s.
       '/pilot-programm': { redirect: { to: '/contact?intent=pilot', statusCode: 301 } },
       '/security-overview': { redirect: { to: '/trust-center', statusCode: 301 } },
       '/compliance-infrastructure': { redirect: { to: '/trust-center', statusCode: 301 } },
+      // /help is retired to the approved support destination (handoff §3
+      // "301 to approved support"). Unlike the three above, pages/help.vue is
+      // deleted rather than left in place, so this rule is the only thing
+      // serving the route. Recoverable from git history if it is ever needed.
+      '/help': { redirect: { to: 'https://support.kakr.ai/', statusCode: 301 } },
 
       // The editor is a private surface: never indexed, never cached, and never
       // reachable from public navigation.

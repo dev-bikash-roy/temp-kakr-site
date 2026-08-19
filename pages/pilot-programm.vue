@@ -8,7 +8,7 @@ setSEO({
   title: "Kakr Labs - Pioneering Web3 on the Litecoin Blockchain",
   description: "Welcome to Kakr Labs™, a Microsoft-backed Web3 innovator leveraging the Litecoin blockchain to deliver decentralized, scalable, and AI-powered solutions for developers and enterprises.",
   keywords: ["Kakr Labs", "Web3 development", "Litecoin blockchain", "Microsoft Web3 partner", "AI-powered blockchain tools", "decentralized applications", "no-code blockchain", "scalable Web3 infrastructure"],
-  image: "https://www.kakr.ai/assets/img/kakr-home.jpg",
+  image: '/og/og-pilot-program.png',
   type: "website",
   url: "https://www.kakr.ai",
   siteName: "Kakr Labs™",

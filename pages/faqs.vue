@@ -212,7 +212,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'FAQs - Kakr Labs | Universal Trust & Support',
   description: 'Answers about PTERI, Identity, Payments, AI Agents, and Developer APIs. Everything you need to know about Kakr Labs cryptographic trust infrastructure.',
-  image: '/home-og.png',
+  image: '/og/og-faqs.png',
   structuredData: [faqPageSchema]
 })
 

@@ -425,7 +425,7 @@ import { useHead, useSEO } from '#imports'
 
 // ---------------- SEO ----------------
 const url = 'https://www.kakr.ai/explained'
-const ogImage = 'https://www.kakr.ai/images/og/kakr-explained-og.jpg'
+const ogImage = '/og/og-how-it-works.png'
 
 const { setSEO } = useSEO()
 

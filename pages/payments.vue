@@ -588,7 +588,7 @@ const content = computed(() => {
       seo: {
         title: 'Self-Custodial Payments & Settlement | Kakr Labs',
         description: 'Build secure, borderless payment systems with PTERI. High-performance, self-custodial settlement infrastructure on the battle-tested Litecoin blockchain.',
-        image: '/payments-page-og.png'
+        image: '/og/og-payments.png'
       },
       faqs: {
         title: 'Payments FAQs',
@@ -648,7 +648,7 @@ const content = computed(() => {
       seo: {
         title: 'Selbstverwahrte Zahlungen durch Autorität gesichert | Kakr Labs',
         description: 'PTERI ermöglicht selbstverwahrte Zahlungen, die durch deterministische kryptografische Autorität unterstützt werden – keine Vermittler, keine Verwahrung, keine Vertrauensannahmen.',
-        image: '/payments-page-og.png'
+        image: '/og/og-payments.png'
       },
       faqs: {
         title: 'Zahlungs-FAQs',
@@ -707,7 +707,7 @@ const content = computed(() => {
       seo: {
         title: 'Pagos Autocustodiados Asegurados por Autoridad | Kakr Labs',
         description: 'PTERI permite pagos autocustodiados respaldados por autoridad criptográfica determinística: sin intermediarios, sin custodia, sin suposiciones de confianza.',
-        image: '/payments-page-og.png'
+        image: '/og/og-payments.png'
       },
       faqs: {
         title: 'Preguntas Frecuentes sobre Pagos',
@@ -766,7 +766,7 @@ const content = computed(() => {
       seo: {
         title: '権限によって保護された自己管理型決済 | Kakr Labs',
         description: 'PTERIは、決定論的暗号学的権限に支えられた自己管理型決済を可能にします-仲介者なし、管理なし、信頼の仮定なし。',
-        image: '/payments-page-og.png'
+        image: '/og/og-payments.png'
       },
       faqs: {
         title: '決済FAQ',
@@ -825,7 +825,7 @@ const content = computed(() => {
       seo: {
         title: 'مدفوعات ذاتية الحفظ مؤمنة بالسلطة | Kakr Labs',
         description: 'يمكّن PTERI المدفوعات ذاتية الحفظ المدعومة بسلطة تشفيرية حتمية - بدون وسطاء، بدون حفظ، بدون افتراضات ثقة.',
-        image: '/payments-page-og.png'
+        image: '/og/og-payments.png'
       },
       faqs: {
         title: 'الأسئلة الشائعة حول المدفوعات',

@@ -270,6 +270,7 @@ useHead({
 setSEO({
   title: 'AI Security - PTERI',
   description: 'Secure AI agents with cryptographic identity and signed actions. Replace API tokens with verifiable proof.',
+  image: '/og/og-ai-security.png',
   robots: 'index, follow'
 })
 </script>

@@ -122,7 +122,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Contact KAKR.ai | Identity and Authorization Security for Your Organization',
   description: 'Contact KAKR Labs for PTERI enterprise deployment, pilots, and partnerships in identity and authorization security.',
-  image: '/contact-og.png',
+  image: '/og/og-contact.png',
 })
 
 const focusPoints = [

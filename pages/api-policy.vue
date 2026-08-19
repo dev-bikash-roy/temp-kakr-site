@@ -4,7 +4,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'API Policy - Kakr Labs',
   description: 'Kakr Labs API usage policy. Learn about rate limits, authentication requirements, and best practices for using our blockchain infrastructure APIs.',
-  image: '/legal-og.png',
+  image: '/og/og-api-policy.png',
   keywords: ['api policy', 'kakr labs api', 'rate limits', 'api terms', 'developer guidelines']
 })
 

@@ -426,7 +426,7 @@ const translations = {
     "badge": "PTERI App",
     "seoTitle": "PTERI App | Passwordless Authentication, Approvals, and Payments",
     "seoDescription": "The PTERI App lets you authenticate without passwords, control credentials, approve sensitive actions, and manage supported payments from a trusted device.",
-    "seoImage": "/og/wallet-og.png",
+    "seoImage": "/og/og-pteri-app.png",
     "titlePart1": "Your Identity.",
     "titlePart2": " Your Authority.",
     "titlePart3": " Your Control.",
@@ -1766,7 +1766,7 @@ watchEffect(() => {
   setSEO({
     title: content.value.seoTitle,
     description: content.value.seoDescription,
-    image: content.value.seoImage || '/wallet-og.png',
+    image: content.value.seoImage || '/og/og-pteri-app.png',
     structuredData: [mobileAppSchema]
   })
 })

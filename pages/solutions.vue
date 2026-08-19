@@ -76,28 +76,28 @@
                 <i class="las la-exclamation-circle text-emerald-400 mt-0.5 text-lg"></i>
                 <div class="text-sm">
                   <span class="text-white font-semibold block sm:inline">{{ t.reg1Label }}</span>
-                  <span class="text-slate-400 sm:ml-1">{{ t.reg1Desc }}</span>
+                  <span class="text-slate-400 sm:ml-1">{{ ' ' + t.reg1Desc }}</span>
                 </div>
               </li>
               <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="60">
                 <i class="las la-exclamation-circle text-emerald-400 mt-0.5 text-lg"></i>
                 <div class="text-sm">
                   <span class="text-white font-semibold block sm:inline">{{ t.reg2Label }}</span>
-                  <span class="text-slate-400 sm:ml-1">{{ t.reg2Desc }}</span>
+                  <span class="text-slate-400 sm:ml-1">{{ ' ' + t.reg2Desc }}</span>
                 </div>
               </li>
               <li class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="120">
                 <i class="las la-exclamation-circle text-emerald-400 mt-0.5 text-lg"></i>
                 <div class="text-sm">
                   <span class="text-white font-semibold block sm:inline">{{ t.reg3Label }}</span>
-                  <span class="text-slate-400 sm:ml-1">{{ t.reg3Desc }}</span>
+                  <span class="text-slate-400 sm:ml-1">{{ ' ' + t.reg3Desc }}</span>
                 </div>
               </li>
               <li class="flex items-start gap-3 mt-5 pt-5 border-t border-emerald-500/10" data-aos="fade-up" data-aos-delay="180">
                 <i class="las la-shield-alt text-emerald-400 mt-0.5 text-lg"></i>
                 <div class="text-sm">
                   <span class="text-white font-semibold block sm:inline">{{ t.reg4Label }}</span>
-                  <span class="text-slate-400 sm:ml-1">{{ t.reg4Desc }}</span>
+                  <span class="text-slate-400 sm:ml-1">{{ ' ' + t.reg4Desc }}</span>
                 </div>
               </li>
             </ul>
@@ -222,14 +222,14 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div id="contact" class="mb-8 mt-4 scroll-mt-24" data-aos="fade-up">
-          <div class="text-center mb-8">
-            <p class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">{{ t.contactLabel }}</p>
-            <h2 class="text-2xl sm:text-4xl font-bold text-white mb-4">{{ t.contactTitle }}</h2>
-            <p class="text-white/60 text-base max-w-2xl mx-auto">{{ t.contactSubtitle }}</p>
-          </div>
-          <HubSpotForm />
+        <!-- Contact — routes to the single centralized lead form at /contact
+             rather than embedding a second one here (handoff §5: "do not
+             maintain competing lead forms"). -->
+        <div id="contact" class="mb-8 mt-4 scroll-mt-24 text-center" data-aos="fade-up">
+          <p class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">{{ t.contactLabel }}</p>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white mb-4">{{ t.contactTitle }}</h2>
+          <p class="text-white/60 text-base max-w-2xl mx-auto mb-8">{{ t.contactSubtitle }}</p>
+          <a href="/contact?intent=pilot" class="cta-primary">{{ t.ctaBtn3 }}</a>
         </div>
 
         <!-- Footer CTA -->
@@ -274,7 +274,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'PTERI Solutions | Protect People, AI Agents, and Enterprise Systems',
   description: 'Add passwordless MFA, runtime authorization, and verifiable approvals to the systems and workflows your organization already operates.',
-  image: '/solutions-og.png',
+  image: '/og/og-solutions.png',
 })
 
 const t = computed(() => {
@@ -294,7 +294,7 @@ const t = computed(() => {
       reg3Label: 'Published standards:', reg3Desc: 'Emerging regulatory guidance in multiple jurisdictions emphasizes phishing-resistant, cryptographic-grade authentication.',
       reg4Label: 'Additional threats:', reg4Desc: 'eSIM/SIM-swap fraud and AI agents operating without verifiable scoped authority.',
       solutionsTitle: 'PTERI Solutions',
-      mfaTitle: 'Passwordless MFA', mfaProblem: 'Legacy OTP-based MFA is vulnerable to phishing and regulatory non-compliance.',
+      mfaTitle: 'Passwordless MFA', mfaProblem: 'Legacy OTP-based MFA is vulnerable to phishing.',
       mfaSolution: 'Add passwordless cryptographic authentication to existing workforce access, applications, and sensitive workflows.',
       mfaPoints: ['Phishing-resistant verification', 'Works alongside existing identity providers', 'Designed to support regulated authentication and authorization requirements'],
       paymentsTitle: 'Payments and Approvals with Litecoin', paymentsProblem: 'Traditional payments lack privacy and expose users to custody risks.',

@@ -190,7 +190,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'KAKR.ai Trust Center | Verifiable Security Architecture',
   description: 'How PTERI verifies identity and authorization using customer-controlled credentials, scoped authorization, and tamper-evident action evidence.',
-  image: '/trust-center-og.png',
+  image: '/og/og-trust-center.png',
 })
 </script>
 

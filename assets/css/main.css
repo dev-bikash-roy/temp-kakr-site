@@ -53,32 +53,16 @@
     @apply bg-white/90 dark:bg-white/10 backdrop-blur-lg border border-slate-300 dark:border-white/20 shadow-md dark:shadow-none;
   }
 
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.75rem;
-    font-size: 0.9375rem;
-    font-weight: 700;
-    color: #000000;
-    border-radius: 9999px;
-    border: 1px solid rgba(52, 211, 153, 0.5);
-    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-    box-shadow: 0 0 16px rgba(52, 211, 153, 0.3);
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .btn-primary:hover {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    box-shadow: 0 0 28px rgba(52, 211, 153, 0.5);
-    transform: translateY(-1px);
-  }
-  .btn-primary:active {
-    transform: translateY(0);
-  }
+  /* .btn-primary is deliberately NOT defined here.
+     theme.css is the single source of truth for button geometry (52px height,
+     15/20 type, shared radius/padding — handoff §6 "same radii, heights").
+     A second copy used to live in this @layer components block with
+     `padding: 0.75rem 1.75rem` and no `min-height`. Because @import hoists
+     theme.css above the `@tailwind components` output, that copy won on equal
+     specificity and silently stripped the locked 52px height from every
+     primary button — so .btn-primary sized to its text while .btn-ghost
+     (defined only in theme.css) kept 52px, leaving the two buttons in a CTA
+     row visibly mismatched. Add button changes to theme.css, not here. */
 
   .btn-secondary {
     @apply px-6 py-3 glass text-slate-800 dark:text-white font-semibold rounded-lg hover:glass-strong transition-all duration-300 transform hover:scale-105;

@@ -236,7 +236,7 @@ const gursonSidanaSchema = {
 setSEO({
   title: 'About Us | Kakr Labs - Building Foundational Trust',
   description: 'Learn how Kakr Labs is building universal trust infrastructure for the AI era, replacing fragile existing enterprise systems with decentralized cryptographic authority.',
-  image: '/about-og.png',
+  image: '/og/og-about.png',
   structuredData: [aboutPageSchema, harvinSinghSchema, josephAkpanSchema, gursonSidanaSchema]
 })
 </script>

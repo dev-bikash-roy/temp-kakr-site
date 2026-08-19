@@ -369,7 +369,7 @@ const { setSEO } = useSEO()
 setSEO({
   title: 'Kakr Labs Roadmap - Web3 Infrastructure Development Timeline',
   description: 'Explore Kakr Labs product roadmap. Pure Proof-of-Work infrastructure on 100% Litecoin. Track our journey from vision to execution with decentralized ID, eSIM security, and more.',
-  image: '/roadmap-og.png',
+  image: '/og/og-roadmap.png',
   keywords: ['kakr labs roadmap', 'web3 roadmap', 'litecoin infrastructure', 'pteri roadmap', 'blockchain development timeline', 'proof of work']
 })
 </script>
