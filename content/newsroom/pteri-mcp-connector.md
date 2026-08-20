@@ -6,8 +6,8 @@ summary: PTERI Wallet is now available as an MCP connector, letting AI agents
   shared secrets, per-agent revocable identity.
 category: product-update
 status: published
-published_at: 2026-08-21T00:00:00.000Z
-updated_at: 2026-08-21T09:00:00.000Z
+published_at: 2026-08-20T21:05:00.000Z
+updated_at: 2026-08-20T21:05:00.000Z
 author_name: KAKR Labs
 author_role: Software Developer
 hero_image: https://postsnippets.com/wp-content/uploads/2026/04/banner_14_best_claude_connectors_in_2026.webp
