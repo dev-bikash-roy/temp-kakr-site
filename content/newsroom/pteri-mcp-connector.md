@@ -11,6 +11,7 @@ updated_at: 2026-08-19T21:05:00.000Z
 author_name: KAKR Labs
 author_role: Software Developer
 hero_image: https://postsnippets.com/wp-content/uploads/2026/04/banner_14_best_claude_connectors_in_2026.webp
+hero_alt: Claude Connector Diagram
 social_image: /uploads/newsroom/kakr-ai-article-image.jpg
 featured: true
 announcement:
