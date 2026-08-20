@@ -21,7 +21,7 @@ announcement:
   starts_at: 2026-08-19T21:08:00.000Z
 availability: public-beta
 cta_primary:
-  label: Claude Insights
+  label: Claude Insight
   url: https://claude.ai/share/7a59c125-2286-49c2-9db8-be65723f77d6
 cta_secondary:
   label: Test Live
